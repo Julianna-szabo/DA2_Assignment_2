@@ -60,6 +60,21 @@ View( df %>% filter( !complete.cases(df) ) )
 # It looks like the only column with missing values is the Percentage of Profit.
 # I will keep these for now to not disrupt my time series.
 
+# Let's check what the density of the data per year is
+
+df %>% 
+  group_by(date_year) %>% 
+  summarise(
+    n = n()
+  )
+
+# Looks like I only have I value for 1990 so I will drop that one
+
+df <- df[-1, ]
+
+# I see that for the other years before 2000 I don't have tons of observations but it will be enough for analysis.
+# If it causes issues I will drop them later.
+
 # Now the data is clean so we can save it
 
 # Save clean data

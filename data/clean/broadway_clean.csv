@@ -1,5 +1,4 @@
 date,date_day,date_month,date_year,show_name,show_theater,show_type,num_of_attendance,capacity_filled,revenue,percentage_of_poss_profit,num_of_performances
-1990-08-26,26,8,1990,Tru,Booth,Play,5500,0.88,134456,NA,8
 1991-03-24,24,3,1991,Miss Saigon,Broadway,Musical,1737,1,100647,NA,0
 1991-03-31,31,3,1991,Miss Saigon,Broadway,Musical,12160,1,634424,NA,0
 1991-04-07,7,4,1991,Miss Saigon,Broadway,Musical,13921,1,713353,NA,0
