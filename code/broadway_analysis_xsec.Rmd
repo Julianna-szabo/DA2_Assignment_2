@@ -1,0 +1,114 @@
+---
+title: "Broadway data analysis"
+author: "Julianna Szabo"
+date: "12/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list = ls())
+
+# Packages to use
+library(tidyverse)
+# For scaling ggplots
+require(scales)
+# Estimate piecewise linear splines
+#install.packages("lspline")
+library(lspline)
+# Estimate robust SE
+#install.packages("estimatr")
+library(estimatr)
+# Compare models with robust SE
+#install.packages("texreg")
+library(texreg)
+# For different themes
+#install.packages(ggthemes)
+library(ggthemes)
+library(ggplot2)
+library(flextable)
+library(magrittr)
+```
+
+# Executive summary
+
+
+## Research question
+
+Is there a correlation between the occupancy percentage of a show and the revenue per attendant?
+I will be looking for causality.
+
+## Data
+
+```{r, echo = FALSE, include = FALSE}}
+my_url <- "https://raw.githubusercontent.com/Julianna-szabo/DA2_Assignment_2/main/data/clean/broadway_clean_xsec.csv"
+df <- read.csv(my_url)
+df <- data.frame(df)
+```
+
+
+The data is very complete and representative. I have removed some missing values during the cleaning process but it was a very small percentage. Further some measures were lost by switching from a time series to a cross sectional data set. However, I aggregated on the show name, which lets me keel the most amount of detail. Most of the variables are quantitative so that means they measure what they decribe.
+I will use using Revenue / Attendant, where Revenue is measured as the gross revenue of the show, and attendants which are measured as total number of people who attended the show.
+
+My x variable will be Occupancy percentage (capacity_filled)
+My y variable will be Revenue / Attendant which I will calculate based on revenue and attendant
+
+````{r, echo = FALSE}
+df$revenue_per_att <- df$revenue/df$num_of_attendance
+```
+
+
+There may be some measurement error in y, which is classic and doesn't affect the slope. There may be some measuement error in x which could also be classic, which does affect the slope.
+
+
+# Summary of variables
+
+```{r, echo = FALSE, warning = FALSE, out.width="50%", figures-side, fig.show="hold"}
+df %>%
+  ggplot(aes(x = capacity_filled)) +
+  geom_histogram(bins= 20)+
+  labs(x = "Occupancy percentage", y = "Count")
+
+df %>%
+  ggplot(aes(x = revenue_per_att)) +
+  geom_histogram(bins= 20)+
+  labs(x = "Revenue per attendant", y = "Count")
+```
+```{r, echo = FALSE}
+x_summary <- df %>% 
+  summarise(
+    n = length(capacity_filled),
+    mean = mean(capacity_filled),
+    median = median(capacity_filled),
+    min = min(capacity_filled),
+    max = max(capacity_filled),
+    sd = sd(capacity_filled))
+
+y_summary <- df %>% 
+  summarise(
+    n = length(revenue_per_att),
+    mean = mean(revenue_per_att),
+    median = median(revenue_per_att),
+    min = min(revenue_per_att),
+    max = max(revenue_per_att),
+    sd = sd(revenue_per_att))
+
+summary_table <- add_row(x_summary,y_summary)
+kable(summary_table)
+```
+
+Looks like they are distributed somehwat normall, but y has a long right tail, while x has more of a left tail. Also looking at x, there are a few outliers, since a percentage should not be larger than 1. Therefore I will remove these from the set.
+
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
