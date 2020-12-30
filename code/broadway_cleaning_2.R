@@ -82,6 +82,11 @@ View( df %>% filter( !complete.cases(percentage_of_poss_profit) ) )
 
 df <- df %>% filter( complete.cases(percentage_of_poss_profit) ) 
 
+# I found out during the are outliers in the occupancy percentage during my exploration of the data, which
+# I will also remove during the cleaning process.
+
+df <- df %>% filter(capacity_filled <= 1)
+
 # Now the data is clean so we can save it
 
 # Save clean data
