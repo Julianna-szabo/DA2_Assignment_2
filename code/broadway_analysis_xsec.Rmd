@@ -36,6 +36,8 @@ library(knitr)
 library(pander)
 #install.packages(tibble)
 library(tibble)
+#install.packages(stargazes)
+library(stargazer)
 ```
 
 # Executive summary
@@ -43,7 +45,7 @@ library(tibble)
 
 ## Research question
 
-Is there a correlation between the occupancy percentage of a show and the revenue per attendant?
+Is there a correlation between the occupancy percentage of a show and the revenue per attendant?  
 I will be looking for causality.
 
 ## Data
@@ -71,20 +73,45 @@ There may be some measurement error in y, which is classic and doesn't affect th
 
 # Summary of variables
 
-```{r, echo = FALSE, warning = FALSE, out.width="50%", figures-side, fig.show="hold"}
+```{r, echo = FALSE, warning = FALSE, out.width="50%", figures-side1, fig.show="hold"}
 df %>%
   ggplot(aes(x = capacity_filled)) +
-  geom_histogram(bins= 20)+
-  labs(x = "Occupancy percentage", y = "Count")
+  geom_histogram(bins= 20, col="white")+
+  labs(x = "Occupancy percentage", y = "Count") +
+  theme_bw()
 
 df %>%
-  ggplot(aes(x = revenue_per_att)) +
-  geom_histogram(bins= 20)+
-  labs(x = "Revenue per attendant", y = "Count")
+  ggplot(aes(x = percentage_of_poss_profit)) +
+  geom_histogram(bins= 20, col="white")+
+  labs(x = "Percentage of pottention profit", y = "Count") +
+  theme_bw()
 ```
+```{r, echo = FALSE, warning = FALSE, out.width="50%", figures-side2, fig.show="hold"}
+df %>%
+  ggplot(aes(x = num_of_performances)) +
+  geom_histogram(bins= 20, col= "white")+
+  labs(x = "Number of performances", y = "Count") +
+  theme_bw()
+
+df %>%
+  ggplot(aes(x = show_type)) +
+  geom_histogram(stat = "count")+
+  labs(x = "Show type", y = "Count") +
+  theme_bw()
+```
+
+```{r, echo = FALSE, warning = FALSE, out.width="50%", figures-side3, fig.show="hold"}
+df %>%
+  ggplot(aes(x = revenue_per_att)) +
+  geom_histogram(bins= 20, col = "white")+
+  labs(x = "Revenue per attendant", y = "Count") +
+  theme_bw()
+```
+
 ```{r, echo = FALSE}
-x_summary <- df %>% 
+x1_summary <- df %>% 
   summarise(
+    variable = "Occupancy percentage",
     n = length(capacity_filled),
     mean = mean(capacity_filled),
     median = median(capacity_filled),
@@ -92,8 +119,29 @@ x_summary <- df %>%
     max = max(capacity_filled),
     sd = sd(capacity_filled))
 
+x2_summary <- df %>% 
+  summarise(
+    variable = "Percentage of possible profit",
+    n = length(percentage_of_poss_profit),
+    mean = mean(percentage_of_poss_profit),
+    median = median(percentage_of_poss_profit),
+    min = min(percentage_of_poss_profit),
+    max = max(percentage_of_poss_profit),
+    sd = sd(percentage_of_poss_profit))
+
+x3_summary <- df %>% 
+  summarise(
+    variable = "Number of performances",
+    n = length(num_of_performances),
+    mean = mean(num_of_performances),
+    median = median(num_of_performances),
+    min = min(num_of_performances),
+    max = max(num_of_performances),
+    sd = sd(num_of_performances))
+
 y_summary <- df %>% 
   summarise(
+    variable = "Revenue per Attendant",
     n = length(revenue_per_att),
     mean = mean(revenue_per_att),
     median = median(revenue_per_att),
@@ -101,15 +149,11 @@ y_summary <- df %>%
     max = max(revenue_per_att),
     sd = sd(revenue_per_att))
 
-summary_table <- add_row(x_summary,y_summary)
+summary_table <- rbind(x1_summary, x2_summary, x3_summary ,y_summary)
 kable(summary_table)
 ```
 
 Looks like they are distributed somehwat normall, but y has a long right tail, while x has more of a left tail. Also looking at x, there are a few outliers, since a percentage should not be larger than 1. Therefore I will remove these from the set.
-
-```{r, echo=FALSE}
-df <- df %>% filter(capacity_filled <= 1)
-```
 
 # Ln transformations
 
@@ -142,7 +186,8 @@ df %>%
   ggplot(aes(x = capacity_filled, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Occupancy percentage",y = "Revenue per attendant")
+  labs(x = "Occupancy percentage",y = "Revenue per attendant") +
+  theme_bw()
 ```
 
 ## Log - level regression
@@ -151,7 +196,8 @@ df %>%
   ggplot(aes(x = ln_capacity_filled, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Occupancy percentage)",y = "Revenue per attendant")
+  labs(x = "ln (Occupancy percentage)",y = "Revenue per attendant") +
+  theme_bw()
 ```
 
 ## Level - log regression
@@ -160,7 +206,8 @@ df %>%
   ggplot(aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
+  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
 
 ## Log - log regression
@@ -169,7 +216,8 @@ df %>%
   ggplot(aes(x = ln_capacity_filled, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Occupancy percentage)",y = "ln (Revenue per attendant)")
+  labs(x = "ln (Occupancy percentage)",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
 
 
@@ -179,21 +227,26 @@ df %>%
 ## Regression 1 - Simple linear regression
 ```{r, echo=FALSE}
 reg1 <- lm_robust( ln_revenue_per_att ~ capacity_filled , data = df,  se_type = "HC2" )
-summary( reg1 )
+summary( reg1 ) 
+
 ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( method = lm , color = 'red' ) +
-  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
+  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
+  theme_bw()
+
 ```
 
 ## Regression 2 - Quadratic (linear) regression
 ```{r, echo=FALSE}
 reg2 <- lm_robust( ln_revenue_per_att ~ capacity_filled + capacity_filled_sq , data = df )
-summary( reg2 )
+summary( reg2 ) 
+
 ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( formula = y ~ poly(x,2) , method = lm , color = 'red' ) +
-  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
+  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
 
 ## Regressipn 3 - Piecewise linear spline regression
@@ -204,34 +257,38 @@ Using 0.5 as a cutof point
 cutoff <- 0.5
 # Use simple regression with the lspline function
 reg3 <- lm_robust(ln_revenue_per_att ~ lspline( capacity_filled , cutoff ), data = df )
-summary( reg3 )
+summary( reg3 ) 
+
 ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( formula = y ~ lspline(x,cutoff) , method = lm , color = 'red' ) +
-  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
+  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
 
 
 ## Regression 4 - Weighted linear regression, where  weights = percentage of total revenue
 ```{r, echo=FALSE}
 reg4 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = df , weights = percentage_of_poss_profit)
-summary( reg4 )
+summary( reg4 ) 
 
 ggplot(data = df, aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=percentage_of_poss_profit),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
   geom_smooth(aes(weight = percentage_of_poss_profit), method = "lm", color='red')+
-  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
+  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
 
 ## Regression 5 - Weighted linear regression, where weights = number of performances
 ```{r, echo=FALSE}
 reg5 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = df , weights = num_of_performances)
-summary( reg4 )
+summary( reg5 ) 
 
 ggplot(data = df, aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=num_of_performances),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
   geom_smooth(aes(weight = num_of_performances), method = "lm", color='red')+
-  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
+  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
 
 # Model Comparison
@@ -253,13 +310,16 @@ Check if it becomes better if one of the weights are included as variables
 
 ```{r, echo=FALSE}
 reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = df,  se_type = "HC2" )
-reg6
+summary( reg6 ) 
 
 reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + num_of_performances, data = df,  se_type = "HC2" )
-reg7
+summary( reg7) 
 
 reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + num_of_performances, data = df,  se_type = "HC2" )
-reg8
+summary( reg8 ) 
+
+reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + num_of_performances + as.factor(show_type), data = df,  se_type = "HC2" )
+summary( reg9 ) 
 ```
 
 ## Explore again

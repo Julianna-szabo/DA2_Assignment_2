@@ -51,7 +51,8 @@ df$revenue_per_att <- df$revenue/df$num_of_attendance
 # Data description --------------------------------------------------------
 
 # Distribution of x
-x_summary <- df %>% 
+## Occupancy percentage
+x1_summary <- df %>% 
   summarise(
     n = length(capacity_filled),
     mean = mean(capacity_filled),
@@ -64,6 +65,38 @@ df %>%
   ggplot(aes(x = capacity_filled)) +
   geom_histogram(bins= 20)+
   labs(x = "Occupancy percentage", y = "Count")
+
+## Percentage of possible proft
+
+x2_summary <- df %>% 
+  summarise(
+    n = length(percentage_of_poss_profit),
+    mean = mean(percentage_of_poss_profit),
+    median = median(percentage_of_poss_profit),
+    min = min(percentage_of_poss_profit),
+    max = max(percentage_of_poss_profit),
+    sd = sd(percentage_of_poss_profit))
+
+df %>%
+  ggplot(aes(x = percentage_of_poss_profit)) +
+  geom_histogram(bins= 20)+
+  labs(x = "Percentage of pottention profit", y = "Count")
+
+## Number of performances
+
+x3_summary <- df %>% 
+  summarise(
+    n = length(num_of_performances),
+    mean = mean(num_of_performances),
+    median = median(num_of_performances),
+    min = min(num_of_performances),
+    max = max(num_of_performances),
+    sd = sd(num_of_performances))
+
+df %>%
+  ggplot(aes(x = num_of_performances)) +
+  geom_histogram(bins= 20)+
+  labs(x = "Number of performances", y = "Count")
 
 # Looks like there are some outliers that are errors, since it cannot be more than 1
 
@@ -86,11 +119,6 @@ summary_table
   
 # Looks like they are distributed somehwat normall, but y has a long right tail, while x is more heavy
 # on the right and left tail
-
-# Remove the outliers in occupancy
-
-df <- df %>% filter(capacity_filled <= 1)
-
 
 # Ln Transformations ------------------------------------------------------
 
