@@ -31,10 +31,12 @@ df <- df %>% mutate( ln_capacity_filled = log( capacity_filled ),
 
 df <- df %>% mutate( capacity_filled_sq = capacity_filled^2)
 
+
 # Now split it into train and test
 
-train <- df[sample(nrow(df), 640), ]
+train <- df[sample(nrow(df), 606), ]
 test <- df[ !(df$show_name %in% train$show_name), ]
+
 
 # Save these as files in the clean data folder
 
