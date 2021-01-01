@@ -40,13 +40,13 @@ df$date <- NULL
 df$date_day <- NULL
 df$date_month <- NULL
 df$date_year <- NULL
+df$show_theater <- NULL
 
 # Now to the aggregation
 
 df_2 <- df %>% 
   group_by(show_name) %>% 
   summarise(
-    "show_theater" = show_theater,
     "show_type" = show_type,
     "num_of_attendance" = sum(num_of_attendance),
     "capacity_filled" = mean(capacity_filled),
