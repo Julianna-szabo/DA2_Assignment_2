@@ -209,6 +209,12 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 ,reg5 ),
          caption = "Modelling Revenue per attendant on Occupancy percentage for different shows",
          file = paste0( data_out ,'model_comparison.html'), include.ci = FALSE)
 ```
+Looks like these models with mainly one variable are not a great fit for the data. Therefore, I will include additional variables to try and get a better fit. Further, it looks like the original use of "Number of Performances" has no impact so I will try and create a dummy variable and use that instead. I will use 0 for any show that had less than one year of performances so less than 8*52 (416) and one for those that have had more.
+
+```{r, echo=FALSE}
+df <- df %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
+```
+
 
 ## Additional models
 
@@ -216,14 +222,18 @@ Check if it becomes better if one of the weights are included as variables
 
 ```{r, echo=FALSE}
 reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = df,  se_type = "HC2" )
-reg6
+summary( reg6 ) 
 
-reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + num_of_performances, data = df,  se_type = "HC2" )
-reg7
+reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + as.factor(num_of_performances_d), data = df,  se_type = "HC2" )
+summary( reg7) 
 
-reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + num_of_performances, data = df,  se_type = "HC2" )
-reg8
+reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d), data = df,  se_type = "HC2" )
+summary( reg8 ) 
+
+reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = df,  se_type = "HC2" )
+summary( reg9 ) 
 ```
+
 
 ## Explore again
 

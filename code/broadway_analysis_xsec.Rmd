@@ -182,7 +182,14 @@ log  of number of performances
 # Regression Models
 
 ```{r, echo=FALSE}
+train <- df[sample(nrow(df), 640), ]
+test <- df[ !(df$show_name %in% train$show_name), ]
+```
+
+
+```{r, echo=FALSE}
 df <- df %>% mutate( capacity_filled_sq = capacity_filled^2)
+test <- test %>% mutate( capacity_filled_sq = capacity_filled^2)
 ```
 
 Decided on ....... model
@@ -341,12 +348,14 @@ df %>%
 
 # Regression modes
 
+To make my regression model more robust, I created a train and test data set
+
 ## Regression 1 - Simple linear regression
 ```{r, echo=FALSE}
-reg1 <- lm_robust( ln_revenue_per_att ~ capacity_filled , data = df,  se_type = "HC2" )
+reg1 <- lm_robust( ln_revenue_per_att ~ capacity_filled , data = train,  se_type = "HC2" )
 summary( reg1 , digits = 2) 
 
-ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
@@ -356,10 +365,10 @@ ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) +
 
 ## Regression 2 - Quadratic (linear) regression
 ```{r, echo=FALSE}
-reg2 <- lm_robust( ln_revenue_per_att ~ capacity_filled + capacity_filled_sq , data = df )
+reg2 <- lm_robust( ln_revenue_per_att ~ capacity_filled + capacity_filled_sq , data = train )
 summary( reg2 , digits = 2) 
 
-ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( formula = y ~ poly(x,2) , method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
@@ -373,10 +382,10 @@ Using 0.5 as a cutof point
 # Define the cutoff for occupancy
 cutoff <- 0.5
 # Use simple regression with the lspline function
-reg3 <- lm_robust(ln_revenue_per_att ~ lspline( capacity_filled , cutoff ), data = df )
+reg3 <- lm_robust(ln_revenue_per_att ~ lspline( capacity_filled , cutoff ), data = train )
 summary( reg3 , digits = 2) 
 
-ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( formula = y ~ lspline(x,cutoff) , method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
@@ -386,10 +395,10 @@ ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) +
 
 ## Regression 4 - Weighted linear regression, where  weights = percentage of total revenue
 ```{r, echo=FALSE}
-reg4 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = df , weights = percentage_of_poss_profit)
+reg4 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = train , weights = percentage_of_poss_profit)
 summary( reg4 , digits = 2) 
 
-ggplot(data = df, aes(x = capacity_filled, y = ln_revenue_per_att)) +
+ggplot(data = train, aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=percentage_of_poss_profit),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
   geom_smooth(aes(weight = percentage_of_poss_profit), method = "lm", color='red')+
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
@@ -398,10 +407,10 @@ ggplot(data = df, aes(x = capacity_filled, y = ln_revenue_per_att)) +
 
 ## Regression 5 - Weighted linear regression, where weights = number of performances
 ```{r, echo=FALSE}
-reg5 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = df , weights = num_of_performances)
+reg5 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = train , weights = num_of_performances)
 summary( reg5 , digits = 2) 
 
-ggplot(data = df, aes(x = capacity_filled, y = ln_revenue_per_att)) +
+ggplot(data = train, aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=num_of_performances),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
   geom_smooth(aes(weight = num_of_performances), method = "lm", color='red')+
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
@@ -424,7 +433,8 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 ,reg5 ),
 Looks like these models with mainly one variable are not a great fit for the data. Therefore, I will include additional variables to try and get a better fit. Further, it looks like the original use of "Number of Performances" has no impact so I will try and create a dummy variable and use that instead. I will use 0 for any show that had less than one year of performances so less than 8*52 (416) and one for those that have had more.
 
 ```{r, echo=FALSE}
-df <- df %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
+train <- train %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
+test <- test %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
 ```
 
 
@@ -433,17 +443,17 @@ df <- df %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
 Check if it becomes better if one of the weights are included as variables
 
 ```{r, echo=FALSE}
-reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = df,  se_type = "HC2" )
-summary( reg6 , digits = 2) 
+reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = test,  se_type = "HC2" )
+summary( reg6 , digit = 2) 
 
-reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + as.factor(num_of_performances_d), data = df,  se_type = "HC2" )
-summary( reg7 , digits = 2)
+reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + as.factor(num_of_performances_d), data = test,  se_type = "HC2" )
+summary( reg7, digit = 2) 
 
-reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d), data = df,  se_type = "HC2" )
-summary( reg8 , digits = 2)
+reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d), data = test,  se_type = "HC2" )
+summary( reg8 , digit = 2) 
 
-reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = df,  se_type = "HC2" )
-summary( reg9 , digits = 2)
+reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = test,  se_type = "HC2" )
+summary( reg9 , digit = 2)
 ```
 
 ## Explore again

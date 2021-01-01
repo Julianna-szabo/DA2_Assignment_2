@@ -96,11 +96,11 @@ x3_summary <- df %>%
     sd = sd(num_of_performances))
 
 df %>%
+  filter(num_of_performances <= 1000) %>% 
   ggplot(aes(x = num_of_performances)) +
   geom_histogram(bins= 20)+
   labs(x = "Number of performances", y = "Count") +
   theme_bw()
-
 
 ## Show type
 
@@ -187,7 +187,8 @@ df %>%
   ggplot(aes(x = percentage_of_poss_profit, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Percentage of potential profit",y = "Revenue per attendant")
+  labs(x = "Percentage of potential profit",y = "Revenue per attendant") +
+  theme_bw()
 
 # 2, Log - level regression
 
@@ -195,7 +196,8 @@ df %>%
   ggplot(aes(x = ln_percentage_of_poss_profit, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Percentage of potential profit)",y = "Revenue per attendant")
+  labs(x = "ln (Percentage of potential profit)",y = "Revenue per attendant") +
+  theme_bw()
 
 # 3, Level - log regression
 
@@ -203,7 +205,8 @@ df %>%
   ggplot(aes(x = percentage_of_poss_profit, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Percentage of potential profit",y = "ln (Revenue per attendant)")
+  labs(x = "Percentage of potential profit",y = "ln (Revenue per attendant)") +
+  theme_bw()
 
 # 4, Log - log regression
 
@@ -211,7 +214,8 @@ df %>%
   ggplot(aes(x = ln_percentage_of_poss_profit, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Percentage of potential profit)",y = "ln (Revenue per attendant)")
+  labs(x = "ln (Percentage of potential profit)",y = "ln (Revenue per attendant)") +
+  theme_bw()
 
 # Number of performances
 
@@ -221,7 +225,8 @@ df %>%
   ggplot(aes(x = num_of_performances, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Number of performances",y = "Revenue per attendant")
+  labs(x = "Number of performances",y = "Revenue per attendant") +
+  theme_bw()
 
 # 2, Log - level regression
 
@@ -229,7 +234,8 @@ df %>%
   ggplot(aes(x = ln_num_of_performances, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Number of performances)",y = "Revenue per attendant")
+  labs(x = "ln (Number of performances)",y = "Revenue per attendant") +
+  theme_bw()
 
 # 3, Level - log regression
 
@@ -237,7 +243,8 @@ df %>%
   ggplot(aes(x = num_of_performances, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Number of performances",y = "ln (Revenue per attendant)")
+  labs(x = "Number of performances",y = "ln (Revenue per attendant)") +
+  theme_bw()
 
 # 4, Log - log regression
 
@@ -245,10 +252,30 @@ df %>%
   ggplot(aes(x = ln_num_of_performances, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Number of performances)",y = "ln (Revenue per attendant)")
+  labs(x = "ln (Number of performances)",y = "ln (Revenue per attendant)") +
+  theme_bw()
 
 
+# Check correlation
+numeric_df <- keep( df , is.numeric)
+numeric_df$revenue <- NULL
+numeric_df$num_of_attendance <- NULL
+cT <- cor(numeric_df , use = "complete.obs")
+# High correlation
+sum( cT >= 0.8 & cT != 1 ) / 2
+# Correlation higher than 0.8
+id_cr <- which( cT >= 0.8 & cT != 1 )
+# Get the pains
+pair_names <- expand.grid( variable.names(numeric_df) , variable.names(numeric_df) )
+high_corr <- pair_names[ id_cr , ]
+high_corr <- mutate( high_corr , corr_val = cT[ id_cr ] )
+high_corr
 
+
+# Create the train and test data ------------------------------------------
+
+train <- df[sample(nrow(df), 640), ]
+test <- df[ !(df$show_name %in% train$show_name), ]
 
 
 # Regression Models -------------------------------------------------------
@@ -260,26 +287,27 @@ df %>%
 
 # First I will add the square and cube of the x variable to df
 
-df <- df %>% mutate( capacity_filled_sq = capacity_filled^2)
+train <- train %>% mutate( capacity_filled_sq = capacity_filled^2)
+test <- test %>% mutate( capacity_filled_sq = capacity_filled^2)
 
 # Regression 1 - Simple linear regression
 
-reg1 <- lm_robust( ln_revenue_per_att ~ capacity_filled , data = df,  se_type = "HC2" )
+reg1 <- lm_robust( ln_revenue_per_att ~ capacity_filled , data = train,  se_type = "HC2" )
 reg1
 
 # Summary statistics
 summary( reg1 )
 # Visual inspection:
-ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
 
 # Regression 2 - Quadratic (linear) regression
 
-reg2 <- lm_robust( ln_revenue_per_att ~ capacity_filled + capacity_filled_sq , data = df )
+reg2 <- lm_robust( ln_revenue_per_att ~ capacity_filled + capacity_filled_sq , data = train )
 summary( reg2 )
-ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( formula = y ~ poly(x,2) , method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
@@ -289,29 +317,29 @@ ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) +
 # Define the cutoff for occupancy
 cutoff <- 0.5
 # Use simple regression with the lspline function
-reg3 <- lm_robust(ln_revenue_per_att ~ lspline( capacity_filled , cutoff ), data = df )
+reg3 <- lm_robust(ln_revenue_per_att ~ lspline( capacity_filled , cutoff ), data = train )
 summary( reg3 )
-ggplot( data = df, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( formula = y ~ lspline(x,cutoff) , method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
 
 # Regression 4 - Weighted linear regression, where  weights = percentage of total revenue
 
-reg4 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = df , weights = percentage_of_poss_profit)
+reg4 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = train , weights = percentage_of_poss_profit)
 summary( reg4 )
 
-ggplot(data = df, aes(x = capacity_filled, y = ln_revenue_per_att)) +
+ggplot(data = train, aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=percentage_of_poss_profit),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
   geom_smooth(aes(weight = percentage_of_poss_profit), method = "lm", color='red')+
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
 
 # Regression 5 - Weighted linear regression, where weights = number of performances
 
-reg5 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = df , weights = num_of_performances)
+reg5 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = train , weights = num_of_performances)
 summary( reg4 )
 
-ggplot(data = df, aes(x = capacity_filled, y = ln_revenue_per_att)) +
+ggplot(data = train, aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=num_of_performances),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
   geom_smooth(aes(weight = num_of_performances), method = "lm", color='red')+
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
@@ -333,18 +361,22 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 ,reg5 ),
 # Pick Weighted OLS with number of performances
 
 # Check if it becomes better if one of the weights are included as variables
+## Create dummy
+train <- train %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
+test <- test %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
 
-reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = df,  se_type = "HC2" )
-reg6
+# More regressions
+reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = test,  se_type = "HC2" )
+summary( reg6 ) 
 
-reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + num_of_performances, data = df,  se_type = "HC2" )
-reg7
+reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + as.factor(num_of_performances_d), data = test,  se_type = "HC2" )
+summary( reg7) 
 
-reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + num_of_performances, data = df,  se_type = "HC2" )
-reg8
+reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d), data = test,  se_type = "HC2" )
+summary( reg8 ) 
 
-reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + num_of_performances + as.factor(show_type), data = df,  se_type = "HC2" )
-reg9
+reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = test,  se_type = "HC2" )
+summary( reg9 )
 
 # Export again and compare
 

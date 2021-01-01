@@ -1,1072 +1,142 @@
-date,date_day,date_month,date_year,show_name,show_theater,show_type,num_of_attendance,capacity_filled,revenue,percentage_of_poss_profit,num_of_performances
-2016-01-03,3,1,2016,A View From The Bridge 2015,Lyceum,Play,7074,0.87,518228,0.59,8
-2016-01-03,3,1,2016,Aladdin,New Amsterdam,Musical,15542,1,2398110,1.05,9
-2016-01-03,3,1,2016,Allegiance,Longacre,Musical,6997,0.83,552338,0.6,8
-2016-01-03,3,1,2016,An American In Paris,Palace,Musical,11546,0.86,1349303,0.92,8
-2016-01-03,3,1,2016,Beautiful,Stephen Sondheim,Musical,7857,0.96,1042635,0.86,8
-2016-01-03,3,1,2016,Chicago,Ambassador,Musical,9239,0.95,1033996,1.01,9
-2016-01-03,3,1,2016,China Doll,Schoenfeld,Play,5312,0.71,697576,0.67,7
-2016-01-03,3,1,2016,Dames At Sea,Helen Hayes,Musical,4069,0.78,211207,0.3,9
-2016-01-03,3,1,2016,Fiddler On The Roof 2015,Broadway,Musical,14408,0.94,1725264,0.99,9
-2016-01-03,3,1,2016,Finding Neverland,Lunt-Fontanne,Musical,12770,0.94,1477505,0.78,9
-2016-01-03,3,1,2016,Fun Home,Circle In The Square,Musical,5642,0.95,717261,0.9,8
-2016-01-03,3,1,2016,Hamilton,Richard Rodgers,Musical,10745,1.02,1959785,1.47,8
-2016-01-03,3,1,2016,Hand To God,Booth,Play,5836,0.94,425669,0.68,8
-2016-01-03,3,1,2016,Jersey Boys,August Wilson,Musical,7939,0.92,922954,0.82,7
-2016-01-03,3,1,2016,King Charles Iii,Music Box,Play,6478,0.83,604833,0.61,8
-2016-01-03,3,1,2016,Kinky Boots,Al Hirschfeld,Musical,11982,0.93,1359430,0.85,9
-2016-01-03,3,1,2016,Les Miserables '14,Imperial,Musical,11221,1,1245505,1.06,8
-2016-01-03,3,1,2016,Lord Of The Dance: Dangerous Games,Lyric,Special,11750,0.69,870337,0.51,9
-2016-01-03,3,1,2016,Matilda,Shubert,Musical,12947,1,1556824,1.05,9
-2016-01-03,3,1,2016,Misery,Broadhurst,Play,6806,0.72,817415,0.66,8
-2016-01-03,3,1,2016,Noises Off 2016,American Airlines,Play,5554,0.94,438491,0.67,0
-2016-01-03,3,1,2016,On Your Feet!,Marquis,Musical,12538,0.96,1495724,0.96,8
-2016-01-03,3,1,2016,Our Mother'S Brief Affair,Friedman,Play,2591,0.66,113194,0.24,0
-2016-01-03,3,1,2016,School Of Rock,Winter Garden,Musical,13122,1.02,1671622,1.04,9
-2016-01-03,3,1,2016,Something Rotten!,St. James,Musical,10354,0.78,1155633,0.68,8
-2016-01-03,3,1,2016,Spring Awakening 2015,Brooks Atkinson,Musical,8017,0.87,688989,0.61,9
-2016-01-03,3,1,2016,Sylvia,Cort,Play,6950,0.72,391703,0.38,9
-2016-01-03,3,1,2016,The Book Of Mormon,Eugene O'Neill,Musical,9846,1.03,2024551,1.1,9
-2016-01-03,3,1,2016,The Color Purple 2015,Jacobs,Musical,8247,0.98,1003357,0.96,8
-2016-01-03,3,1,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,7564,0.93,789908,0.88,8
-2016-01-03,3,1,2016,The Gin Game 2015,Golden,Play,5611,0.87,349779,0.45,8
-2016-01-03,3,1,2016,The Illusionists - Live On Broadway,Neil Simon,Special,15149,0.84,1801327,0.82,13
-2016-01-03,3,1,2016,The King And I 2015,Vivian Beaumont,Musical,6988,0.83,1050922,0.77,8
-2016-01-03,3,1,2016,The Lion King,Minskoff,Musical,15198,1,2878505,1.06,9
-2016-01-03,3,1,2016,The Phantom Of The Opera,Majestic,Musical,13288,0.92,1651287,0.97,9
-2016-01-03,3,1,2016,Th<e9>r<e8>se Raquin,Studio 54,Play,5452,0.76,370028,0.5,7
-2016-01-03,3,1,2016,Wicked,Gershwin,Musical,17119,0.99,2940096,1.47,9
-2016-01-10,10,1,2016,A Gentleman'S Guide To Love And Murder,Walter Kerr,Musical,6622,0.91,584067,0.61,8
-2016-01-10,10,1,2016,A View From The Bridge 2015,Lyceum,Play,6840,0.84,529395,0.6,8
-2016-01-10,10,1,2016,Aladdin,New Amsterdam,Musical,13710,0.99,1370548,0.98,8
-2016-01-10,10,1,2016,Allegiance,Longacre,Musical,5316,0.63,384482,0.41,8
-2016-01-10,10,1,2016,An American In Paris,Palace,Musical,8486,0.63,855948,0.58,8
-2016-01-10,10,1,2016,Beautiful,Stephen Sondheim,Musical,7078,0.86,886369,0.73,8
-2016-01-10,10,1,2016,Chicago,Ambassador,Musical,6141,0.71,498231,0.53,8
-2016-01-10,10,1,2016,China Doll,Schoenfeld,Play,4886,0.76,631375,0.77,6
-2016-01-10,10,1,2016,Fiddler On The Roof 2015,Broadway,Musical,11728,0.86,1051184,0.68,8
-2016-01-10,10,1,2016,Finding Neverland,Lunt-Fontanne,Musical,8533,0.71,720499,0.49,8
-2016-01-10,10,1,2016,Fun Home,Circle In The Square,Musical,5656,0.96,535525,0.67,8
-2016-01-10,10,1,2016,Hamilton,Richard Rodgers,Musical,10757,1.02,1712792,1.28,8
-2016-01-10,10,1,2016,Jersey Boys,August Wilson,Musical,8229,0.84,761766,0.66,8
-2016-01-10,10,1,2016,King Charles Iii,Music Box,Play,6675,0.85,652313,0.65,8
-2016-01-10,10,1,2016,Kinky Boots,Al Hirschfeld,Musical,8253,0.72,803807,0.63,8
-2016-01-10,10,1,2016,Les Miserables '14,Imperial,Musical,8307,0.74,713975,0.6,8
-2016-01-10,10,1,2016,Matilda,Shubert,Musical,8988,0.78,689029,0.52,8
-2016-01-10,10,1,2016,Misery,Broadhurst,Play,6647,0.71,668037,0.54,8
-2016-01-10,10,1,2016,Noises Off 2016,American Airlines,Play,5679,0.96,366803,0.56,0
-2016-01-10,10,1,2016,On Your Feet!,Marquis,Musical,9808,0.75,1121842,0.72,8
-2016-01-10,10,1,2016,Our Mother'S Brief Affair,Friedman,Play,3178,0.7,167332,0.31,0
-2016-01-10,10,1,2016,School Of Rock,Winter Garden,Musical,9541,0.84,981822,0.69,8
-2016-01-10,10,1,2016,Something Rotten!,St. James,Musical,9416,0.76,760654,0.55,8
-2016-01-10,10,1,2016,Spring Awakening 2015,Brooks Atkinson,Musical,7609,0.93,618339,0.62,8
-2016-01-10,10,1,2016,The Book Of Mormon,Eugene O'Neill,Musical,8719,1.02,1492963,1.08,8
-2016-01-10,10,1,2016,The Color Purple 2015,Jacobs,Musical,7115,0.85,787187,0.76,8
-2016-01-10,10,1,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6780,0.83,554435,0.65,8
-2016-01-10,10,1,2016,The Gin Game 2015,Golden,Play,6014,0.94,500357,0.64,8
-2016-01-10,10,1,2016,The King And I 2015,Vivian Beaumont,Musical,7148,0.85,794737,0.69,8
-2016-01-10,10,1,2016,The Lion King,Minskoff,Musical,13491,0.99,1812024,0.98,8
-2016-01-10,10,1,2016,The Phantom Of The Opera,Majestic,Musical,9225,0.72,770315,0.51,8
-2016-01-10,10,1,2016,Wicked,Gershwin,Musical,13123,0.91,1552322,0.87,8
-2016-01-17,17,1,2016,A Gentleman'S Guide To Love And Murder,Walter Kerr,Musical,7181,0.99,677178,0.71,8
-2016-01-17,17,1,2016,A View From The Bridge 2015,Lyceum,Play,6943,0.85,525768,0.6,8
-2016-01-17,17,1,2016,Aladdin,New Amsterdam,Musical,13633,0.99,1360505,0.9,8
-2016-01-17,17,1,2016,Allegiance,Longacre,Musical,5452,0.64,411044,0.44,8
-2016-01-17,17,1,2016,An American In Paris,Palace,Musical,9410,0.7,899077,0.61,8
-2016-01-17,17,1,2016,Beautiful,Stephen Sondheim,Musical,7856,0.96,994176,0.82,8
-2016-01-17,17,1,2016,Chicago,Ambassador,Musical,5468,0.63,428250,0.45,8
-2016-01-17,17,1,2016,China Doll,Schoenfeld,Play,4539,0.71,552601,0.66,6
-2016-01-17,17,1,2016,Fiddler On The Roof 2015,Broadway,Musical,11945,0.87,1112364,0.71,8
-2016-01-17,17,1,2016,Finding Neverland,Lunt-Fontanne,Musical,9012,0.75,822460,0.56,8
-2016-01-17,17,1,2016,Fun Home,Circle In The Square,Musical,5798,0.98,603057,0.76,8
-2016-01-17,17,1,2016,Hamilton,Richard Rodgers,Musical,10753,1.02,1769360,1.33,8
-2016-01-17,17,1,2016,Jersey Boys,August Wilson,Musical,7282,0.74,668825,0.58,8
-2016-01-17,17,1,2016,King Charles Iii,Music Box,Play,7086,0.91,692062,0.69,8
-2016-01-17,17,1,2016,Kinky Boots,Al Hirschfeld,Musical,8286,0.73,829888,0.65,8
-2016-01-17,17,1,2016,Les Miserables '14,Imperial,Musical,8248,0.73,702532,0.59,8
-2016-01-17,17,1,2016,Matilda,Shubert,Musical,8698,0.76,716542,0.54,8
-2016-01-17,17,1,2016,Misery,Broadhurst,Play,6854,0.73,728263,0.58,8
-2016-01-17,17,1,2016,Noises Off 2016,American Airlines,Play,5856,0.99,382252,0.59,5
-2016-01-17,17,1,2016,On Your Feet!,Marquis,Musical,10442,0.8,1146372,0.74,8
-2016-01-17,17,1,2016,Our Mother'S Brief Affair,Friedman,Play,4692,0.9,187813,0.3,0
-2016-01-17,17,1,2016,School Of Rock,Winter Garden,Musical,9976,0.87,1073910,0.75,8
-2016-01-17,17,1,2016,Something Rotten!,St. James,Musical,9740,0.81,772428,0.56,8
-2016-01-17,17,1,2016,Spring Awakening 2015,Brooks Atkinson,Musical,7624,0.93,604880,0.6,8
-2016-01-17,17,1,2016,The Book Of Mormon,Eugene O'Neill,Musical,8734,1.02,1496509,1.04,8
-2016-01-17,17,1,2016,The Color Purple 2015,Jacobs,Musical,7989,0.95,889127,0.85,8
-2016-01-17,17,1,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6664,0.82,564797,0.66,8
-2016-01-17,17,1,2016,The King And I 2015,Vivian Beaumont,Musical,7189,0.86,740971,0.65,8
-2016-01-17,17,1,2016,The Lion King,Minskoff,Musical,13310,0.98,1660171,0.83,8
-2016-01-17,17,1,2016,The Phantom Of The Opera,Majestic,Musical,7775,0.61,635769,0.42,8
-2016-01-17,17,1,2016,Wicked,Gershwin,Musical,13432,0.93,1590318,0.89,8
-2016-01-24,24,1,2016,A View From The Bridge 2015,Lyceum,Play,4723,0.77,325572,0.49,6
-2016-01-24,24,1,2016,Aladdin,New Amsterdam,Musical,9253,0.89,831498,0.8,6
-2016-01-24,24,1,2016,Allegiance,Longacre,Musical,4007,0.63,262562,0.38,6
-2016-01-24,24,1,2016,An American In Paris,Palace,Musical,5801,0.58,516420,0.47,6
-2016-01-24,24,1,2016,Beautiful,Stephen Sondheim,Musical,5536,0.9,596405,0.67,6
-2016-01-24,24,1,2016,Chicago,Ambassador,Musical,3573,0.55,270842,0.37,6
-2016-01-24,24,1,2016,China Doll,Schoenfeld,Play,3773,0.71,358928,0.54,5
-2016-01-24,24,1,2016,Fiddler On The Roof 2015,Broadway,Musical,8093,0.79,657219,0.57,6
-2016-01-24,24,1,2016,Finding Neverland,Lunt-Fontanne,Musical,7632,0.85,642844,0.58,6
-2016-01-24,24,1,2016,Fun Home,Circle In The Square,Musical,3799,0.86,340120,0.58,6
-2016-01-24,24,1,2016,Hamilton,Richard Rodgers,Musical,8062,1.02,1304793,1.3,6
-2016-01-24,24,1,2016,Jersey Boys,August Wilson,Musical,4304,0.58,344021,0.41,6
-2016-01-24,24,1,2016,King Charles Iii,Music Box,Play,4961,0.85,457695,0.61,6
-2016-01-24,24,1,2016,Kinky Boots,Al Hirschfeld,Musical,5490,0.64,477468,0.51,6
-2016-01-24,24,1,2016,Les Miserables '14,Imperial,Musical,5368,0.63,405742,0.47,6
-2016-01-24,24,1,2016,Matilda,Shubert,Musical,5533,0.64,368576,0.37,6
-2016-01-24,24,1,2016,Misery,Broadhurst,Play,4513,0.64,391901,0.43,6
-2016-01-24,24,1,2016,Noises Off 2016,American Airlines,Play,4040,0.91,300106,0.61,6
-2016-01-24,24,1,2016,On Your Feet!,Marquis,Musical,7322,0.75,732366,0.63,6
-2016-01-24,24,1,2016,Our Mother'S Brief Affair,Friedman,Play,3125,0.8,109716,0.28,5
-2016-01-24,24,1,2016,School Of Rock,Winter Garden,Musical,6481,0.76,526274,0.5,6
-2016-01-24,24,1,2016,Something Rotten!,St. James,Musical,5689,0.65,427882,0.43,6
-2016-01-24,24,1,2016,Spring Awakening 2015,Brooks Atkinson,Musical,6035,0.98,545145,0.72,6
-2016-01-24,24,1,2016,The Book Of Mormon,Eugene O'Neill,Musical,6450,1.01,968563,0.93,6
-2016-01-24,24,1,2016,The Color Purple 2015,Jacobs,Musical,5697,0.9,549933,0.72,6
-2016-01-24,24,1,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5277,0.86,344769,0.54,6
-2016-01-24,24,1,2016,The Humans,Helen Hayes,Play,500,0.87,32574,0.51,0
-2016-01-24,24,1,2016,The King And I 2015,Vivian Beaumont,Musical,4872,0.78,444069,0.53,6
-2016-01-24,24,1,2016,The Lion King,Minskoff,Musical,8750,0.86,1063040,0.8,6
-2016-01-24,24,1,2016,The Phantom Of The Opera,Majestic,Musical,5683,0.59,397769,0.35,6
-2016-01-24,24,1,2016,Wicked,Gershwin,Musical,10375,0.96,983150,0.74,6
-2016-01-31,31,1,2016,A View From The Bridge 2015,Lyceum,Play,6592,0.81,477846,0.54,8
-2016-01-31,31,1,2016,Aladdin,New Amsterdam,Musical,13023,0.94,1234997,0.89,8
-2016-01-31,31,1,2016,Allegiance,Longacre,Musical,6452,0.76,455658,0.49,8
-2016-01-31,31,1,2016,An American In Paris,Palace,Musical,9545,0.71,820726,0.56,8
-2016-01-31,31,1,2016,Beautiful,Stephen Sondheim,Musical,7759,0.95,905361,0.77,8
-2016-01-31,31,1,2016,Chicago,Ambassador,Musical,5590,0.65,422580,0.45,8
-2016-01-31,31,1,2016,China Doll,Schoenfeld,Play,6346,0.85,658216,0.69,7
-2016-01-31,31,1,2016,Fiddler On The Roof 2015,Broadway,Musical,11797,0.86,1039910,0.67,8
-2016-01-31,31,1,2016,Finding Neverland,Lunt-Fontanne,Musical,9018,0.75,724729,0.49,8
-2016-01-31,31,1,2016,Fun Home,Circle In The Square,Musical,5221,0.88,488273,0.61,8
-2016-01-31,31,1,2016,Hamilton,Richard Rodgers,Musical,10748,1.02,1732653,1.3,8
-2016-01-31,31,1,2016,Jersey Boys,August Wilson,Musical,6400,0.65,571964,0.5,8
-2016-01-31,31,1,2016,King Charles Iii,Music Box,Play,7203,0.92,732328,0.73,8
-2016-01-31,31,1,2016,Kinky Boots,Al Hirschfeld,Musical,9059,0.8,838362,0.65,8
-2016-01-31,31,1,2016,Les Miserables '14,Imperial,Musical,8486,0.75,686752,0.58,8
-2016-01-31,31,1,2016,Matilda,Shubert,Musical,9267,0.81,684547,0.52,8
-2016-01-31,31,1,2016,Misery,Broadhurst,Play,7488,0.8,694020,0.56,8
-2016-01-31,31,1,2016,Noises Off 2016,American Airlines,Play,5468,0.92,442872,0.68,8
-2016-01-31,31,1,2016,On Your Feet!,Marquis,Musical,10510,0.81,1082485,0.7,8
-2016-01-31,31,1,2016,Our Mother'S Brief Affair,Friedman,Play,3899,0.75,229778,0.36,8
-2016-01-31,31,1,2016,School Of Rock,Winter Garden,Musical,8791,0.77,817940,0.58,8
-2016-01-31,31,1,2016,Something Rotten!,St. James,Musical,8765,0.71,702766,0.51,8
-2016-01-31,31,1,2016,The Book Of Mormon,Eugene O'Neill,Musical,8665,1.02,1343531,0.98,8
-2016-01-31,31,1,2016,The Color Purple 2015,Jacobs,Musical,8118,0.97,813710,0.78,8
-2016-01-31,31,1,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,7126,0.88,509779,0.59,8
-2016-01-31,31,1,2016,The Humans,Helen Hayes,Play,3872,0.84,240050,0.48,0
-2016-01-31,31,1,2016,The King And I 2015,Vivian Beaumont,Musical,6926,0.83,682534,0.6,8
-2016-01-31,31,1,2016,The Lion King,Minskoff,Musical,12979,0.96,1513498,0.89,8
-2016-01-31,31,1,2016,The Phantom Of The Opera,Majestic,Musical,7922,0.62,599766,0.4,8
-2016-01-31,31,1,2016,Wicked,Gershwin,Musical,14440,1,1469622,0.83,8
-2016-02-07,7,2,2016,A View From The Bridge 2015,Lyceum,Play,6144,0.75,436995,0.5,8
-2016-02-07,7,2,2016,Aladdin,New Amsterdam,Musical,13074,0.95,1225573,0.88,8
-2016-02-07,7,2,2016,Allegiance,Longacre,Musical,6853,0.81,472198,0.5,8
-2016-02-07,7,2,2016,An American In Paris,Palace,Musical,8696,0.65,754543,0.51,8
-2016-02-07,7,2,2016,Beautiful,Stephen Sondheim,Musical,7178,0.87,810526,0.69,8
-2016-02-07,7,2,2016,Blackbird,Belasco,Play,1865,0.91,156916,0.66,0
-2016-02-07,7,2,2016,Chicago,Ambassador,Musical,5595,0.65,397020,0.42,8
-2016-02-07,7,2,2016,Fiddler On The Roof 2015,Broadway,Musical,10804,0.79,936466,0.6,8
-2016-02-07,7,2,2016,Finding Neverland,Lunt-Fontanne,Musical,7477,0.71,557235,0.43,7
-2016-02-07,7,2,2016,Fun Home,Circle In The Square,Musical,5011,0.85,432296,0.54,8
-2016-02-07,7,2,2016,Hamilton,Richard Rodgers,Musical,10746,1.02,1771086,1.33,8
-2016-02-07,7,2,2016,Jersey Boys,August Wilson,Musical,5303,0.54,465912,0.4,8
-2016-02-07,7,2,2016,Kinky Boots,Al Hirschfeld,Musical,7954,0.7,702285,0.55,8
-2016-02-07,7,2,2016,Les Miserables '14,Imperial,Musical,7759,0.69,576959,0.49,8
-2016-02-07,7,2,2016,Matilda,Shubert,Musical,7957,0.69,546352,0.41,8
-2016-02-07,7,2,2016,Misery,Broadhurst,Play,7488,0.8,707574,0.57,8
-2016-02-07,7,2,2016,Noises Off 2016,American Airlines,Play,5552,0.94,445927,0.68,8
-2016-02-07,7,2,2016,On Your Feet!,Marquis,Musical,10594,0.81,1058989,0.68,8
-2016-02-07,7,2,2016,Our Mother'S Brief Affair,Friedman,Play,3503,0.67,201600,0.32,8
-2016-02-07,7,2,2016,School Of Rock,Winter Garden,Musical,8687,0.76,756571,0.54,8
-2016-02-07,7,2,2016,Something Rotten!,St. James,Musical,8253,0.69,633021,0.46,8
-2016-02-07,7,2,2016,The Book Of Mormon,Eugene O'Neill,Musical,8635,1.01,1273332,0.92,8
-2016-02-07,7,2,2016,The Color Purple 2015,Jacobs,Musical,8253,0.98,815646,0.79,8
-2016-02-07,7,2,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6326,0.78,451765,0.53,8
-2016-02-07,7,2,2016,The Humans,Helen Hayes,Play,3826,0.83,236708,0.47,0
-2016-02-07,7,2,2016,The King And I 2015,Vivian Beaumont,Musical,6464,0.77,619639,0.54,8
-2016-02-07,7,2,2016,The Lion King,Minskoff,Musical,13198,0.97,1533403,0.95,8
-2016-02-07,7,2,2016,The Phantom Of The Opera,Majestic,Musical,8249,0.64,618591,0.41,8
-2016-02-07,7,2,2016,Wicked,Gershwin,Musical,14557,0.97,1429696,0.8,8
-2016-02-14,14,2,2016,A View From The Bridge 2015,Lyceum,Play,6569,0.8,462978,0.53,8
-2016-02-14,14,2,2016,Aladdin,New Amsterdam,Musical,13811,1,1493306,0.94,8
-2016-02-14,14,2,2016,Allegiance,Longacre,Musical,6589,0.78,583133,0.62,8
-2016-02-14,14,2,2016,An American In Paris,Palace,Musical,9222,0.69,854231,0.58,8
-2016-02-14,14,2,2016,Beautiful,Stephen Sondheim,Musical,7258,0.88,920024,0.78,8
-2016-02-14,14,2,2016,Blackbird,Belasco,Play,5655,0.79,439753,0.56,0
-2016-02-14,14,2,2016,Chicago,Ambassador,Musical,6702,0.78,566356,0.6,8
-2016-02-14,14,2,2016,Disaster!,Nederlander,Musical,6534,0.68,364575,0.32,0
-2016-02-14,14,2,2016,Fiddler On The Roof 2015,Broadway,Musical,11361,0.83,1040265,0.66,8
-2016-02-14,14,2,2016,Finding Neverland,Lunt-Fontanne,Musical,8862,0.65,841122,0.46,9
-2016-02-14,14,2,2016,Fun Home,Circle In The Square,Musical,5489,0.93,503402,0.63,8
-2016-02-14,14,2,2016,Hamilton,Richard Rodgers,Musical,10751,1.02,1792099,1.34,8
-2016-02-14,14,2,2016,Hughie 2016,Booth,Play,5200,0.96,330298,0.49,0
-2016-02-14,14,2,2016,Jersey Boys,August Wilson,Musical,6448,0.66,595522,0.52,8
-2016-02-14,14,2,2016,Kinky Boots,Al Hirschfeld,Musical,8756,0.77,917439,0.71,8
-2016-02-14,14,2,2016,Les Miserables '14,Imperial,Musical,9528,0.85,871423,0.74,8
-2016-02-14,14,2,2016,Matilda,Shubert,Musical,9780,0.85,837763,0.63,8
-2016-02-14,14,2,2016,Misery,Broadhurst,Play,7263,0.77,784206,0.63,8
-2016-02-14,14,2,2016,Noises Off 2016,American Airlines,Play,5515,0.93,432543,0.66,8
-2016-02-14,14,2,2016,On Your Feet!,Marquis,Musical,10392,0.8,1098756,0.71,8
-2016-02-14,14,2,2016,Our Mother'S Brief Affair,Friedman,Play,3450,0.66,187877,0.3,8
-2016-02-14,14,2,2016,School Of Rock,Winter Garden,Musical,9899,0.87,999098,0.71,8
-2016-02-14,14,2,2016,Something Rotten!,St. James,Musical,8775,0.73,768883,0.56,8
-2016-02-14,14,2,2016,The Book Of Mormon,Eugene O'Neill,Musical,8680,1.02,1472569,1.07,8
-2016-02-14,14,2,2016,The Color Purple 2015,Jacobs,Musical,8078,0.96,905095,0.87,8
-2016-02-14,14,2,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6153,0.76,516341,0.6,8
-2016-02-14,14,2,2016,The Humans,Helen Hayes,Play,4192,0.91,224521,0.44,0
-2016-02-14,14,2,2016,The King And I 2015,Vivian Beaumont,Musical,6966,0.83,717826,0.63,8
-2016-02-14,14,2,2016,The Lion King,Minskoff,Musical,13557,1,1717043,0.95,8
-2016-02-14,14,2,2016,The Phantom Of The Opera,Majestic,Musical,9164,0.71,779491,0.51,8
-2016-02-14,14,2,2016,Wicked,Gershwin,Musical,14060,0.97,1695453,0.95,8
-2016-02-21,21,2,2016,A View From The Bridge 2015,Lyceum,Play,7460,0.91,538668,0.61,8
-2016-02-21,21,2,2016,Aladdin,New Amsterdam,Musical,13793,1,1486893,0.93,8
-2016-02-21,21,2,2016,An American In Paris,Palace,Musical,9259,0.69,799369,0.54,8
-2016-02-21,21,2,2016,Beautiful,Stephen Sondheim,Musical,7838,0.95,936997,0.8,8
-2016-02-21,21,2,2016,Blackbird,Belasco,Play,5498,0.68,417989,0.47,0
-2016-02-21,21,2,2016,Chicago,Ambassador,Musical,5614,0.65,458553,0.48,8
-2016-02-21,21,2,2016,Disaster!,Nederlander,Musical,6211,0.65,333537,0.3,0
-2016-02-21,21,2,2016,Fiddler On The Roof 2015,Broadway,Musical,10873,0.8,977198,0.63,8
-2016-02-21,21,2,2016,Finding Neverland,Lunt-Fontanne,Musical,9179,0.76,756746,0.51,8
-2016-02-21,21,2,2016,Fun Home,Circle In The Square,Musical,5412,0.91,461437,0.58,8
-2016-02-21,21,2,2016,Hamilton,Richard Rodgers,Musical,10756,1.02,1750924,1.31,8
-2016-02-21,21,2,2016,Hughie 2016,Booth,Play,4935,0.8,298616,0.38,0
-2016-02-21,21,2,2016,Jersey Boys,August Wilson,Musical,6984,0.71,607591,0.53,8
-2016-02-21,21,2,2016,Kinky Boots,Al Hirschfeld,Musical,8618,0.76,805706,0.63,8
-2016-02-21,21,2,2016,Les Miserables '14,Imperial,Musical,9496,0.84,798137,0.68,8
-2016-02-21,21,2,2016,Matilda,Shubert,Musical,9770,0.85,810342,0.61,8
-2016-02-21,21,2,2016,Noises Off 2016,American Airlines,Play,5786,0.98,508885,0.78,8
-2016-02-21,21,2,2016,On Your Feet!,Marquis,Musical,10002,0.77,1032021,0.66,8
-2016-02-21,21,2,2016,Our Mother'S Brief Affair,Friedman,Play,3522,0.68,183321,0.29,8
-2016-02-21,21,2,2016,School Of Rock,Winter Garden,Musical,11537,1.01,1152012,0.82,8
-2016-02-21,21,2,2016,She Loves Me 2016,Studio 54,Musical,3233,0.8,227422,0.51,0
-2016-02-21,21,2,2016,Something Rotten!,St. James,Musical,9571,0.82,755395,0.56,8
-2016-02-21,21,2,2016,The Book Of Mormon,Eugene O'Neill,Musical,8735,1.02,1365956,0.99,8
-2016-02-21,21,2,2016,The Color Purple 2015,Jacobs,Musical,7942,0.94,832786,0.8,8
-2016-02-21,21,2,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6515,0.8,508935,0.59,8
-2016-02-21,21,2,2016,The Humans,Helen Hayes,Play,4394,0.95,250540,0.55,5
-2016-02-21,21,2,2016,The King And I 2015,Vivian Beaumont,Musical,6201,0.74,567092,0.5,8
-2016-02-21,21,2,2016,The Lion King,Minskoff,Musical,13518,1,1851720,0.96,8
-2016-02-21,21,2,2016,The Phantom Of The Opera,Majestic,Musical,8859,0.69,729805,0.48,8
-2016-02-21,21,2,2016,Wicked,Gershwin,Musical,14838,0.99,1747324,0.98,8
-2016-02-28,28,2,2016,Aladdin,New Amsterdam,Musical,13150,0.95,1151986,0.85,8
-2016-02-28,28,2,2016,An American In Paris,Palace,Musical,7972,0.59,690631,0.47,8
-2016-02-28,28,2,2016,Beautiful,Stephen Sondheim,Musical,6763,0.82,793832,0.68,8
-2016-02-28,28,2,2016,Blackbird,Belasco,Play,5545,0.68,399452,0.45,0
-2016-02-28,28,2,2016,Bright Star,Cort,Musical,3238,0.77,206573,0.44,0
-2016-02-28,28,2,2016,Chicago,Ambassador,Musical,4387,0.51,342737,0.36,8
-2016-02-28,28,2,2016,Disaster!,Nederlander,Musical,5195,0.54,261661,0.24,0
-2016-02-28,28,2,2016,Eclipsed,Golden,Play,5461,0.97,400315,0.56,0
-2016-02-28,28,2,2016,Fiddler On The Roof 2015,Broadway,Musical,8816,0.65,773083,0.5,8
-2016-02-28,28,2,2016,Finding Neverland,Lunt-Fontanne,Musical,6077,0.51,455737,0.31,8
-2016-02-28,28,2,2016,Fun Home,Circle In The Square,Musical,4922,0.83,386312,0.49,8
-2016-02-28,28,2,2016,Hamilton,Richard Rodgers,Musical,10756,1.02,1755010,1.31,8
-2016-02-28,28,2,2016,Hughie 2016,Booth,Play,5074,0.82,280732,0.36,5
-2016-02-28,28,2,2016,Jersey Boys,August Wilson,Musical,5414,0.55,482602,0.42,8
-2016-02-28,28,2,2016,Kinky Boots,Al Hirschfeld,Musical,6747,0.59,634622,0.49,8
-2016-02-28,28,2,2016,Les Miserables '14,Imperial,Musical,8483,0.75,736402,0.62,8
-2016-02-28,28,2,2016,Matilda,Shubert,Musical,7222,0.63,528382,0.4,8
-2016-02-28,28,2,2016,Noises Off 2016,American Airlines,Play,5687,0.96,475948,0.73,8
-2016-02-28,28,2,2016,On Your Feet!,Marquis,Musical,8494,0.65,829058,0.53,8
-2016-02-28,28,2,2016,Our Mother'S Brief Affair,Friedman,Play,3555,0.68,179194,0.28,8
-2016-02-28,28,2,2016,School Of Rock,Winter Garden,Musical,9100,0.8,720585,0.51,8
-2016-02-28,28,2,2016,She Loves Me 2016,Studio 54,Musical,5202,0.65,337093,0.37,0
-2016-02-28,28,2,2016,Something Rotten!,St. James,Musical,8100,0.71,582997,0.44,8
-2016-02-28,28,2,2016,The Book Of Mormon,Eugene O'Neill,Musical,8672,1.02,1300231,0.94,8
-2016-02-28,28,2,2016,The Color Purple 2015,Jacobs,Musical,7359,0.88,751469,0.72,8
-2016-02-28,28,2,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5215,0.64,392453,0.46,8
-2016-02-28,28,2,2016,The Humans,Helen Hayes,Play,4271,0.92,344276,0.63,8
-2016-02-28,28,2,2016,The King And I 2015,Vivian Beaumont,Musical,5794,0.69,534179,0.47,8
-2016-02-28,28,2,2016,The Lion King,Minskoff,Musical,13536,1,1469120,0.91,8
-2016-02-28,28,2,2016,The Phantom Of The Opera,Majestic,Musical,6547,0.51,518384,0.34,8
-2016-02-28,28,2,2016,Wicked,Gershwin,Musical,12055,0.83,1295960,0.73,8
-2016-03-06,6,3,2016,Aladdin,New Amsterdam,Musical,12778,0.92,1079248,0.82,8
-2016-03-06,6,3,2016,An American In Paris,Palace,Musical,8288,0.62,704302,0.48,8
-2016-03-06,6,3,2016,Beautiful,Stephen Sondheim,Musical,7178,0.87,822324,0.7,8
-2016-03-06,6,3,2016,Blackbird,Belasco,Play,5574,0.69,365048,0.41,0
-2016-03-06,6,3,2016,Bright Star,Cort,Musical,5103,0.7,255641,0.32,0
-2016-03-06,6,3,2016,Chicago,Ambassador,Musical,4898,0.57,377670,0.4,8
-2016-03-06,6,3,2016,Disaster!,Nederlander,Musical,6690,0.7,296010,0.27,0
-2016-03-06,6,3,2016,Eclipsed,Golden,Play,6049,0.94,340891,0.42,1
-2016-03-06,6,3,2016,Fiddler On The Roof 2015,Broadway,Musical,9317,0.68,801154,0.52,8
-2016-03-06,6,3,2016,Finding Neverland,Lunt-Fontanne,Musical,8369,0.7,642636,0.44,8
-2016-03-06,6,3,2016,Fun Home,Circle In The Square,Musical,4810,0.81,380213,0.48,8
-2016-03-06,6,3,2016,Hamilton,Richard Rodgers,Musical,10751,1.02,1766223,1.32,8
-2016-03-06,6,3,2016,Hughie 2016,Booth,Play,3901,0.63,256454,0.33,8
-2016-03-06,6,3,2016,Jersey Boys,August Wilson,Musical,5607,0.57,490591,0.43,8
-2016-03-06,6,3,2016,Kinky Boots,Al Hirschfeld,Musical,6865,0.6,661447,0.52,8
-2016-03-06,6,3,2016,Les Miserables '14,Imperial,Musical,7449,0.66,534606,0.45,8
-2016-03-06,6,3,2016,Matilda,Shubert,Musical,7576,0.66,546268,0.41,8
-2016-03-06,6,3,2016,Noises Off 2016,American Airlines,Play,5924,1,495948,0.76,8
-2016-03-06,6,3,2016,On Your Feet!,Marquis,Musical,9059,0.7,882991,0.57,8
-2016-03-06,6,3,2016,Our Mother'S Brief Affair,Friedman,Play,3993,0.77,167916,0.3,8
-2016-03-06,6,3,2016,School Of Rock,Winter Garden,Musical,8291,0.73,729218,0.52,8
-2016-03-06,6,3,2016,She Loves Me 2016,Studio 54,Musical,6003,0.74,397366,0.44,0
-2016-03-06,6,3,2016,Something Rotten!,St. James,Musical,8537,0.71,632839,0.46,8
-2016-03-06,6,3,2016,The Book Of Mormon,Eugene O'Neill,Musical,8740,1.02,1278459,0.93,8
-2016-03-06,6,3,2016,The Color Purple 2015,Jacobs,Musical,7039,0.84,722487,0.69,8
-2016-03-06,6,3,2016,The Crucible 2016,Walter Kerr,Play,4881,0.9,475357,0.68,0
-2016-03-06,6,3,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5171,0.63,400960,0.47,8
-2016-03-06,6,3,2016,The Humans,Helen Hayes,Play,4024,0.87,354973,0.65,8
-2016-03-06,6,3,2016,The King And I 2015,Vivian Beaumont,Musical,5396,0.64,470168,0.41,8
-2016-03-06,6,3,2016,The Lion King,Minskoff,Musical,13289,0.98,1461331,0.86,8
-2016-03-06,6,3,2016,The Phantom Of The Opera,Majestic,Musical,6740,0.52,552229,0.36,8
-2016-03-06,6,3,2016,Wicked,Gershwin,Musical,12268,0.85,1337007,0.75,8
-2016-03-13,13,3,2016,Aladdin,New Amsterdam,Musical,13639,0.99,1325184,0.92,8
-2016-03-13,13,3,2016,An American In Paris,Palace,Musical,9329,0.69,856835,0.58,8
-2016-03-13,13,3,2016,Beautiful,Stephen Sondheim,Musical,7888,0.96,918575,0.78,8
-2016-03-13,13,3,2016,Blackbird,Belasco,Play,6519,0.8,411984,0.47,4
-2016-03-13,13,3,2016,Bright Star,Cort,Musical,6481,0.77,301410,0.33,0
-2016-03-13,13,3,2016,Chicago,Ambassador,Musical,6010,0.7,469188,0.5,8
-2016-03-13,13,3,2016,Disaster!,Nederlander,Musical,5729,0.6,318847,0.29,8
-2016-03-13,13,3,2016,Eclipsed,Golden,Play,5690,0.89,421319,0.51,8
-2016-03-13,13,3,2016,Fiddler On The Roof 2015,Broadway,Musical,10125,0.74,888243,0.57,8
-2016-03-13,13,3,2016,Finding Neverland,Lunt-Fontanne,Musical,8500,0.71,659099,0.45,8
-2016-03-13,13,3,2016,Fun Home,Circle In The Square,Musical,5371,0.91,466331,0.59,8
-2016-03-13,13,3,2016,Hamilton,Richard Rodgers,Musical,10756,1.02,1758555,1.32,8
-2016-03-13,13,3,2016,Hughie 2016,Booth,Play,4083,0.66,295800,0.38,8
-2016-03-13,13,3,2016,Jersey Boys,August Wilson,Musical,6387,0.65,564025,0.49,8
-2016-03-13,13,3,2016,Kinky Boots,Al Hirschfeld,Musical,8630,0.76,844214,0.66,8
-2016-03-13,13,3,2016,Les Miserables '14,Imperial,Musical,8945,0.79,698731,0.59,8
-2016-03-13,13,3,2016,Matilda,Shubert,Musical,8745,0.76,683263,0.51,8
-2016-03-13,13,3,2016,Noises Off 2016,American Airlines,Play,5999,1.01,557404,0.85,8
-2016-03-13,13,3,2016,On Your Feet!,Marquis,Musical,9308,0.72,973702,0.63,8
-2016-03-13,13,3,2016,School Of Rock,Winter Garden,Musical,10058,0.88,900072,0.64,8
-2016-03-13,13,3,2016,She Loves Me 2016,Studio 54,Musical,7360,0.91,409091,0.45,0
-2016-03-13,13,3,2016,Something Rotten!,St. James,Musical,9167,0.76,765481,0.56,8
-2016-03-13,13,3,2016,The Book Of Mormon,Eugene O'Neill,Musical,8744,1.03,1353456,0.98,8
-2016-03-13,13,3,2016,The Color Purple 2015,Jacobs,Musical,7168,0.85,742916,0.71,8
-2016-03-13,13,3,2016,The Crucible 2016,Walter Kerr,Play,6177,0.98,583709,0.72,0
-2016-03-13,13,3,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5791,0.71,444027,0.52,8
-2016-03-13,13,3,2016,The Humans,Helen Hayes,Play,4250,0.92,380140,0.7,8
-2016-03-13,13,3,2016,The King And I 2015,Vivian Beaumont,Musical,6646,0.79,633677,0.55,8
-2016-03-13,13,3,2016,The Lion King,Minskoff,Musical,13413,0.99,1708789,0.9,8
-2016-03-13,13,3,2016,The Phantom Of The Opera,Majestic,Musical,8615,0.67,723466,0.48,8
-2016-03-13,13,3,2016,Wicked,Gershwin,Musical,14103,0.98,1662470,0.93,8
-2016-03-20,20,3,2016,Aladdin,New Amsterdam,Musical,13808,1,1570189,0.99,8
-2016-03-20,20,3,2016,An American In Paris,Palace,Musical,9320,0.69,832227,0.57,8
-2016-03-20,20,3,2016,Beautiful,Stephen Sondheim,Musical,7581,0.92,888029,0.76,8
-2016-03-20,20,3,2016,Blackbird,Belasco,Play,6420,0.79,483635,0.55,8
-2016-03-20,20,3,2016,Bright Star,Cort,Musical,7244,0.86,312937,0.34,0
-2016-03-20,20,3,2016,Chicago,Ambassador,Musical,6914,0.8,574676,0.61,8
-2016-03-20,20,3,2016,Disaster!,Nederlander,Musical,5843,0.61,387742,0.35,8
-2016-03-20,20,3,2016,Eclipsed,Golden,Play,5285,0.82,419842,0.5,8
-2016-03-20,20,3,2016,Fiddler On The Roof 2015,Broadway,Musical,10987,0.8,961474,0.62,8
-2016-03-20,20,3,2016,Finding Neverland,Lunt-Fontanne,Musical,10041,0.83,825077,0.56,8
-2016-03-20,20,3,2016,Fun Home,Circle In The Square,Musical,5608,0.95,504606,0.63,8
-2016-03-20,20,3,2016,Hamilton,Richard Rodgers,Musical,10753,1.02,1740104,1.3,8
-2016-03-20,20,3,2016,Hughie 2016,Booth,Play,4217,0.68,282706,0.36,8
-2016-03-20,20,3,2016,Jersey Boys,August Wilson,Musical,7255,0.74,636123,0.55,8
-2016-03-20,20,3,2016,Kinky Boots,Al Hirschfeld,Musical,9266,0.81,903528,0.7,8
-2016-03-20,20,3,2016,Les Miserables '14,Imperial,Musical,10650,0.94,874255,0.74,8
-2016-03-20,20,3,2016,Matilda,Shubert,Musical,10972,0.96,939959,0.71,8
-2016-03-20,20,3,2016,On Your Feet!,Marquis,Musical,8907,0.68,934149,0.6,8
-2016-03-20,20,3,2016,School Of Rock,Winter Garden,Musical,11115,0.93,1072497,0.74,8
-2016-03-20,20,3,2016,She Loves Me 2016,Studio 54,Musical,7833,0.97,505150,0.56,5
-2016-03-20,20,3,2016,Shuffle Along,Music Box,Musical,5660,0.98,640453,0.8,0
-2016-03-20,20,3,2016,Something Rotten!,St. James,Musical,10798,0.81,891778,0.62,8
-2016-03-20,20,3,2016,The Book Of Mormon,Eugene O'Neill,Musical,8738,1.02,1367888,0.99,8
-2016-03-20,20,3,2016,The Color Purple 2015,Jacobs,Musical,7439,0.88,768846,0.74,8
-2016-03-20,20,3,2016,The Crucible 2016,Walter Kerr,Play,7187,1,659753,0.71,0
-2016-03-20,20,3,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6812,0.84,529468,0.62,8
-2016-03-20,20,3,2016,The Humans,Helen Hayes,Play,4305,0.93,390853,0.7,8
-2016-03-20,20,3,2016,The King And I 2015,Vivian Beaumont,Musical,7310,0.87,773089,0.68,8
-2016-03-20,20,3,2016,The Lion King,Minskoff,Musical,13554,1,2044101,0.97,8
-2016-03-20,20,3,2016,The Phantom Of The Opera,Majestic,Musical,11072,0.86,981647,0.65,8
-2016-03-20,20,3,2016,Wicked,Gershwin,Musical,15226,0.99,1934807,1.09,8
-2016-03-27,27,3,2016,Aladdin,New Amsterdam,Musical,15519,1,2127857,0.98,9
-2016-03-27,27,3,2016,American Psycho,Schoenfeld,Musical,4056,0.98,365186,0.69,0
-2016-03-27,27,3,2016,An American In Paris,Palace,Musical,11012,0.82,968216,0.66,8
-2016-03-27,27,3,2016,Beautiful,Stephen Sondheim,Musical,7628,0.93,872074,0.74,8
-2016-03-27,27,3,2016,Blackbird,Belasco,Play,6223,0.77,475196,0.54,8
-2016-03-27,27,3,2016,Bright Star,Cort,Musical,7969,0.95,384716,0.42,5
-2016-03-27,27,3,2016,Chicago,Ambassador,Musical,7974,0.92,723791,0.77,8
-2016-03-27,27,3,2016,Disaster!,Nederlander,Musical,5898,0.62,473885,0.43,8
-2016-03-27,27,3,2016,Eclipsed,Golden,Play,4027,0.63,318920,0.39,8
-2016-03-27,27,3,2016,Fiddler On The Roof 2015,Broadway,Musical,11201,0.82,1126634,0.73,8
-2016-03-27,27,3,2016,Finding Neverland,Lunt-Fontanne,Musical,9916,0.82,1009392,0.68,8
-2016-03-27,27,3,2016,Fun Home,Circle In The Square,Musical,5672,0.96,520363,0.65,8
-2016-03-27,27,3,2016,Hamilton,Richard Rodgers,Musical,10755,1.02,1719570,1.29,8
-2016-03-27,27,3,2016,Hughie 2016,Booth,Play,4583,0.74,278658,0.36,8
-2016-03-27,27,3,2016,Jersey Boys,August Wilson,Musical,8066,0.82,713574,0.62,8
-2016-03-27,27,3,2016,Kinky Boots,Al Hirschfeld,Musical,10100,0.89,1009623,0.79,8
-2016-03-27,27,3,2016,Les Miserables '14,Imperial,Musical,11052,0.98,1015672,0.86,8
-2016-03-27,27,3,2016,Matilda,Shubert,Musical,11393,0.99,1237341,0.93,8
-2016-03-27,27,3,2016,On Your Feet!,Marquis,Musical,9607,0.74,992096,0.64,8
-2016-03-27,27,3,2016,School Of Rock,Winter Garden,Musical,12130,1.01,1323673,0.92,8
-2016-03-27,27,3,2016,She Loves Me 2016,Studio 54,Musical,7830,0.97,590842,0.66,8
-2016-03-27,27,3,2016,Shuffle Along,Music Box,Musical,2889,1,358845,0.86,0
-2016-03-27,27,3,2016,Something Rotten!,St. James,Musical,11842,0.89,1011004,0.7,8
-2016-03-27,27,3,2016,The Book Of Mormon,Eugene O'Neill,Musical,8751,1.03,1414631,1.03,8
-2016-03-27,27,3,2016,The Color Purple 2015,Jacobs,Musical,7668,0.91,819292,0.78,8
-2016-03-27,27,3,2016,The Crucible 2016,Walter Kerr,Play,7233,1,651186,0.7,0
-2016-03-27,27,3,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,7430,0.91,554597,0.65,8
-2016-03-27,27,3,2016,The Father 2016,Friedman,Play,3094,0.68,163744,0.26,0
-2016-03-27,27,3,2016,The Humans,Helen Hayes,Play,4306,0.93,395820,0.68,8
-2016-03-27,27,3,2016,The King And I 2015,Vivian Beaumont,Musical,8252,0.99,928304,0.81,8
-2016-03-27,27,3,2016,The Lion King,Minskoff,Musical,15236,1,2629844,0.99,9
-2016-03-27,27,3,2016,The Phantom Of The Opera,Majestic,Musical,12085,0.94,1352186,0.89,8
-2016-03-27,27,3,2016,Waitress,Brooks Atkinson,Musical,3171,1.01,425830,1.11,0
-2016-03-27,27,3,2016,Wicked,Gershwin,Musical,16940,0.98,2532613,1.26,9
-2016-04-03,3,4,2016,Aladdin,New Amsterdam,Musical,13760,1,1850963,0.96,8
-2016-04-03,3,4,2016,American Psycho,Schoenfeld,Musical,6997,0.97,506264,0.55,0
-2016-04-03,3,4,2016,An American In Paris,Palace,Musical,10840,0.81,895565,0.61,8
-2016-04-03,3,4,2016,Beautiful,Stephen Sondheim,Musical,7585,0.92,920856,0.78,8
-2016-04-03,3,4,2016,Blackbird,Belasco,Play,5685,0.7,443329,0.5,8
-2016-04-03,3,4,2016,Bright Star,Cort,Musical,6141,0.73,421067,0.46,8
-2016-04-03,3,4,2016,Chicago,Ambassador,Musical,7115,0.82,618024,0.65,8
-2016-04-03,3,4,2016,Disaster!,Nederlander,Musical,5058,0.53,379444,0.34,8
-2016-04-03,3,4,2016,Eclipsed,Golden,Play,4336,0.68,333300,0.41,8
-2016-04-03,3,4,2016,Fiddler On The Roof 2015,Broadway,Musical,11224,0.82,994179,0.64,8
-2016-04-03,3,4,2016,Finding Neverland,Lunt-Fontanne,Musical,10659,0.89,924657,0.63,8
-2016-04-03,3,4,2016,Fully Committed,Lyceum,Play,2809,0.77,210547,0.47,0
-2016-04-03,3,4,2016,Fun Home,Circle In The Square,Musical,5241,0.89,481016,0.61,8
-2016-04-03,3,4,2016,Hamilton,Richard Rodgers,Musical,10752,1.02,1822594,1.37,8
-2016-04-03,3,4,2016,Jersey Boys,August Wilson,Musical,7950,0.81,697679,0.61,8
-2016-04-03,3,4,2016,Kinky Boots,Al Hirschfeld,Musical,8343,0.73,784339,0.61,8
-2016-04-03,3,4,2016,Les Miserables '14,Imperial,Musical,10213,0.91,885389,0.75,8
-2016-04-03,3,4,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,700,0.95,66284,0.8,0
-2016-04-03,3,4,2016,Matilda,Shubert,Musical,10741,0.94,1112189,0.84,8
-2016-04-03,3,4,2016,On Your Feet!,Marquis,Musical,10180,0.78,1066514,0.69,8
-2016-04-03,3,4,2016,School Of Rock,Winter Garden,Musical,11941,1,1336781,0.93,8
-2016-04-03,3,4,2016,She Loves Me 2016,Studio 54,Musical,7374,0.91,598894,0.67,8
-2016-04-03,3,4,2016,Shuffle Along,Music Box,Musical,1926,1,235617,0.86,0
-2016-04-03,3,4,2016,Something Rotten!,St. James,Musical,11144,0.84,912884,0.63,8
-2016-04-03,3,4,2016,The Book Of Mormon,Eugene O'Neill,Musical,8704,1.02,1340418,0.97,8
-2016-04-03,3,4,2016,The Color Purple 2015,Jacobs,Musical,7549,0.9,757240,0.72,8
-2016-04-03,3,4,2016,The Crucible 2016,Walter Kerr,Play,7304,0.99,597429,0.71,5
-2016-04-03,3,4,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,7191,0.88,548531,0.64,8
-2016-04-03,3,4,2016,The Father 2016,Friedman,Play,3722,0.72,214587,0.3,0
-2016-04-03,3,4,2016,The Humans,Helen Hayes,Play,4262,0.92,389222,0.67,8
-2016-04-03,3,4,2016,The King And I 2015,Vivian Beaumont,Musical,7541,0.9,832143,0.73,8
-2016-04-03,3,4,2016,The Lion King,Minskoff,Musical,13566,1,2289548,0.99,8
-2016-04-03,3,4,2016,The Phantom Of The Opera,Majestic,Musical,10705,0.83,1148699,0.76,8
-2016-04-03,3,4,2016,Tuck Everlasting,Broadhurst,Musical,4242,0.91,263150,0.51,0
-2016-04-03,3,4,2016,Waitress,Brooks Atkinson,Musical,7315,1,834272,0.94,0
-2016-04-03,3,4,2016,Wicked,Gershwin,Musical,15018,0.97,2215826,1.24,8
-2016-04-10,10,4,2016,Aladdin,New Amsterdam,Musical,13507,0.98,1494139,0.92,8
-2016-04-10,10,4,2016,American Psycho,Schoenfeld,Musical,6841,0.95,472563,0.51,0
-2016-04-10,10,4,2016,An American In Paris,Palace,Musical,10212,0.76,900006,0.61,8
-2016-04-10,10,4,2016,Beautiful,Stephen Sondheim,Musical,7203,0.88,882474,0.75,8
-2016-04-10,10,4,2016,Blackbird,Belasco,Play,5443,0.67,433038,0.49,8
-2016-04-10,10,4,2016,Bright Star,Cort,Musical,5600,0.67,391861,0.43,8
-2016-04-10,10,4,2016,Chicago,Ambassador,Musical,6189,0.72,494896,0.52,8
-2016-04-10,10,4,2016,Disaster!,Nederlander,Musical,4420,0.46,291351,0.26,8
-2016-04-10,10,4,2016,Eclipsed,Golden,Play,3954,0.62,281599,0.35,8
-2016-04-10,10,4,2016,Fiddler On The Roof 2015,Broadway,Musical,8606,0.63,770572,0.5,8
-2016-04-10,10,4,2016,Finding Neverland,Lunt-Fontanne,Musical,7790,0.65,610077,0.41,8
-2016-04-10,10,4,2016,Fully Committed,Lyceum,Play,5372,0.73,386498,0.44,0
-2016-04-10,10,4,2016,Fun Home,Circle In The Square,Musical,5102,0.86,418140,0.53,8
-2016-04-10,10,4,2016,Hamilton,Richard Rodgers,Musical,10754,1.02,1813655,1.36,8
-2016-04-10,10,4,2016,Jersey Boys,August Wilson,Musical,5712,0.58,495098,0.43,8
-2016-04-10,10,4,2016,Kinky Boots,Al Hirschfeld,Musical,6744,0.59,626626,0.49,8
-2016-04-10,10,4,2016,Les Miserables '14,Imperial,Musical,8589,0.76,689608,0.58,8
-2016-04-10,10,4,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,4573,0.88,356646,0.61,0
-2016-04-10,10,4,2016,Matilda,Shubert,Musical,9796,0.86,807649,0.61,8
-2016-04-10,10,4,2016,On Your Feet!,Marquis,Musical,8577,0.66,864813,0.56,8
-2016-04-10,10,4,2016,School Of Rock,Winter Garden,Musical,10165,0.85,993584,0.68,8
-2016-04-10,10,4,2016,She Loves Me 2016,Studio 54,Musical,6094,0.76,492102,0.55,8
-2016-04-10,10,4,2016,Shuffle Along,Music Box,Musical,6719,1,766912,0.82,0
-2016-04-10,10,4,2016,Something Rotten!,St. James,Musical,8247,0.69,688616,0.5,8
-2016-04-10,10,4,2016,The Book Of Mormon,Eugene O'Neill,Musical,8728,1.02,1322498,0.96,8
-2016-04-10,10,4,2016,The Color Purple 2015,Jacobs,Musical,6832,0.81,694145,0.66,8
-2016-04-10,10,4,2016,The Crucible 2016,Walter Kerr,Play,6760,0.89,688299,0.7,8
-2016-04-10,10,4,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5616,0.69,425606,0.5,8
-2016-04-10,10,4,2016,The Father 2016,Friedman,Play,4596,0.88,243636,0.34,0
-2016-04-10,10,4,2016,The Humans,Helen Hayes,Play,4271,0.93,390555,0.67,8
-2016-04-10,10,4,2016,The King And I 2015,Vivian Beaumont,Musical,7687,0.92,918970,0.8,8
-2016-04-10,10,4,2016,The Lion King,Minskoff,Musical,13452,0.99,1996041,0.99,8
-2016-04-10,10,4,2016,The Phantom Of The Opera,Majestic,Musical,10912,0.85,910453,0.6,8
-2016-04-10,10,4,2016,Tuck Everlasting,Broadhurst,Musical,6726,0.83,324493,0.36,0
-2016-04-10,10,4,2016,Waitress,Brooks Atkinson,Musical,8356,1,880303,0.86,0
-2016-04-10,10,4,2016,Wicked,Gershwin,Musical,14143,0.98,1676579,0.94,8
-2016-04-17,17,4,2016,Aladdin,New Amsterdam,Musical,13436,0.97,1451714,0.89,8
-2016-04-17,17,4,2016,American Psycho,Schoenfeld,Musical,6480,0.9,505917,0.55,0
-2016-04-17,17,4,2016,An American In Paris,Palace,Musical,10161,0.76,930052,0.63,8
-2016-04-17,17,4,2016,Beautiful,Stephen Sondheim,Musical,7642,0.93,927363,0.79,8
-2016-04-17,17,4,2016,Blackbird,Belasco,Play,5064,0.62,414556,0.46,8
-2016-04-17,17,4,2016,Bright Star,Cort,Musical,5898,0.7,420690,0.46,8
-2016-04-17,17,4,2016,Chicago,Ambassador,Musical,6337,0.73,509671,0.54,8
-2016-04-17,17,4,2016,Disaster!,Nederlander,Musical,4390,0.46,287222,0.26,8
-2016-04-17,17,4,2016,Eclipsed,Golden,Play,4338,0.68,303684,0.37,8
-2016-04-17,17,4,2016,Fiddler On The Roof 2015,Broadway,Musical,8512,0.62,747626,0.48,8
-2016-04-17,17,4,2016,Finding Neverland,Lunt-Fontanne,Musical,7963,0.66,571983,0.39,8
-2016-04-17,17,4,2016,Fully Committed,Lyceum,Play,5137,0.7,387494,0.45,0
-2016-04-17,17,4,2016,Fun Home,Circle In The Square,Musical,4972,0.84,416678,0.52,8
-2016-04-17,17,4,2016,Hamilton,Richard Rodgers,Musical,10732,1.02,1678620,1.26,8
-2016-04-17,17,4,2016,Jersey Boys,August Wilson,Musical,5810,0.59,525127,0.46,8
-2016-04-17,17,4,2016,Kinky Boots,Al Hirschfeld,Musical,7341,0.64,683090,0.53,8
-2016-04-17,17,4,2016,Les Miserables '14,Imperial,Musical,8098,0.72,652783,0.55,8
-2016-04-17,17,4,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,4871,0.94,375709,0.64,0
-2016-04-17,17,4,2016,Matilda,Shubert,Musical,9529,0.83,774997,0.58,8
-2016-04-17,17,4,2016,On Your Feet!,Marquis,Musical,8573,0.66,883616,0.57,8
-2016-04-17,17,4,2016,Paramour,Lyric,Musical,1897,1,190774,1,0
-2016-04-17,17,4,2016,School Of Rock,Winter Garden,Musical,10185,0.85,1022302,0.7,8
-2016-04-17,17,4,2016,She Loves Me 2016,Studio 54,Musical,6934,0.86,573941,0.64,8
-2016-04-17,17,4,2016,Shuffle Along,Music Box,Musical,7689,1,872205,0.83,0
-2016-04-17,17,4,2016,Something Rotten!,St. James,Musical,8402,0.7,681402,0.5,8
-2016-04-17,17,4,2016,The Book Of Mormon,Eugene O'Neill,Musical,8696,1.02,1343502,0.98,8
-2016-04-17,17,4,2016,The Color Purple 2015,Jacobs,Musical,6752,0.8,696493,0.66,8
-2016-04-17,17,4,2016,The Crucible 2016,Walter Kerr,Play,7160,0.94,705805,0.72,8
-2016-04-17,17,4,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5799,0.71,424175,0.49,8
-2016-04-17,17,4,2016,The Father 2016,Friedman,Play,4548,0.87,226272,0.36,6
-2016-04-17,17,4,2016,The Humans,Helen Hayes,Play,4210,0.91,394296,0.68,8
-2016-04-17,17,4,2016,The King And I 2015,Vivian Beaumont,Musical,8083,0.97,1013157,0.88,8
-2016-04-17,17,4,2016,The Lion King,Minskoff,Musical,13402,0.99,1939509,0.97,8
-2016-04-17,17,4,2016,The Phantom Of The Opera,Majestic,Musical,8793,0.68,755682,0.5,8
-2016-04-17,17,4,2016,Tuck Everlasting,Broadhurst,Musical,7338,0.79,339031,0.33,0
-2016-04-17,17,4,2016,Waitress,Brooks Atkinson,Musical,8405,1.01,937590,0.92,0
-2016-04-17,17,4,2016,Wicked,Gershwin,Musical,13637,0.94,1612361,0.91,8
-2016-04-24,24,4,2016,Aladdin,New Amsterdam,Musical,13590,0.98,1433167,0.88,8
-2016-04-24,24,4,2016,American Psycho,Schoenfeld,Musical,7722,0.94,534224,0.51,6
-2016-04-24,24,4,2016,An American In Paris,Palace,Musical,9294,0.69,860975,0.59,8
-2016-04-24,24,4,2016,Beautiful,Stephen Sondheim,Musical,7507,0.91,904296,0.77,8
-2016-04-24,24,4,2016,Blackbird,Belasco,Play,5194,0.64,371241,0.42,8
-2016-04-24,24,4,2016,Bright Star,Cort,Musical,5328,0.64,357812,0.39,8
-2016-04-24,24,4,2016,Chicago,Ambassador,Musical,6182,0.72,515332,0.55,8
-2016-04-24,24,4,2016,Disaster!,Nederlander,Musical,3995,0.42,247941,0.22,8
-2016-04-24,24,4,2016,Eclipsed,Golden,Play,3500,0.55,233636,0.29,8
-2016-04-24,24,4,2016,Fiddler On The Roof 2015,Broadway,Musical,8439,0.62,718586,0.46,8
-2016-04-24,24,4,2016,Finding Neverland,Lunt-Fontanne,Musical,8056,0.67,612034,0.41,8
-2016-04-24,24,4,2016,Fully Committed,Lyceum,Play,5934,0.81,364746,0.42,0
-2016-04-24,24,4,2016,Fun Home,Circle In The Square,Musical,5013,0.85,398485,0.5,8
-2016-04-24,24,4,2016,Hamilton,Richard Rodgers,Musical,10753,1.02,1813024,1.36,8
-2016-04-24,24,4,2016,Jersey Boys,August Wilson,Musical,5780,0.59,531076,0.46,8
-2016-04-24,24,4,2016,Kinky Boots,Al Hirschfeld,Musical,6975,0.61,665837,0.52,8
-2016-04-24,24,4,2016,Les Miserables '14,Imperial,Musical,7898,0.7,651150,0.55,8
-2016-04-24,24,4,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,4926,0.95,389107,0.67,0
-2016-04-24,24,4,2016,Matilda,Shubert,Musical,9651,0.84,794697,0.6,8
-2016-04-24,24,4,2016,On Your Feet!,Marquis,Musical,8332,0.64,831705,0.54,8
-2016-04-24,24,4,2016,Paramour,Lyric,Musical,10623,0.93,1018942,0.89,0
-2016-04-24,24,4,2016,School Of Rock,Winter Garden,Musical,10293,0.86,991893,0.65,8
-2016-04-24,24,4,2016,She Loves Me 2016,Studio 54,Musical,6373,0.79,542520,0.6,8
-2016-04-24,24,4,2016,Shuffle Along,Music Box,Musical,7211,0.94,809033,0.77,0
-2016-04-24,24,4,2016,Something Rotten!,St. James,Musical,8975,0.73,690564,0.5,8
-2016-04-24,24,4,2016,The Book Of Mormon,Eugene O'Neill,Musical,8706,1.02,1325465,0.96,8
-2016-04-24,24,4,2016,The Color Purple 2015,Jacobs,Musical,7306,0.87,769765,0.73,8
-2016-04-24,24,4,2016,The Crucible 2016,Walter Kerr,Play,6967,0.92,672860,0.69,8
-2016-04-24,24,4,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5185,0.64,384462,0.45,8
-2016-04-24,24,4,2016,The Father 2016,Friedman,Play,3815,0.73,258848,0.37,8
-2016-04-24,24,4,2016,The Humans,Helen Hayes,Play,4157,0.9,378045,0.65,8
-2016-04-24,24,4,2016,The King And I 2015,Vivian Beaumont,Musical,6787,0.81,553790,0.48,8
-2016-04-24,24,4,2016,The Lion King,Minskoff,Musical,13477,0.99,1995760,0.96,8
-2016-04-24,24,4,2016,The Phantom Of The Opera,Majestic,Musical,9196,0.72,761147,0.5,8
-2016-04-24,24,4,2016,Tuck Everlasting,Broadhurst,Musical,7621,0.82,332230,0.32,0
-2016-04-24,24,4,2016,Waitress,Brooks Atkinson,Musical,8419,1.01,746871,0.73,1
-2016-04-24,24,4,2016,Wicked,Gershwin,Musical,13810,0.96,1660014,0.93,8
-2016-05-01,1,5,2016,Aladdin,New Amsterdam,Musical,13775,1,1494979,0.94,8
-2016-05-01,1,5,2016,American Psycho,Schoenfeld,Musical,7247,0.88,597188,0.57,8
-2016-05-01,1,5,2016,An American In Paris,Palace,Musical,10337,0.77,938050,0.64,8
-2016-05-01,1,5,2016,Beautiful,Stephen Sondheim,Musical,7935,0.97,996237,0.85,8
-2016-05-01,1,5,2016,Blackbird,Belasco,Play,5756,0.71,417680,0.47,8
-2016-05-01,1,5,2016,Bright Star,Cort,Musical,5184,0.62,369471,0.41,8
-2016-05-01,1,5,2016,Chicago,Ambassador,Musical,6349,0.73,524120,0.55,8
-2016-05-01,1,5,2016,Disaster!,Nederlander,Musical,4793,0.5,264032,0.24,8
-2016-05-01,1,5,2016,Eclipsed,Golden,Play,3588,0.56,269110,0.34,8
-2016-05-01,1,5,2016,Fiddler On The Roof 2015,Broadway,Musical,10073,0.74,854640,0.55,8
-2016-05-01,1,5,2016,Finding Neverland,Lunt-Fontanne,Musical,7418,0.62,583984,0.4,8
-2016-05-01,1,5,2016,Fully Committed,Lyceum,Play,5606,0.77,377270,0.44,8
-2016-05-01,1,5,2016,Fun Home,Circle In The Square,Musical,5272,0.89,416282,0.52,8
-2016-05-01,1,5,2016,Hamilton,Richard Rodgers,Musical,10754,1.02,1818758,1.36,8
-2016-05-01,1,5,2016,Jersey Boys,August Wilson,Musical,6099,0.62,553984,0.48,8
-2016-05-01,1,5,2016,Kinky Boots,Al Hirschfeld,Musical,7649,0.67,714405,0.56,8
-2016-05-01,1,5,2016,Les Miserables '14,Imperial,Musical,8266,0.73,662705,0.56,8
-2016-05-01,1,5,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,4954,0.96,344594,0.59,6
-2016-05-01,1,5,2016,Matilda,Shubert,Musical,9030,0.79,760351,0.57,8
-2016-05-01,1,5,2016,On Your Feet!,Marquis,Musical,9391,0.72,969147,0.62,8
-2016-05-01,1,5,2016,Paramour,Lyric,Musical,11043,0.97,1065771,0.91,0
-2016-05-01,1,5,2016,School Of Rock,Winter Garden,Musical,10496,0.88,1003657,0.66,8
-2016-05-01,1,5,2016,She Loves Me 2016,Studio 54,Musical,7278,0.9,610887,0.68,8
-2016-05-01,1,5,2016,Shuffle Along,Music Box,Musical,7647,0.99,708267,0.67,4
-2016-05-01,1,5,2016,Something Rotten!,St. James,Musical,8838,0.7,695800,0.5,8
-2016-05-01,1,5,2016,The Book Of Mormon,Eugene O'Neill,Musical,8712,1.02,1332910,0.97,8
-2016-05-01,1,5,2016,The Color Purple 2015,Jacobs,Musical,8245,0.98,879248,0.83,8
-2016-05-01,1,5,2016,The Crucible 2016,Walter Kerr,Play,6843,0.9,648902,0.66,8
-2016-05-01,1,5,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5831,0.72,413167,0.48,8
-2016-05-01,1,5,2016,The Father 2016,Friedman,Play,3463,0.67,294222,0.42,8
-2016-05-01,1,5,2016,The Humans,Helen Hayes,Play,4271,0.93,412929,0.71,8
-2016-05-01,1,5,2016,The King And I 2015,Vivian Beaumont,Musical,7286,0.87,621885,0.54,8
-2016-05-01,1,5,2016,The Lion King,Minskoff,Musical,13567,1,1950539,0.99,8
-2016-05-01,1,5,2016,The Phantom Of The Opera,Majestic,Musical,10623,0.83,892752,0.59,8
-2016-05-01,1,5,2016,Tuck Everlasting,Broadhurst,Musical,7198,0.77,340152,0.31,7
-2016-05-01,1,5,2016,Waitress,Brooks Atkinson,Musical,8428,1.01,907936,0.89,8
-2016-05-01,1,5,2016,Wicked,Gershwin,Musical,13753,0.95,1625910,0.91,8
-2016-05-08,8,5,2016,Aladdin,New Amsterdam,Musical,13549,0.98,1397674,0.88,8
-2016-05-08,8,5,2016,American Psycho,Schoenfeld,Musical,6341,0.77,492703,0.47,8
-2016-05-08,8,5,2016,An American In Paris,Palace,Musical,9494,0.71,842148,0.57,8
-2016-05-08,8,5,2016,Beautiful,Stephen Sondheim,Musical,7405,0.9,926725,0.79,8
-2016-05-08,8,5,2016,Blackbird,Belasco,Play,5470,0.67,408567,0.46,8
-2016-05-08,8,5,2016,Bright Star,Cort,Musical,5716,0.68,416362,0.46,8
-2016-05-08,8,5,2016,Chicago,Ambassador,Musical,6533,0.76,550045,0.58,8
-2016-05-08,8,5,2016,Disaster!,Nederlander,Musical,5945,0.62,387184,0.35,8
-2016-05-08,8,5,2016,Eclipsed,Golden,Play,4246,0.66,329271,0.42,8
-2016-05-08,8,5,2016,Fiddler On The Roof 2015,Broadway,Musical,8712,0.64,754291,0.49,8
-2016-05-08,8,5,2016,Finding Neverland,Lunt-Fontanne,Musical,6903,0.57,527545,0.36,8
-2016-05-08,8,5,2016,Fully Committed,Lyceum,Play,4995,0.68,385642,0.49,8
-2016-05-08,8,5,2016,Fun Home,Circle In The Square,Musical,5117,0.86,415694,0.52,8
-2016-05-08,8,5,2016,Hamilton,Richard Rodgers,Musical,10754,1.02,1833473,1.37,8
-2016-05-08,8,5,2016,Jersey Boys,August Wilson,Musical,5701,0.58,520425,0.45,8
-2016-05-08,8,5,2016,Kinky Boots,Al Hirschfeld,Musical,7146,0.63,677547,0.53,8
-2016-05-08,8,5,2016,Les Miserables '14,Imperial,Musical,7901,0.7,622687,0.53,8
-2016-05-08,8,5,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,5047,0.97,433606,0.74,7
-2016-05-08,8,5,2016,Matilda,Shubert,Musical,8697,0.76,675744,0.51,8
-2016-05-08,8,5,2016,On Your Feet!,Marquis,Musical,9619,0.74,959447,0.62,8
-2016-05-08,8,5,2016,Paramour,Lyric,Musical,11443,0.86,1074996,0.79,0
-2016-05-08,8,5,2016,School Of Rock,Winter Garden,Musical,9472,0.79,816811,0.54,8
-2016-05-08,8,5,2016,She Loves Me 2016,Studio 54,Musical,7138,0.89,619969,0.69,8
-2016-05-08,8,5,2016,Shuffle Along,Music Box,Musical,7771,1.01,924352,0.88,8
-2016-05-08,8,5,2016,Something Rotten!,St. James,Musical,7108,0.56,565473,0.4,8
-2016-05-08,8,5,2016,The Book Of Mormon,Eugene O'Neill,Musical,8692,1.02,1289782,0.94,8
-2016-05-08,8,5,2016,The Color Purple 2015,Jacobs,Musical,8330,0.99,967352,0.92,8
-2016-05-08,8,5,2016,The Crucible 2016,Walter Kerr,Play,6590,0.87,618331,0.63,8
-2016-05-08,8,5,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,4944,0.61,359124,0.42,8
-2016-05-08,8,5,2016,The Father 2016,Friedman,Play,3574,0.69,257203,0.36,8
-2016-05-08,8,5,2016,The Humans,Helen Hayes,Play,4136,0.9,432744,0.74,8
-2016-05-08,8,5,2016,The King And I 2015,Vivian Beaumont,Musical,6515,0.78,567326,0.5,8
-2016-05-08,8,5,2016,The Lion King,Minskoff,Musical,13489,0.99,2007738,0.99,8
-2016-05-08,8,5,2016,The Phantom Of The Opera,Majestic,Musical,9474,0.74,803456,0.53,8
-2016-05-08,8,5,2016,Tuck Everlasting,Broadhurst,Musical,6009,0.65,282911,0.25,8
-2016-05-08,8,5,2016,Waitress,Brooks Atkinson,Musical,8375,1,960477,0.94,8
-2016-05-08,8,5,2016,Wicked,Gershwin,Musical,12691,0.88,1474349,0.83,8
-2016-05-15,15,5,2016,Aladdin,New Amsterdam,Musical,13238,0.96,1377960,0.85,8
-2016-05-15,15,5,2016,American Psycho,Schoenfeld,Musical,6663,0.81,528127,0.5,8
-2016-05-15,15,5,2016,An American In Paris,Palace,Musical,9276,0.69,864098,0.59,8
-2016-05-15,15,5,2016,Beautiful,Stephen Sondheim,Musical,7725,0.94,939456,0.8,8
-2016-05-15,15,5,2016,Blackbird,Belasco,Play,5541,0.68,424525,0.48,8
-2016-05-15,15,5,2016,Bright Star,Cort,Musical,6422,0.77,477058,0.52,8
-2016-05-15,15,5,2016,Chicago,Ambassador,Musical,6260,0.72,516920,0.55,8
-2016-05-15,15,5,2016,Eclipsed,Golden,Play,3855,0.6,291497,0.37,8
-2016-05-15,15,5,2016,Fiddler On The Roof 2015,Broadway,Musical,9684,0.71,808837,0.52,8
-2016-05-15,15,5,2016,Finding Neverland,Lunt-Fontanne,Musical,6221,0.52,475048,0.32,8
-2016-05-15,15,5,2016,Fully Committed,Lyceum,Play,5239,0.72,419040,0.53,8
-2016-05-15,15,5,2016,Fun Home,Circle In The Square,Musical,5009,0.85,385207,0.48,8
-2016-05-15,15,5,2016,Hamilton,Richard Rodgers,Musical,10736,1.02,1686168,1.26,8
-2016-05-15,15,5,2016,Jersey Boys,August Wilson,Musical,6069,0.62,570232,0.5,8
-2016-05-15,15,5,2016,Kinky Boots,Al Hirschfeld,Musical,7896,0.69,731462,0.57,8
-2016-05-15,15,5,2016,Les Miserables '14,Imperial,Musical,8036,0.71,652694,0.55,8
-2016-05-15,15,5,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,5058,0.98,441296,0.76,7
-2016-05-15,15,5,2016,Matilda,Shubert,Musical,7997,0.7,591874,0.45,8
-2016-05-15,15,5,2016,On Your Feet!,Marquis,Musical,9691,0.75,1016014,0.65,8
-2016-05-15,15,5,2016,Paramour,Lyric,Musical,6169,0.81,464021,0.59,0
-2016-05-15,15,5,2016,School Of Rock,Winter Garden,Musical,9134,0.76,847399,0.56,8
-2016-05-15,15,5,2016,She Loves Me 2016,Studio 54,Musical,7184,0.89,622688,0.69,8
-2016-05-15,15,5,2016,Shuffle Along,Music Box,Musical,7822,1.02,957143,0.88,8
-2016-05-15,15,5,2016,Something Rotten!,St. James,Musical,7640,0.6,645191,0.46,8
-2016-05-15,15,5,2016,The Book Of Mormon,Eugene O'Neill,Musical,8731,1.02,1341902,0.97,8
-2016-05-15,15,5,2016,The Color Purple 2015,Jacobs,Musical,6976,0.83,604552,0.57,8
-2016-05-15,15,5,2016,The Crucible 2016,Walter Kerr,Play,6597,0.87,621743,0.63,8
-2016-05-15,15,5,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5257,0.65,388809,0.45,8
-2016-05-15,15,5,2016,The Father 2016,Friedman,Play,4041,0.78,304078,0.43,8
-2016-05-15,15,5,2016,The Humans,Helen Hayes,Play,4288,0.93,462084,0.79,8
-2016-05-15,15,5,2016,The King And I 2015,Vivian Beaumont,Musical,5975,0.71,542874,0.47,8
-2016-05-15,15,5,2016,The Lion King,Minskoff,Musical,11384,0.96,1651070,0.92,7
-2016-05-15,15,5,2016,The Phantom Of The Opera,Majestic,Musical,9788,0.76,832886,0.55,8
-2016-05-15,15,5,2016,Tuck Everlasting,Broadhurst,Musical,5550,0.6,326097,0.29,8
-2016-05-15,15,5,2016,Waitress,Brooks Atkinson,Musical,8453,1.01,981313,0.96,8
-2016-05-15,15,5,2016,Wicked,Gershwin,Musical,13157,0.91,1478453,0.83,8
-2016-05-22,22,5,2016,Aladdin,New Amsterdam,Musical,13715,0.99,1474530,0.91,8
-2016-05-22,22,5,2016,American Psycho,Schoenfeld,Musical,6965,0.84,565107,0.54,8
-2016-05-22,22,5,2016,An American In Paris,Palace,Musical,10909,0.81,966672,0.66,8
-2016-05-22,22,5,2016,Beautiful,Stephen Sondheim,Musical,8139,0.99,1003594,0.85,8
-2016-05-22,22,5,2016,Blackbird,Belasco,Play,6009,0.74,434330,0.49,8
-2016-05-22,22,5,2016,Bright Star,Cort,Musical,7112,0.85,492566,0.54,8
-2016-05-22,22,5,2016,Chicago,Ambassador,Musical,7231,0.84,578948,0.61,8
-2016-05-22,22,5,2016,Eclipsed,Golden,Play,4646,0.72,332255,0.42,8
-2016-05-22,22,5,2016,Fiddler On The Roof 2015,Broadway,Musical,9870,0.72,809896,0.52,8
-2016-05-22,22,5,2016,Finding Neverland,Lunt-Fontanne,Musical,8876,0.74,570764,0.39,8
-2016-05-22,22,5,2016,Fully Committed,Lyceum,Play,5321,0.73,426562,0.54,8
-2016-05-22,22,5,2016,Fun Home,Circle In The Square,Musical,5104,0.86,424225,0.53,8
-2016-05-22,22,5,2016,Hamilton,Richard Rodgers,Musical,10755,1.02,1764808,1.32,8
-2016-05-22,22,5,2016,Jersey Boys,August Wilson,Musical,6492,0.66,584273,0.51,8
-2016-05-22,22,5,2016,Kinky Boots,Al Hirschfeld,Musical,8470,0.74,796052,0.62,8
-2016-05-22,22,5,2016,Les Miserables '14,Imperial,Musical,8729,0.77,728285,0.62,8
-2016-05-22,22,5,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,5034,0.97,460247,0.79,7
-2016-05-22,22,5,2016,Matilda,Shubert,Musical,9645,0.84,735485,0.55,8
-2016-05-22,22,5,2016,On Your Feet!,Marquis,Musical,10041,0.77,1004367,0.65,8
-2016-05-22,22,5,2016,Paramour,Lyric,Musical,9213,0.97,907800,0.93,0
-2016-05-22,22,5,2016,School Of Rock,Winter Garden,Musical,10524,0.88,930524,0.61,8
-2016-05-22,22,5,2016,She Loves Me 2016,Studio 54,Musical,7817,0.97,687824,0.76,8
-2016-05-22,22,5,2016,Shuffle Along,Music Box,Musical,7752,1.01,949306,0.84,8
-2016-05-22,22,5,2016,Something Rotten!,St. James,Musical,8873,0.72,730132,0.53,8
-2016-05-22,22,5,2016,The Book Of Mormon,Eugene O'Neill,Musical,8744,1.03,1388431,1.01,8
-2016-05-22,22,5,2016,The Color Purple 2015,Jacobs,Musical,7664,0.91,661167,0.63,8
-2016-05-22,22,5,2016,The Crucible 2016,Walter Kerr,Play,6508,0.86,601778,0.61,8
-2016-05-22,22,5,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5683,0.7,409027,0.48,8
-2016-05-22,22,5,2016,The Father 2016,Friedman,Play,3916,0.75,295322,0.42,8
-2016-05-22,22,5,2016,The Humans,Helen Hayes,Play,4539,0.99,483400,0.83,8
-2016-05-22,22,5,2016,The King And I 2015,Vivian Beaumont,Musical,7274,0.87,573166,0.5,8
-2016-05-22,22,5,2016,The Lion King,Minskoff,Musical,13560,1,2056550,0.98,8
-2016-05-22,22,5,2016,The Phantom Of The Opera,Majestic,Musical,12068,0.94,1033513,0.68,8
-2016-05-22,22,5,2016,Tuck Everlasting,Broadhurst,Musical,6488,0.7,325361,0.29,8
-2016-05-22,22,5,2016,Waitress,Brooks Atkinson,Musical,8456,1.01,982755,0.96,8
-2016-05-22,22,5,2016,Wicked,Gershwin,Musical,14208,0.98,1673967,0.94,8
-2016-05-29,29,5,2016,Aladdin,New Amsterdam,Musical,13779,1,1524878,0.99,8
-2016-05-29,29,5,2016,American Psycho,Schoenfeld,Musical,5593,0.68,440118,0.42,8
-2016-05-29,29,5,2016,An Act Of God 2016,Booth,Play,1413,0.94,122461,0.64,0
-2016-05-29,29,5,2016,An American In Paris,Palace,Musical,10052,0.75,863153,0.59,8
-2016-05-29,29,5,2016,Beautiful,Stephen Sondheim,Musical,7851,0.96,889409,0.76,8
-2016-05-29,29,5,2016,Blackbird,Belasco,Play,6523,0.8,392758,0.44,8
-2016-05-29,29,5,2016,Bright Star,Cort,Musical,6032,0.72,443293,0.49,8
-2016-05-29,29,5,2016,Chicago,Ambassador,Musical,7128,0.82,596632,0.63,8
-2016-05-29,29,5,2016,Eclipsed,Golden,Play,3737,0.58,295071,0.37,8
-2016-05-29,29,5,2016,Fiddler On The Roof 2015,Broadway,Musical,8505,0.62,734036,0.47,8
-2016-05-29,29,5,2016,Finding Neverland,Lunt-Fontanne,Musical,8184,0.68,619504,0.42,8
-2016-05-29,29,5,2016,Fully Committed,Lyceum,Play,4819,0.66,371654,0.47,8
-2016-05-29,29,5,2016,Fun Home,Circle In The Square,Musical,4807,0.81,387952,0.49,8
-2016-05-29,29,5,2016,Hamilton,Richard Rodgers,Musical,10752,1.02,1917923,1.44,8
-2016-05-29,29,5,2016,Jersey Boys,August Wilson,Musical,5966,0.61,539847,0.47,8
-2016-05-29,29,5,2016,Kinky Boots,Al Hirschfeld,Musical,7472,0.66,710617,0.55,8
-2016-05-29,29,5,2016,Les Miserables '14,Imperial,Musical,9000,0.8,755648,0.64,8
-2016-05-29,29,5,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,4962,0.96,450190,0.77,7
-2016-05-29,29,5,2016,Matilda,Shubert,Musical,9974,0.87,822013,0.62,8
-2016-05-29,29,5,2016,On Your Feet!,Marquis,Musical,8663,0.67,876630,0.56,8
-2016-05-29,29,5,2016,Paramour,Lyric,Musical,13731,0.91,1126943,0.62,6
-2016-05-29,29,5,2016,School Of Rock,Winter Garden,Musical,11243,0.94,1082056,0.71,8
-2016-05-29,29,5,2016,She Loves Me 2016,Studio 54,Musical,7207,0.9,619602,0.69,8
-2016-05-29,29,5,2016,Shuffle Along,Music Box,Musical,7832,1.02,985656,0.88,8
-2016-05-29,29,5,2016,Something Rotten!,St. James,Musical,9070,0.68,728531,0.5,8
-2016-05-29,29,5,2016,The Book Of Mormon,Eugene O'Neill,Musical,8731,1.02,1346049,0.98,8
-2016-05-29,29,5,2016,The Color Purple 2015,Jacobs,Musical,7002,0.83,615210,0.58,8
-2016-05-29,29,5,2016,The Crucible 2016,Walter Kerr,Play,6295,0.83,534686,0.54,8
-2016-05-29,29,5,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5345,0.66,393329,0.46,8
-2016-05-29,29,5,2016,The Father 2016,Friedman,Play,3717,0.71,246823,0.36,8
-2016-05-29,29,5,2016,The Humans,Helen Hayes,Play,4518,0.98,471919,0.81,8
-2016-05-29,29,5,2016,The King And I 2015,Vivian Beaumont,Musical,6399,0.76,546476,0.48,8
-2016-05-29,29,5,2016,The Lion King,Minskoff,Musical,13552,1,2072450,1,8
-2016-05-29,29,5,2016,The Phantom Of The Opera,Majestic,Musical,11683,0.91,1026927,0.68,8
-2016-05-29,29,5,2016,Tuck Everlasting,Broadhurst,Musical,7945,0.86,410516,0.37,8
-2016-05-29,29,5,2016,Waitress,Brooks Atkinson,Musical,8456,1.01,1001427,0.98,8
-2016-05-29,29,5,2016,Wicked,Gershwin,Musical,13700,0.95,1744424,0.98,8
-2016-06-05,5,6,2016,Aladdin,New Amsterdam,Musical,13641,0.99,1506481,0.92,8
-2016-06-05,5,6,2016,American Psycho,Schoenfeld,Musical,7453,0.9,620083,0.59,8
-2016-06-05,5,6,2016,An Act Of God 2016,Booth,Play,4599,0.76,293212,0.38,0
-2016-06-05,5,6,2016,An American In Paris,Palace,Musical,8032,0.6,681148,0.46,8
-2016-06-05,5,6,2016,Beautiful,Stephen Sondheim,Musical,7338,0.89,847560,0.72,8
-2016-06-05,5,6,2016,Blackbird,Belasco,Play,5680,0.7,413284,0.46,8
-2016-06-05,5,6,2016,Bright Star,Cort,Musical,5948,0.71,437980,0.48,8
-2016-06-05,5,6,2016,Chicago,Ambassador,Musical,6223,0.72,505919,0.54,8
-2016-06-05,5,6,2016,Eclipsed,Golden,Play,4233,0.66,303940,0.39,8
-2016-06-05,5,6,2016,Fiddler On The Roof 2015,Broadway,Musical,8673,0.64,672540,0.43,8
-2016-06-05,5,6,2016,Finding Neverland,Lunt-Fontanne,Musical,8158,0.68,592637,0.4,8
-2016-06-05,5,6,2016,Fully Committed,Lyceum,Play,4545,0.62,343091,0.43,8
-2016-06-05,5,6,2016,Fun Home,Circle In The Square,Musical,4431,0.75,342143,0.43,8
-2016-06-05,5,6,2016,Hamilton,Richard Rodgers,Musical,10756,1.02,1854989,1.39,8
-2016-06-05,5,6,2016,Jersey Boys,August Wilson,Musical,5823,0.59,505461,0.44,8
-2016-06-05,5,6,2016,Kinky Boots,Al Hirschfeld,Musical,6771,0.59,606568,0.49,8
-2016-06-05,5,6,2016,Les Miserables '14,Imperial,Musical,8241,0.73,685321,0.58,8
-2016-06-05,5,6,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,4975,0.97,433191,0.74,7
-2016-06-05,5,6,2016,Matilda,Shubert,Musical,10465,0.91,815427,0.62,8
-2016-06-05,5,6,2016,On Your Feet!,Marquis,Musical,7809,0.6,787779,0.51,8
-2016-06-05,5,6,2016,Paramour,Lyric,Musical,12000,0.79,1024450,0.57,8
-2016-06-05,5,6,2016,School Of Rock,Winter Garden,Musical,10800,0.9,1024700,0.67,8
-2016-06-05,5,6,2016,She Loves Me 2016,Studio 54,Musical,7679,0.96,644551,0.72,8
-2016-06-05,5,6,2016,Shuffle Along,Music Box,Musical,7766,1.01,960427,0.85,8
-2016-06-05,5,6,2016,Something Rotten!,St. James,Musical,7764,0.66,628040,0.47,8
-2016-06-05,5,6,2016,The Book Of Mormon,Eugene O'Neill,Musical,8726,1.02,1305975,0.95,8
-2016-06-05,5,6,2016,The Color Purple 2015,Jacobs,Musical,6837,0.81,578875,0.55,8
-2016-06-05,5,6,2016,The Crucible 2016,Walter Kerr,Play,6027,0.79,482516,0.49,8
-2016-06-05,5,6,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,4634,0.57,344839,0.4,8
-2016-06-05,5,6,2016,The Father 2016,Friedman,Play,3470,0.67,251465,0.35,8
-2016-06-05,5,6,2016,The Humans,Helen Hayes,Play,4407,0.96,457093,0.79,8
-2016-06-05,5,6,2016,The King And I 2015,Vivian Beaumont,Musical,5888,0.7,483314,0.42,8
-2016-06-05,5,6,2016,The Lion King,Minskoff,Musical,13544,1,2059644,0.99,8
-2016-06-05,5,6,2016,The Phantom Of The Opera,Majestic,Musical,9881,0.77,857783,0.57,8
-2016-06-05,5,6,2016,Waitress,Brooks Atkinson,Musical,8212,0.98,981923,0.96,8
-2016-06-05,5,6,2016,Wicked,Gershwin,Musical,13270,0.92,1684817,0.95,8
-2016-06-12,12,6,2016,Aladdin,New Amsterdam,Musical,13642,0.99,1581642,0.95,8
-2016-06-12,12,6,2016,An Act Of God 2016,Booth,Play,3700,0.7,256649,0.38,7
-2016-06-12,12,6,2016,An American In Paris,Palace,Musical,9257,0.69,800245,0.54,8
-2016-06-12,12,6,2016,Beautiful,Stephen Sondheim,Musical,7485,0.91,889393,0.76,8
-2016-06-12,12,6,2016,Blackbird,Belasco,Play,7375,0.91,552394,0.62,8
-2016-06-12,12,6,2016,Bright Star,Cort,Musical,6672,0.8,527807,0.58,8
-2016-06-12,12,6,2016,Chicago,Ambassador,Musical,6938,0.8,565835,0.6,8
-2016-06-12,12,6,2016,Eclipsed,Golden,Play,5233,0.82,387767,0.49,8
-2016-06-12,12,6,2016,Fiddler On The Roof 2015,Broadway,Musical,9213,0.67,751607,0.48,8
-2016-06-12,12,6,2016,Finding Neverland,Lunt-Fontanne,Musical,9483,0.79,688641,0.47,8
-2016-06-12,12,6,2016,Fully Committed,Lyceum,Play,5009,0.69,370369,0.47,8
-2016-06-12,12,6,2016,Fun Home,Circle In The Square,Musical,4514,0.76,331268,0.42,8
-2016-06-12,12,6,2016,Hamilton,Richard Rodgers,Musical,10754,1.02,2028208,1.52,8
-2016-06-12,12,6,2016,Jersey Boys,August Wilson,Musical,6133,0.62,540996,0.47,8
-2016-06-12,12,6,2016,Kinky Boots,Al Hirschfeld,Musical,7193,0.63,660084,0.53,8
-2016-06-12,12,6,2016,Les Miserables '14,Imperial,Musical,9108,0.81,755856,0.64,8
-2016-06-12,12,6,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,4420,1,408921,0.82,6
-2016-06-12,12,6,2016,Matilda,Shubert,Musical,11011,0.96,911510,0.69,8
-2016-06-12,12,6,2016,On Your Feet!,Marquis,Musical,8909,0.68,859596,0.55,8
-2016-06-12,12,6,2016,Paramour,Lyric,Musical,11279,0.74,1093610,0.61,8
-2016-06-12,12,6,2016,School Of Rock,Winter Garden,Musical,11187,0.94,1082064,0.71,8
-2016-06-12,12,6,2016,She Loves Me 2016,Studio 54,Musical,6961,0.99,618089,0.79,7
-2016-06-12,12,6,2016,Shuffle Along,Music Box,Musical,7650,0.99,972860,0.86,8
-2016-06-12,12,6,2016,Something Rotten!,St. James,Musical,8250,0.67,674213,0.49,8
-2016-06-12,12,6,2016,The Book Of Mormon,Eugene O'Neill,Musical,8722,1.02,1343083,0.98,8
-2016-06-12,12,6,2016,The Color Purple 2015,Jacobs,Musical,7342,0.87,672299,0.64,8
-2016-06-12,12,6,2016,The Crucible 2016,Walter Kerr,Play,6082,0.8,493874,0.5,8
-2016-06-12,12,6,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,4846,0.6,360867,0.42,8
-2016-06-12,12,6,2016,The Father 2016,Friedman,Play,3970,0.76,298505,0.42,8
-2016-06-12,12,6,2016,The Humans,Helen Hayes,Play,4562,0.99,484407,0.83,8
-2016-06-12,12,6,2016,The King And I 2015,Vivian Beaumont,Musical,6746,0.81,584349,0.51,8
-2016-06-12,12,6,2016,The Lion King,Minskoff,Musical,13572,1,2071899,1.01,8
-2016-06-12,12,6,2016,The Phantom Of The Opera,Majestic,Musical,10831,0.84,941327,0.62,8
-2016-06-12,12,6,2016,Waitress,Brooks Atkinson,Musical,8432,1.01,1058461,1.04,8
-2016-06-12,12,6,2016,Wicked,Gershwin,Musical,14510,0.97,1859038,1.04,8
-2016-06-19,19,6,2016,Aladdin,New Amsterdam,Musical,13677,0.99,1586333,0.95,8
-2016-06-19,19,6,2016,An Act Of God 2016,Booth,Play,3853,0.64,328145,0.4,8
-2016-06-19,19,6,2016,An American In Paris,Palace,Musical,7977,0.59,696523,0.47,8
-2016-06-19,19,6,2016,Beautiful,Stephen Sondheim,Musical,7612,0.93,873760,0.74,8
-2016-06-19,19,6,2016,Bright Star,Cort,Musical,7074,0.85,549237,0.6,8
-2016-06-19,19,6,2016,Chicago,Ambassador,Musical,6298,0.73,521971,0.55,8
-2016-06-19,19,6,2016,Eclipsed,Golden,Play,5733,0.89,481728,0.61,8
-2016-06-19,19,6,2016,Fiddler On The Roof 2015,Broadway,Musical,10339,0.76,869484,0.56,8
-2016-06-19,19,6,2016,Finding Neverland,Lunt-Fontanne,Musical,7864,0.65,591700,0.4,8
-2016-06-19,19,6,2016,Fully Committed,Lyceum,Play,5134,0.7,417308,0.53,8
-2016-06-19,19,6,2016,Fun Home,Circle In The Square,Musical,4711,0.8,313556,0.39,8
-2016-06-19,19,6,2016,Hamilton,Richard Rodgers,Musical,10752,1.02,2026838,1.22,8
-2016-06-19,19,6,2016,Jersey Boys,August Wilson,Musical,5962,0.61,534079,0.46,8
-2016-06-19,19,6,2016,Kinky Boots,Al Hirschfeld,Musical,6953,0.61,644007,0.52,8
-2016-06-19,19,6,2016,Les Miserables '14,Imperial,Musical,9617,0.85,813319,0.69,8
-2016-06-19,19,6,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,5120,1,491524,0.84,7
-2016-06-19,19,6,2016,Matilda,Shubert,Musical,10311,0.9,831317,0.63,8
-2016-06-19,19,6,2016,On Your Feet!,Marquis,Musical,8222,0.63,840804,0.54,8
-2016-06-19,19,6,2016,Paramour,Lyric,Musical,10251,0.68,971039,0.54,8
-2016-06-19,19,6,2016,School Of Rock,Winter Garden,Musical,11188,0.94,1170683,0.77,8
-2016-06-19,19,6,2016,She Loves Me 2016,Studio 54,Musical,7670,0.96,655358,0.73,8
-2016-06-19,19,6,2016,Shuffle Along,Music Box,Musical,7647,0.99,973686,0.87,8
-2016-06-19,19,6,2016,Something Rotten!,St. James,Musical,7585,0.65,643101,0.48,8
-2016-06-19,19,6,2016,The Book Of Mormon,Eugene O'Neill,Musical,8749,1.03,1371176,1,8
-2016-06-19,19,6,2016,The Color Purple 2015,Jacobs,Musical,6459,0.77,560484,0.53,8
-2016-06-19,19,6,2016,The Crucible 2016,Walter Kerr,Play,6375,0.84,505542,0.52,8
-2016-06-19,19,6,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5404,0.66,393373,0.46,8
-2016-06-19,19,6,2016,The Father 2016,Friedman,Play,4708,0.91,364765,0.49,8
-2016-06-19,19,6,2016,The Humans,Helen Hayes,Play,4565,0.99,563565,0.97,8
-2016-06-19,19,6,2016,The King And I 2015,Vivian Beaumont,Musical,7418,0.89,676588,0.59,8
-2016-06-19,19,6,2016,The Lion King,Minskoff,Musical,13571,1,2106410,1,8
-2016-06-19,19,6,2016,The Phantom Of The Opera,Majestic,Musical,10587,0.82,958711,0.63,8
-2016-06-19,19,6,2016,Waitress,Brooks Atkinson,Musical,8407,1.01,1084775,1.06,8
-2016-06-19,19,6,2016,Wicked,Gershwin,Musical,14014,0.97,1818372,1.02,8
-2016-06-26,26,6,2016,Aladdin,New Amsterdam,Musical,13791,1,1671568,0.96,8
-2016-06-26,26,6,2016,An Act Of God 2016,Booth,Play,3624,0.69,306916,0.43,7
-2016-06-26,26,6,2016,An American In Paris,Palace,Musical,8636,0.64,746218,0.51,8
-2016-06-26,26,6,2016,Beautiful,Stephen Sondheim,Musical,7868,0.96,922959,0.79,8
-2016-06-26,26,6,2016,Bright Star,Cort,Musical,8321,1,708013,0.78,8
-2016-06-26,26,6,2016,Chicago,Ambassador,Musical,6848,0.79,577914,0.61,8
-2016-06-26,26,6,2016,Fiddler On The Roof 2015,Broadway,Musical,10254,0.75,852656,0.55,8
-2016-06-26,26,6,2016,Finding Neverland,Lunt-Fontanne,Musical,8545,0.71,661493,0.45,8
-2016-06-26,26,6,2016,Fully Committed,Lyceum,Play,5381,0.74,426533,0.54,8
-2016-06-26,26,6,2016,Fun Home,Circle In The Square,Musical,5230,0.88,384193,0.48,8
-2016-06-26,26,6,2016,Hamilton,Richard Rodgers,Musical,10732,1.02,2007222,1.03,8
-2016-06-26,26,6,2016,Jersey Boys,August Wilson,Musical,6698,0.68,590406,0.51,8
-2016-06-26,26,6,2016,Kinky Boots,Al Hirschfeld,Musical,7868,0.69,742726,0.56,8
-2016-06-26,26,6,2016,Les Miserables '14,Imperial,Musical,10581,0.94,899993,0.77,8
-2016-06-26,26,6,2016,Long Day'S Journey Into Night 2016,American Airlines,Play,5181,1.01,502602,0.86,7
-2016-06-26,26,6,2016,Matilda,Shubert,Musical,11258,0.98,990756,0.75,8
-2016-06-26,26,6,2016,On Your Feet!,Marquis,Musical,8224,0.63,836484,0.54,8
-2016-06-26,26,6,2016,Paramour,Lyric,Musical,10756,0.71,1000730,0.55,8
-2016-06-26,26,6,2016,School Of Rock,Winter Garden,Musical,11724,0.98,1250456,0.82,8
-2016-06-26,26,6,2016,She Loves Me 2016,Studio 54,Musical,7374,0.92,654651,0.73,8
-2016-06-26,26,6,2016,Shuffle Along,Music Box,Musical,7404,0.96,814942,0.72,8
-2016-06-26,26,6,2016,Something Rotten!,St. James,Musical,8138,0.72,712837,0.54,8
-2016-06-26,26,6,2016,The Book Of Mormon,Eugene O'Neill,Musical,8740,1.02,1371455,1,8
-2016-06-26,26,6,2016,The Color Purple 2015,Jacobs,Musical,8209,0.98,799021,0.76,8
-2016-06-26,26,6,2016,The Crucible 2016,Walter Kerr,Play,6273,0.83,514916,0.52,8
-2016-06-26,26,6,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5406,0.66,392158,0.46,8
-2016-06-26,26,6,2016,The Humans,Helen Hayes,Play,4498,0.98,562088,0.97,8
-2016-06-26,26,6,2016,The King And I 2015,Vivian Beaumont,Musical,8370,1,840824,0.73,8
-2016-06-26,26,6,2016,The Lion King,Minskoff,Musical,13570,1,2113062,1,8
-2016-06-26,26,6,2016,The Phantom Of The Opera,Majestic,Musical,11066,0.86,998680,0.66,8
-2016-06-26,26,6,2016,Waitress,Brooks Atkinson,Musical,8436,1.01,1100048,1.08,8
-2016-06-26,26,6,2016,Wicked,Gershwin,Musical,14629,0.98,1969159,1.11,8
-2016-07-03,3,7,2016,Aladdin,New Amsterdam,Musical,13683,0.99,1564928,0.89,8
-2016-07-03,3,7,2016,An Act Of God 2016,Booth,Play,4393,0.73,348283,0.42,8
-2016-07-03,3,7,2016,An American In Paris,Palace,Musical,9143,0.68,699977,0.48,8
-2016-07-03,3,7,2016,Beautiful,Stephen Sondheim,Musical,7484,0.91,805532,0.69,8
-2016-07-03,3,7,2016,Chicago,Ambassador,Musical,7497,0.87,628426,0.66,8
-2016-07-03,3,7,2016,Fiddler On The Roof 2015,Broadway,Musical,10286,0.75,808911,0.52,8
-2016-07-03,3,7,2016,Finding Neverland,Lunt-Fontanne,Musical,9350,0.78,662985,0.45,8
-2016-07-03,3,7,2016,Fully Committed,Lyceum,Play,5743,0.79,430791,0.54,8
-2016-07-03,3,7,2016,Fun Home,Circle In The Square,Musical,5608,0.95,375628,0.47,8
-2016-07-03,3,7,2016,Hamilton,Richard Rodgers,Musical,10739,1.02,2022790,1.04,8
-2016-07-03,3,7,2016,Jersey Boys,August Wilson,Musical,6394,0.65,540597,0.47,8
-2016-07-03,3,7,2016,Kinky Boots,Al Hirschfeld,Musical,7645,0.67,682678,0.52,8
-2016-07-03,3,7,2016,Les Miserables '14,Imperial,Musical,10777,0.96,917109,0.78,8
-2016-07-03,3,7,2016,Matilda,Shubert,Musical,11047,0.96,946216,0.72,8
-2016-07-03,3,7,2016,On Your Feet!,Marquis,Musical,7580,0.58,759324,0.49,8
-2016-07-03,3,7,2016,Paramour,Lyric,Musical,11748,0.77,1000312,0.55,8
-2016-07-03,3,7,2016,School Of Rock,Winter Garden,Musical,11396,0.95,1194312,0.78,8
-2016-07-03,3,7,2016,She Loves Me 2016,Studio 54,Musical,7239,0.96,624045,0.72,8
-2016-07-03,3,7,2016,Shuffle Along,Music Box,Musical,7464,0.97,787622,0.7,8
-2016-07-03,3,7,2016,Something Rotten!,St. James,Musical,8113,0.76,681072,0.53,8
-2016-07-03,3,7,2016,The Book Of Mormon,Eugene O'Neill,Musical,8742,1.03,1324390,0.98,8
-2016-07-03,3,7,2016,The Color Purple 2015,Jacobs,Musical,8009,0.95,764798,0.73,8
-2016-07-03,3,7,2016,The Crucible 2016,Walter Kerr,Play,6693,0.88,507081,0.52,8
-2016-07-03,3,7,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6334,0.78,428289,0.5,8
-2016-07-03,3,7,2016,The Humans,Helen Hayes,Play,4485,0.97,535415,0.92,8
-2016-07-03,3,7,2016,The Lion King,Minskoff,Musical,13573,1,2164298,1.01,8
-2016-07-03,3,7,2016,The Phantom Of The Opera,Majestic,Musical,10606,0.83,953783,0.63,8
-2016-07-03,3,7,2016,Waitress,Brooks Atkinson,Musical,8324,1,1010938,0.99,8
-2016-07-03,3,7,2016,Wicked,Gershwin,Musical,13874,0.96,1863121,1.05,8
-2016-07-10,10,7,2016,Aladdin,New Amsterdam,Musical,13115,0.95,1591362,0.84,8
-2016-07-10,10,7,2016,An Act Of God 2016,Booth,Play,3541,0.67,284709,0.4,7
-2016-07-10,10,7,2016,An American In Paris,Palace,Musical,8230,0.61,618558,0.42,8
-2016-07-10,10,7,2016,Beautiful,Stephen Sondheim,Musical,6593,0.8,709083,0.6,8
-2016-07-10,10,7,2016,Chicago,Ambassador,Musical,6133,0.71,504919,0.53,8
-2016-07-10,10,7,2016,Fiddler On The Roof 2015,Broadway,Musical,9645,0.71,746147,0.48,8
-2016-07-10,10,7,2016,Finding Neverland,Lunt-Fontanne,Musical,7589,0.63,563513,0.38,8
-2016-07-10,10,7,2016,Fully Committed,Lyceum,Play,4959,0.68,395188,0.5,8
-2016-07-10,10,7,2016,Fun Home,Circle In The Square,Musical,4518,0.76,320261,0.4,8
-2016-07-10,10,7,2016,Hamilton,Richard Rodgers,Musical,10753,1.02,2053263,1.06,8
-2016-07-10,10,7,2016,Jersey Boys,August Wilson,Musical,5742,0.58,489255,0.43,8
-2016-07-10,10,7,2016,Kinky Boots,Al Hirschfeld,Musical,7146,0.63,657585,0.5,8
-2016-07-10,10,7,2016,Les Miserables '14,Imperial,Musical,10213,0.91,879952,0.75,8
-2016-07-10,10,7,2016,Matilda,Shubert,Musical,10896,0.95,939097,0.78,8
-2016-07-10,10,7,2016,On Your Feet!,Marquis,Musical,6867,0.53,675318,0.44,8
-2016-07-10,10,7,2016,Paramour,Lyric,Musical,9176,0.6,859152,0.48,8
-2016-07-10,10,7,2016,School Of Rock,Winter Garden,Musical,11402,0.95,1157594,0.76,8
-2016-07-10,10,7,2016,She Loves Me 2016,Studio 54,Musical,7850,0.99,712072,0.79,8
-2016-07-10,10,7,2016,Shuffle Along,Music Box,Musical,7334,0.95,755787,0.67,8
-2016-07-10,10,7,2016,Something Rotten!,St. James,Musical,7436,0.69,640454,0.5,8
-2016-07-10,10,7,2016,The Book Of Mormon,Eugene O'Neill,Musical,8738,1.02,1322710,0.98,8
-2016-07-10,10,7,2016,The Color Purple 2015,Jacobs,Musical,7331,0.87,689987,0.66,8
-2016-07-10,10,7,2016,The Crucible 2016,Walter Kerr,Play,6408,0.84,510250,0.52,8
-2016-07-10,10,7,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5081,0.62,369489,0.43,8
-2016-07-10,10,7,2016,The Humans,Helen Hayes,Play,4563,0.99,535584,0.92,8
-2016-07-10,10,7,2016,The Lion King,Minskoff,Musical,13185,0.97,2255572,0.95,8
-2016-07-10,10,7,2016,The Phantom Of The Opera,Majestic,Musical,9850,0.77,897993,0.59,8
-2016-07-10,10,7,2016,Waitress,Brooks Atkinson,Musical,8020,0.96,969699,0.95,8
-2016-07-10,10,7,2016,Wicked,Gershwin,Musical,13259,0.92,1758107,0.99,8
-2016-07-17,17,7,2016,Aladdin,New Amsterdam,Musical,13442,0.97,1683488,0.88,8
-2016-07-17,17,7,2016,An Act Of God 2016,Booth,Play,4191,0.7,337557,0.41,8
-2016-07-17,17,7,2016,An American In Paris,Palace,Musical,8739,0.65,663649,0.45,8
-2016-07-17,17,7,2016,Beautiful,Stephen Sondheim,Musical,6771,0.82,751258,0.75,8
-2016-07-17,17,7,2016,Cats 2016,Neil Simon,Musical,5135,0.94,603553,0.86,0
-2016-07-17,17,7,2016,Chicago,Ambassador,Musical,6734,0.78,559443,0.59,8
-2016-07-17,17,7,2016,Fiddler On The Roof 2015,Broadway,Musical,9631,0.71,727878,0.47,8
-2016-07-17,17,7,2016,Finding Neverland,Lunt-Fontanne,Musical,8289,0.69,617144,0.42,8
-2016-07-17,17,7,2016,Fully Committed,Lyceum,Play,5245,0.72,415767,0.53,8
-2016-07-17,17,7,2016,Fun Home,Circle In The Square,Musical,4888,0.83,366852,0.46,8
-2016-07-17,17,7,2016,Hamilton,Richard Rodgers,Musical,12053,1.01,2282207,1.04,9
-2016-07-17,17,7,2016,Jersey Boys,August Wilson,Musical,6452,0.66,542904,0.47,8
-2016-07-17,17,7,2016,Kinky Boots,Al Hirschfeld,Musical,7373,0.65,669140,0.52,8
-2016-07-17,17,7,2016,Les Miserables '14,Imperial,Musical,10476,0.93,918041,0.78,8
-2016-07-17,17,7,2016,Matilda,Shubert,Musical,10929,0.95,939859,0.78,8
-2016-07-17,17,7,2016,Motown The Musical 2016,Nederlander,Musical,6650,0.71,424198,0.37,8
-2016-07-17,17,7,2016,On Your Feet!,Marquis,Musical,8907,0.68,793370,0.51,8
-2016-07-17,17,7,2016,Paramour,Lyric,Musical,10088,0.67,897710,0.5,8
-2016-07-17,17,7,2016,School Of Rock,Winter Garden,Musical,11435,0.96,1165912,0.77,8
-2016-07-17,17,7,2016,Shuffle Along,Music Box,Musical,7636,0.99,835420,0.74,8
-2016-07-17,17,7,2016,Something Rotten!,St. James,Musical,9280,0.73,745373,0.53,8
-2016-07-17,17,7,2016,The Book Of Mormon,Eugene O'Neill,Musical,9793,1.02,1486802,0.98,9
-2016-07-17,17,7,2016,The Color Purple 2015,Jacobs,Musical,8090,0.96,790483,0.75,8
-2016-07-17,17,7,2016,The Crucible 2016,Walter Kerr,Play,7290,0.96,613098,0.62,8
-2016-07-17,17,7,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,5493,0.67,393715,0.46,8
-2016-07-17,17,7,2016,The Humans,Helen Hayes,Play,4580,0.99,553052,0.95,8
-2016-07-17,17,7,2016,The Lion King,Minskoff,Musical,14981,0.98,2513984,0.95,9
-2016-07-17,17,7,2016,The Phantom Of The Opera,Majestic,Musical,10811,0.84,984395,0.65,8
-2016-07-17,17,7,2016,Waitress,Brooks Atkinson,Musical,8360,1,1068393,1.05,8
-2016-07-17,17,7,2016,Wicked,Gershwin,Musical,13969,0.97,1780497,1,8
-2016-07-24,24,7,2016,Aladdin,New Amsterdam,Musical,13531,0.98,1737722,0.91,8
-2016-07-24,24,7,2016,An Act Of God 2016,Booth,Play,3607,0.68,285827,0.4,7
-2016-07-24,24,7,2016,An American In Paris,Palace,Musical,8364,0.62,643523,0.44,8
-2016-07-24,24,7,2016,Beautiful,Stephen Sondheim,Musical,6757,0.82,736452,0.73,8
-2016-07-24,24,7,2016,Cats 2016,Neil Simon,Musical,7911,0.96,853633,0.81,0
-2016-07-24,24,7,2016,Chicago,Ambassador,Musical,6874,0.8,572619,0.61,8
-2016-07-24,24,7,2016,Fiddler On The Roof 2015,Broadway,Musical,9775,0.72,741930,0.48,8
-2016-07-24,24,7,2016,Finding Neverland,Lunt-Fontanne,Musical,8728,0.73,638918,0.43,8
-2016-07-24,24,7,2016,Fully Committed,Lyceum,Play,5774,0.79,471574,0.59,8
-2016-07-24,24,7,2016,Fun Home,Circle In The Square,Musical,4867,0.82,368325,0.46,8
-2016-07-24,24,7,2016,Hamilton,Richard Rodgers,Musical,10754,1.02,2046711,1.05,8
-2016-07-24,24,7,2016,Jersey Boys,August Wilson,Musical,6384,0.65,521576,0.45,8
-2016-07-24,24,7,2016,Kinky Boots,Al Hirschfeld,Musical,7151,0.63,672382,0.49,8
-2016-07-24,24,7,2016,Les Miserables '14,Imperial,Musical,10748,0.95,947395,0.81,8
-2016-07-24,24,7,2016,Matilda,Shubert,Musical,10863,0.95,956433,0.8,8
-2016-07-24,24,7,2016,Motown The Musical 2016,Nederlander,Musical,6613,0.71,484334,0.42,8
-2016-07-24,24,7,2016,On Your Feet!,Marquis,Musical,8262,0.64,761232,0.49,8
-2016-07-24,24,7,2016,Paramour,Lyric,Musical,10681,0.7,980483,0.54,8
-2016-07-24,24,7,2016,School Of Rock,Winter Garden,Musical,11580,0.97,1207375,0.79,8
-2016-07-24,24,7,2016,Shuffle Along,Music Box,Musical,7800,1.01,865912,0.77,8
-2016-07-24,24,7,2016,Something Rotten!,St. James,Musical,8613,0.72,666347,0.49,8
-2016-07-24,24,7,2016,The Book Of Mormon,Eugene O'Neill,Musical,8743,1.03,1347238,1,8
-2016-07-24,24,7,2016,The Color Purple 2015,Jacobs,Musical,8123,0.97,789876,0.76,8
-2016-07-24,24,7,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6050,0.74,433660,0.51,8
-2016-07-24,24,7,2016,The Humans,Helen Hayes,Play,4579,0.99,554398,0.95,8
-2016-07-24,24,7,2016,The Lion King,Minskoff,Musical,13453,0.99,2310911,0.97,8
-2016-07-24,24,7,2016,The Phantom Of The Opera,Majestic,Musical,11107,0.87,1016681,0.67,8
-2016-07-24,24,7,2016,Waitress,Brooks Atkinson,Musical,8332,1,1071704,1.05,8
-2016-07-24,24,7,2016,Wicked,Gershwin,Musical,14589,0.98,1896987,1.07,8
-2016-07-31,31,7,2016,Aladdin,New Amsterdam,Musical,13568,0.98,1711547,0.88,8
-2016-07-31,31,7,2016,An Act Of God 2016,Booth,Play,3838,0.64,311773,0.38,8
-2016-07-31,31,7,2016,An American In Paris,Palace,Musical,8451,0.63,662309,0.45,8
-2016-07-31,31,7,2016,Beautiful,Stephen Sondheim,Musical,6920,0.84,743194,0.74,8
-2016-07-31,31,7,2016,Cats 2016,Neil Simon,Musical,9371,0.98,755353,0.72,1
-2016-07-31,31,7,2016,Chicago,Ambassador,Musical,6970,0.81,594913,0.63,8
-2016-07-31,31,7,2016,Fiddler On The Roof 2015,Broadway,Musical,8831,0.65,665308,0.43,8
-2016-07-31,31,7,2016,Finding Neverland,Lunt-Fontanne,Musical,8593,0.71,629900,0.43,8
-2016-07-31,31,7,2016,Fully Committed,Lyceum,Play,6205,0.85,468583,0.59,8
-2016-07-31,31,7,2016,Fun Home,Circle In The Square,Musical,5035,0.85,386965,0.49,8
-2016-07-31,31,7,2016,Hamilton,Richard Rodgers,Musical,10755,1.02,2041865,1.05,8
-2016-07-31,31,7,2016,Jersey Boys,August Wilson,Musical,6259,0.64,548113,0.48,8
-2016-07-31,31,7,2016,Kinky Boots,Al Hirschfeld,Musical,7237,0.64,677763,0.51,8
-2016-07-31,31,7,2016,Les Miserables '14,Imperial,Musical,10834,0.96,947202,0.81,8
-2016-07-31,31,7,2016,Matilda,Shubert,Musical,11173,0.98,997525,0.83,8
-2016-07-31,31,7,2016,Motown The Musical 2016,Nederlander,Musical,6639,0.71,587549,0.51,8
-2016-07-31,31,7,2016,On Your Feet!,Marquis,Musical,7520,0.58,702076,0.45,8
-2016-07-31,31,7,2016,Paramour,Lyric,Musical,10808,0.71,981468,0.54,8
-2016-07-31,31,7,2016,School Of Rock,Winter Garden,Musical,11675,0.98,1226997,0.81,8
-2016-07-31,31,7,2016,Something Rotten!,St. James,Musical,7627,0.71,640745,0.5,8
-2016-07-31,31,7,2016,The Book Of Mormon,Eugene O'Neill,Musical,9816,1.02,1462531,0.97,9
-2016-07-31,31,7,2016,The Color Purple 2015,Jacobs,Musical,7913,0.94,777695,0.75,8
-2016-07-31,31,7,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6232,0.77,461263,0.54,8
-2016-07-31,31,7,2016,The Lion King,Minskoff,Musical,15164,0.99,2554453,0.97,9
-2016-07-31,31,7,2016,The Phantom Of The Opera,Majestic,Musical,11093,0.86,1016634,0.67,8
-2016-07-31,31,7,2016,Waitress,Brooks Atkinson,Musical,8209,0.98,1042654,1.02,8
-2016-07-31,31,7,2016,Wicked,Gershwin,Musical,14484,0.97,1899742,1.07,8
-2016-08-07,7,8,2016,Aladdin,New Amsterdam,Musical,14473,0.93,1790487,0.82,9
-2016-08-07,7,8,2016,An Act Of God 2016,Booth,Play,3552,0.67,306023,0.42,7
-2016-08-07,7,8,2016,An American In Paris,Palace,Musical,8512,0.63,629726,0.43,8
-2016-08-07,7,8,2016,Beautiful,Stephen Sondheim,Musical,6848,0.83,723952,0.72,8
-2016-08-07,7,8,2016,Cats 2016,Neil Simon,Musical,10310,0.94,1083009,0.76,8
-2016-08-07,7,8,2016,Chicago,Ambassador,Musical,6461,0.75,534575,0.57,8
-2016-08-07,7,8,2016,Fiddler On The Roof 2015,Broadway,Musical,9277,0.68,663019,0.43,8
-2016-08-07,7,8,2016,Finding Neverland,Lunt-Fontanne,Musical,8548,0.71,620812,0.42,8
-2016-08-07,7,8,2016,Fun Home,Circle In The Square,Musical,4981,0.84,379924,0.48,8
-2016-08-07,7,8,2016,Hamilton,Richard Rodgers,Musical,10756,1.02,2062862,1.06,8
-2016-08-07,7,8,2016,Jersey Boys,August Wilson,Musical,5914,0.6,519934,0.45,8
-2016-08-07,7,8,2016,Kinky Boots,Al Hirschfeld,Musical,7238,0.64,663156,0.5,8
-2016-08-07,7,8,2016,Les Miserables '14,Imperial,Musical,11091,0.98,1008808,0.86,8
-2016-08-07,7,8,2016,Matilda,Shubert,Musical,10718,0.94,937756,0.78,8
-2016-08-07,7,8,2016,On Your Feet!,Marquis,Musical,7304,0.56,656563,0.42,8
-2016-08-07,7,8,2016,Paramour,Lyric,Musical,10245,0.68,910342,0.5,8
-2016-08-07,7,8,2016,School Of Rock,Winter Garden,Musical,11517,0.96,1211127,0.8,8
-2016-08-07,7,8,2016,Something Rotten!,St. James,Musical,7853,0.73,633523,0.5,8
-2016-08-07,7,8,2016,The Book Of Mormon,Eugene O'Neill,Musical,8735,1.02,1326562,0.99,8
-2016-08-07,7,8,2016,The Color Purple 2015,Jacobs,Musical,7774,0.92,755554,0.73,8
-2016-08-07,7,8,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6344,0.78,467506,0.55,8
-2016-08-07,7,8,2016,The Lion King,Minskoff,Musical,13558,1,2292428,0.97,8
-2016-08-07,7,8,2016,The Phantom Of The Opera,Majestic,Musical,10475,0.82,961265,0.63,8
-2016-08-07,7,8,2016,Waitress,Brooks Atkinson,Musical,8128,0.97,996212,0.98,8
-2016-08-07,7,8,2016,Wicked,Gershwin,Musical,15295,0.94,1927412,0.96,9
-2016-08-14,14,8,2016,Aladdin,New Amsterdam,Musical,13288,0.96,1663119,0.9,8
-2016-08-14,14,8,2016,An Act Of God 2016,Booth,Play,3877,0.64,314205,0.38,8
-2016-08-14,14,8,2016,An American In Paris,Palace,Musical,9111,0.68,687762,0.47,8
-2016-08-14,14,8,2016,Beautiful,Stephen Sondheim,Musical,6829,0.83,728242,0.72,8
-2016-08-14,14,8,2016,Cats 2016,Neil Simon,Musical,10292,0.94,1108909,0.78,8
-2016-08-14,14,8,2016,Chicago,Ambassador,Musical,6929,0.8,571623,0.6,8
-2016-08-14,14,8,2016,Fiddler On The Roof 2015,Broadway,Musical,8632,0.63,652283,0.42,8
-2016-08-14,14,8,2016,Finding Neverland,Lunt-Fontanne,Musical,8775,0.73,628895,0.43,8
-2016-08-14,14,8,2016,Fun Home,Circle In The Square,Musical,4966,0.84,379242,0.48,8
-2016-08-14,14,8,2016,Hamilton,Richard Rodgers,Musical,10756,1.02,2045095,1.05,8
-2016-08-14,14,8,2016,Jersey Boys,August Wilson,Musical,5991,0.61,530413,0.46,8
-2016-08-14,14,8,2016,Kinky Boots,Al Hirschfeld,Musical,7117,0.62,651433,0.5,8
-2016-08-14,14,8,2016,Les Miserables '14,Imperial,Musical,11244,1,1035397,0.88,8
-2016-08-14,14,8,2016,Matilda,Shubert,Musical,10341,0.9,876824,0.73,8
-2016-08-14,14,8,2016,On Your Feet!,Marquis,Musical,7585,0.58,703403,0.45,8
-2016-08-14,14,8,2016,Paramour,Lyric,Musical,11360,0.75,997867,0.55,8
-2016-08-14,14,8,2016,School Of Rock,Winter Garden,Musical,11342,0.95,1160694,0.76,8
-2016-08-14,14,8,2016,Something Rotten!,St. James,Musical,7239,0.67,584022,0.46,8
-2016-08-14,14,8,2016,The Book Of Mormon,Eugene O'Neill,Musical,8731,1.02,1305962,0.97,8
-2016-08-14,14,8,2016,The Color Purple 2015,Jacobs,Musical,7367,0.88,718400,0.7,8
-2016-08-14,14,8,2016,The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,6407,0.79,464058,0.54,8
-2016-08-14,14,8,2016,The Humans,Schoenfeld,Play,7234,0.87,603770,0.62,8
-2016-08-14,14,8,2016,The Lion King,Minskoff,Musical,13485,0.99,2233894,0.97,8
-2016-08-14,14,8,2016,The Phantom Of The Opera,Majestic,Musical,10966,0.85,999632,0.66,8
-2016-08-14,14,8,2016,Waitress,Brooks Atkinson,Musical,8058,0.96,990128,0.97,8
-2016-08-14,14,8,2016,Wicked,Gershwin,Musical,13804,0.95,1779664,1,8
+show_name,show_theater,show_type,num_of_attendance,capacity_filled,revenue,percentage_of_poss_profit,num_of_performances,revenue_per_att,ln_capacity_filled,ln_revenue_per_att,ln_percentage_of_poss_profit,ln_num_of_performances,capacity_filled_sq
+42Nd Street '01,Ford Center,Musical,2199186,0.7867875647668394,131200806,0.6511398963730569,1509,59.65880375739023,-0.23979699741312774,4.08864172788642,-0.42903076527783246,7.319202458767849,0.6190346720717336
+A Behanding In Spokane,Schoenfeld,Play,94831,0.738,6848680,0.48533333333333334,108,72.21984372198965,-0.30381145438166457,4.279714851931014,-0.7229193388936155,4.68213122712422,0.544644
+A Catered Affair,Walter Kerr,Musical,95542,0.7288888888888888,6453273,0.5322222222222223,116,67.54383412530615,-0.3162339743802218,4.21277678156213,-0.6306941659133954,4.7535901911063645,0.5312790123456789
+A Christmas Carol '01,Marquis,Play,12005,0.94,819397,0.9,8,68.25464389837568,-0.06187540371808753,4.223245474217328,-0.10536051565782628,2.0794415416798357,0.8835999999999999
+A Delicate Balance,Plymouth,Play,187407,0.8346153846153846,5995428,0.18153846153846154,185,31.991483775952872,-0.18078427747506814,3.4654697353788486,-1.706287738424018,5.220355825078324,0.6965828402366865
+A Naked Girl On The Appian Way,American Airlines,Play,57992,0.8158333333333333,3082541,0.7216666666666667,69,53.15459028831563,-0.20354519324558135,3.9732044658435997,-0.32619192721365653,4.23410650459726,0.6655840277777777
+A Raisin In The Sun,Royale,Play,116327,0.8993333333333333,7941028,0.8333333333333333,88,68.26470208979859,-0.10610153088254556,4.223392826101683,-0.1823215567939547,4.477336814478207,0.8088004444444444
+A View From The Bridge 2015,Lyceum,Play,115746,0.8005555555555556,8427267,0.56,115,72.80827847182624,-0.22244934788473394,4.287829664009887,-0.579818495252942,4.74493212836325,0.6408891975308643
+Amour,Music Box,Musical,29103,0.63,1338399,0.37714285714285717,17,45.98835171631791,-0.4620354595965587,3.82838814086429,-0.9751312318970884,2.833213344056216,0.39690000000000003
+Amy'S View,Ethel Barrymore,Play,117926,0.935,5911176,0.794375,103,50.12614690568662,-0.06720874969344999,3.9145427662764227,-0.23019963703841848,4.634728988229636,0.8742250000000001
+An Act Of God,Studio 54,Play,91199,0.9076923076923077,11082666,0.8807692307692307,76,121.52179300211625,-0.09684982598991766,4.800093612968959,-0.1269596274612881,4.330733340286331,0.8239053254437869
+An Ideal Husband,Ethel Barrymore,Play,220920,0.6415000000000001,7755341,0.058499999999999996,307,35.10474832518559,-0.4439460949264458,3.5583364012421344,-2.8387285247443264,5.726847747587197,0.4115222500000001
+Annie '12,Palace,Musical,677853,0.7890909090909091,59051957,0.6566666666666667,487,87.11616973001522,-0.23687374412611178,4.467242512208417,-0.4205787459182124,6.18826412308259,0.6226644628099173
+Anything Goes '11,Stephen Sondheim,Musical,515954,0.9085714285714286,47288859,0.6582857142857143,521,91.65324621962424,-0.09588177170328252,4.518012393403395,-0.41811622566172324,6.255750041753367,0.8255020408163266
+Band In Berlin,Helen Hayes,Musical,10438,0.504,383380,0.284,17,36.72925847863576,-0.6851790109107684,3.603573671188793,-1.258781040820931,2.833213344056216,0.254016
+Barrymore,Music Box,Play,174965,0.703529411764706,6566575,0.6720588235294117,236,37.530791872660245,-0.3516455955337303,3.625161712648827,-0.39740940727594776,5.4638318050256105,0.4949536332179932
+Beautiful,Stephen Sondheim,Musical,1092739,0.9337762237762237,143568862,0.8318881118881118,1080,131.38440377802934,-0.0685184585640347,4.878127406296912,-0.1840573281080077,6.984716320118266,0.8719380360897843
+Blithe Spirit '09,Shubert,Play,162121,0.6638095238095238,11603724,0.5042857142857143,145,71.5744659852826,-0.40976003239104514,4.27073839004517,-0.6846122781101078,4.976733742420574,0.44064308390022683
+Bombay Dreams,Broadway,Musical,366843,0.6645,22437579,0.51575,284,61.163982957286905,-0.40872040082883704,4.113558502506256,-0.6621331270307758,5.648974238161206,0.44156025
+Brighton Beach Memoirs '09,Nederlander,Play,21631,0.532,539369,0.156,9,24.935000693449215,-0.6311117896404926,3.216272466808361,-1.8578992717326,2.1972245773362196,0.28302400000000005
+Bronx Bombers,Circle In The Square,Play,29511,0.635,1212059,0.2275,29,41.07143099183355,-0.4541302800894454,3.7153127701136897,-1.480605040591132,3.367295829986474,0.403225
+Burn The Floor,Longacre,Musical,145582,0.7288,9285678,0.4996,185,63.78314626808259,-0.3163559330363885,4.155488990375929,-0.6939475007307144,5.220355825078324,0.53114944
+Candide,Gershwin,Musical,146016,0.6793333333333333,5065916,0.18733333333333335,104,34.6942526846373,-0.3866433538675766,3.546574044550064,-1.6748657177565556,4.6443908991413725,0.4614937777777778
+Cat On A Hot Tin Roof 03,Music Box,Play,124967,0.7109090909090909,8898242,0.6968181818181819,145,71.20473404978914,-0.3412107182411508,4.2655593056709344,-0.361230760474593,4.976733742420574,0.5053917355371901
+Cats 2016,Neil Simon,Musical,43019,0.9520000000000001,4404457,0.7859999999999999,17,102.38399311931937,-0.04919024419077166,4.628730383192455,-0.2407984865529306,2.833213344056216,0.9063040000000001
+China Doll,Schoenfeld,Play,86727,0.8613333333333334,12630662,0.8773333333333333,54,145.63702191935613,-0.1492737027477542,4.981117374865235,-0.13086827520503896,3.9889840465642745,0.7418951111111112
+Cinderella,Broadway,Musical,1039923,0.7440196078431373,88166620,0.5727450980392157,769,84.78187327330966,-0.2956878898684496,4.440081761378776,-0.5573145163246762,6.645090969505644,0.5535651768550558
+Cirque Dreams: Jungle Fantasy,Broadway,Special,92789,0.665,5166140,0.507,70,55.67621161991184,-0.4079682383262829,4.019552975275953,-0.6792442753909539,4.248495242049359,0.44222500000000003
+Company 06,Ethel Barrymore,Musical,179752,0.6117142857142857,12312349,0.4717142857142857,246,68.49631158485023,-0.4914899588878223,4.226779898341821,-0.751381803557377,5.5053315359323625,0.37419436734693873
+Company 95,Criterion,Musical,3493,1,173012,0.73,0,49.5310621242485,0,3.9025999904293514,-0.31471074483970024,-Inf,1
+Curtains,Al Hirschfeld,Musical,582455,0.7620588235294118,43628368,0.6038235294117648,511,74.9042724330635,-0.27173153004214273,4.316210930726304,-0.5044732935853191,6.236369590203704,0.5807336505190311
+Dance Of The Vampires,Minskoff,Musical,156118,0.8006666666666666,9431254,0.5553333333333333,56,60.41106086421809,-0.22231056501031793,4.101172215066115,-0.5881867449234587,4.02535169073515,0.641067111111111
+Dr. Seuss' How The Grinch Stole Christmas!,Hilton Theatre,Musical,189320,0.7972727272727274,13343784,0.7063636363636364,107,70.48269596450454,-0.22655846641427876,4.255367232379109,-0.3476251084188144,4.672828834461906,0.6356438016528927
+Dr. Seuss' How The Grinch Stole Christmas! 07,St. James,Musical,133583,0.6933333333333332,9559565,0.5722222222222222,96,71.56273627632258,-0.3662443949548832,4.270574495420979,-0.5582278626605747,4.564348191467836,0.480711111111111
+"Dracula, The Musical",Belasco,Musical,106028,0.5821739130434783,6109526,0.4673913043478261,157,57.62181687856038,-0.5409860562260684,4.0539012612411796,-0.7605884613554779,5.056245805348308,0.33892646502835544
+Dream: The Johnny Mercer Musical,Royale,Musical,84598,0.6158823529411764,3311853,0.09588235294117647,109,39.14812406912693,-0.4846993191737706,3.6673525047913835,-2.344633329237545,4.6913478822291435,0.3793110726643598
+Elling,Ethel Barrymore,Play,20665,0.6325,686837,0.1975,9,33.23672876844907,-0.4580750583804618,3.503655552642887,-1.6220166946409604,2.1972245773362196,0.40005624999999995
+Everyday Rapture,American Airlines,Musical,53366,0.75,2358299,0.3016666666666667,85,44.19103923846644,-0.2876820724517809,3.7885220363693173,-1.1984326239503205,4.442651256490317,0.5625
+Festen,Music Box,Play,35065,0.5155555555555555,1853946,0.3377777777777778,49,52.87169542278625,-0.6625102110980555,3.967868137499158,-1.085367061918089,3.8918202981106265,0.2657975308641975
+Flower Drum Song,Virginia,Musical,173290,0.7348,11264444,0.5396,169,65.00342778002192,-0.3081569256411665,4.174440003582452,-0.6169271546485363,5.1298987149230735,0.53993104
+Follies,Belasco,Musical,128928,0.8773684210526317,7080718,0.7757894736842106,117,54.919939811367584,-0.1308282824037377,4.005876484966314,-0.25387409240524983,4.762173934797756,0.769775346260388
+Frankie Valli And The Four Seasons On Broadway,Broadway,Special,11401,0.93,1404082,1,7,123.15428471186738,-0.07257069283483537,4.813437916587098,0,1.9459101490553132,0.8649000000000001
+Fun Home,Circle In The Square,Musical,394799,0.9291780821917809,39767095,0.7016438356164383,551,100.72744611815126,-0.0734548661904029,4.612418315896965,-0.35432936037701207,6.311734809152915,0.863371908425596
+Gem Of The Ocean,Walter Kerr,Play,54245,0.6645454545454546,2577530,0.4390909090909091,72,47.516453129320674,-0.4086519990366834,3.861076032734223,-0.8230488051338892,4.276666119016055,0.4416206611570248
+Gigi,Neil Simon,Musical,96860,0.6714285714285714,7028015,0.40142857142857147,86,72.55848647532521,-0.3983476403393005,4.284392946649491,-0.9127256657096589,4.454347296253507,0.45081632653061215
+Gore Vidal'S The Best Man '12,Schoenfeld,Play,185919,0.81,18329754,0.6285185185185186,185,98.58999887047585,-0.21072103131565253,4.590969825130168,-0.46438978675819403,5.220355825078324,0.6561000000000001
+Grey Gardens,Walter Kerr,Musical,234344,0.7497674418604652,17542980,0.6037209302325581,307,74.85994947598402,-0.2879921980551348,4.31561902756267,-0.5046432238576732,5.726847747587197,0.5621512168739861
+Gypsy '03,Shubert,Musical,549037,0.7849180327868852,37762532,0.6539344262295081,451,68.77957587557852,-0.2421759834835389,4.230906838593403,-0.4247481982559961,6.111467339502679,0.6160963181940338
+Hair,Al Hirschfeld,Musical,613014,0.7927536231884058,50570863,0.5981159420289854,519,82.49544545475307,-0.23224279516932383,4.412743085207641,-0.5139706608327691,6.251903883165888,0.6284583070783449
+Hair '11,St. James,Musical,69713,0.515,3453758,0.295,67,49.54252434983432,-0.6635883783184009,3.9028313785529654,-1.2207799226423173,4.204692619390966,0.265225
+Hands On A Hardbody,Brooks Atkinson,Musical,41856,0.74375,1597428,0.2375,28,38.164850917431195,-0.2960503221222975,3.6419149589787194,-1.4375876555074412,3.332204510175204,0.5531640625
+Heartbreak House,American Airlines,Play,67971,0.842857142857143,3177764,0.6114285714285714,79,46.751761780759445,-0.1709577981436394,3.8448519401745633,-0.49195713946160785,4.3694478524670215,0.7104081632653063
+I'M Not Rappaport '02,Booth,Play,21365,0.39555555555555555,793377,0.22,53,37.13442546220454,-0.9274640324722803,3.614544449403473,-1.5141277326297755,3.970291913552122,0.15646419753086419
+Impressionism,Schoenfeld,Play,44558,0.5463636363636364,2776558,0.3581818181818182,56,62.31334440504511,-0.6044705242512542,4.132175598764365,-1.026714549488528,4.02535169073515,0.2985132231404959
+Irena'S Vow,Walter Kerr,Play,64931,0.535625,3070112,0.30625,105,47.28268469606197,-0.6243209896300927,3.8561441543973864,-1.1833535171232001,4.653960350157523,0.286894140625
+Irving Berlin'S White Christmas,Marquis,Musical,92638,0.87875,9354235,0.88625,53,100.97621926207388,-0.12925483585726236,4.614885036267132,-0.12075620113579982,3.970291913552122,0.7722015625
+Irving Berlin'S White Christmas '09,Marquis,Musical,70716,0.6825,6872694,0.55125,51,97.1872560665196,-0.38199275192302223,4.576639592443917,-0.5955668522210813,3.9318256327243257,0.46580625
+Is He Dead?,Lyceum,Play,58357,0.523125,2882050,0.348125,105,49.386534605959866,-0.6479348377383973,3.899677808210793,-1.0551936683005885,4.653960350157523,0.27365976562499994
+It Ain'T Nothin' But The Blues,Vivian Beaumont,Musical,170092,0.5310810810810811,6752894,0.35567567567567565,284,39.70142040777932,-0.6328405743289541,3.6813869655865923,-1.0337359867470535,5.648974238161206,0.28204711468224986
+It Ain'T Nothin' But The Blues,Ambassador,Musical,170092,0.5310810810810811,6752894,0.35567567567567565,284,39.70142040777932,-0.6328405743289541,3.6813869655865923,-1.0337359867470535,5.648974238161206,0.28204711468224986
+Ivanov,Vivian Beaumont,Play,83270,0.9227272727272726,2953109,0.6563636363636364,51,35.46426083823706,-0.08042156731057433,3.568525452430284,-0.42104031989363566,3.9318256327243257,0.8514256198347105
+Kat And The Kings,Cort,Musical,94995,0.5077272727272727,3418286,0.31136363636363634,157,35.98385178167272,-0.6778108402772066,3.5830702762020494,-1.166793801084182,5.056245805348308,0.25778698347107437
+King Charles Iii,Music Box,Play,98107,0.8141176470588235,9411612,0.6076470588235294,103,95.93211493573344,-0.20565039386669262,4.563640805243076,-0.4981610609246689,4.634728988229636,0.6627875432525951
+Laugh Whore,Cort,Play,39329,0.4708333333333334,1828501,0.345,66,46.49243560731267,-0.7532511046296506,3.839289624248724,-1.0642108619507773,4.189654742026425,0.22168402777777782
+Lend Me A Tenor '10,Music Box,Play,121572,0.6852173913043478,8249462,0.39260869565217393,153,67.85659526864738,-0.3780191314994167,4.217396585221571,-0.9349418485002556,5.030437921392435,0.4695228733459357
+Lestat,Palace,Musical,80434,0.728,4630419,0.575,39,57.56793147176567,-0.3174542307854511,4.052965667379797,-0.5533852381847867,3.6635616461296463,0.529984
+Life X 3,Circle In The Square,Play,79272,0.8175,4570880,0.59,104,57.66071248360077,-0.2015043762107286,4.054576048769376,-0.527632742082372,4.6443908991413725,0.66830625
+Lombardi,Circle In The Square,Play,147379,0.6788571428571428,9313391,0.37200000000000005,244,63.193473968475836,-0.38734456699496955,4.1462010358286605,-0.9888614247089903,5.497168225293202,0.4608470204081632
+Long Day'S Journey Into Night 2016,American Airlines,Play,59821,0.9646153846153847,5153917,0.7407692307692308,61,86.15564768225205,-0.03602582225676206,4.456155517206549,-0.3000661316515024,4.110873864173311,0.9304828402366865
+Macbeth 08,Lyceum,Play,51048,0.8833333333333333,4105572,0.8966666666666667,52,80.4257169722614,-0.12405264866997888,4.3873339878787805,-0.1090710950543619,3.9512437185814275,0.7802777777777777
+Major Barbara,American Airlines,Play,65138,0.8185714285714286,3217456,0.6814285714285714,74,49.394454849703706,-0.20019461832866506,3.8998381678873755,-0.3835638441550635,4.30406509320417,0.6700591836734695
+Mike Tyson: Undisputed Truth,Longacre,Special,9160,0.71,1204618,0.71,10,131.5085152838428,-0.342490308946776,4.879071604531515,-0.342490308946776,2.302585092994046,0.5041
+No Man'S Land/Waiting For Godot,Cort,Play,160950,0.8552173913043478,14346510,0.7326086956521739,145,89.13643988816402,-0.156399583528182,4.490168228288765,-0.31114355913077896,4.976733742420574,0.731396786389414
+Noises Off '01,Brooks Atkinson,Play,298100,0.7693478260869565,14678125,0.6106521739130435,348,49.238929889298895,-0.262212102131723,3.896684568531334,-0.49322775537294267,5.8522024797744745,0.5918960775047258
+On Your Feet!,Marquis,Musical,433688,0.7484444444444445,44153666,0.6344444444444445,322,101.80974802161923,-0.28975830039619377,4.623105856129491,-0.4550055536683005,5.7745515455444085,0.5601690864197532
+One Flew Over The Cuckoo'S Nest,Royale,Play,122341,0.812,6477718,0.69,121,52.94805502652422,-0.20825493882045903,3.969311339106938,-0.37106368139083207,4.795790545596741,0.659344
+"One Man, Two Guvnors",Music Box,Play,140382,0.8409090909090909,13071416,0.6559090909090909,159,93.11319114986252,-0.17327172127403667,4.533815862214677,-0.4217330805725364,5.0689042022202315,0.7071280991735538
+Orphans,Schoenfeld,Play,55985,0.8175,4056117,0.495,37,72.45006698222738,-0.2015043762107286,4.282897593296663,-0.7031975164134467,3.6109179126442243,0.66830625
+Outside Mullingar,Friedman,Play,50227,0.9245454545454546,3351777,0.520909090909091,61,66.73257411352459,-0.07845306273790195,4.2006932012280815,-0.6521797420717222,4.110873864173311,0.8547842975206612
+Parade,Vivian Beaumont,Musical,104752,0.780625,4349262,0.604375,85,41.5196082175042,-0.24766039810229493,3.726165802818514,-0.5035604127745783,4.442651256490317,0.609375390625
+Peter And The Starcatcher,Brooks Atkinson,Play,255200,0.7251162790697674,17698854,0.4672093023255814,319,69.35287617554859,-0.321423252063932,4.239207619232476,-0.7609779368667194,5.765191102784844,0.5257936181719848
+Pippin,Music Box,Musical,659865,0.893936170212766,68840074,0.7153191489361703,709,104.32448152273571,-0.11212090432987706,4.647506056637668,-0.3350264737295889,6.5638555265321274,0.7991218764146673
+Present Laughter '10,American Airlines,Play,58727,0.8583333333333333,3071438,0.4041666666666666,69,52.30027074429138,-0.15276275455241028,3.9570015478125713,-0.9059279448386086,4.23410650459726,0.736736111111111
+Private Lives 02,Richard Rodgers,Play,132104,0.7275,7083941,0.6495000000000001,127,53.62397050808454,-0.31814127993648944,3.98199617907946,-0.4315524428714827,4.844187086458591,0.5292562500000001
+Proposals,Broadhurst,Play,51007,0.49636363636363634,2172196,0.45545454545454545,77,42.58623326210128,-0.7004464830415569,3.7515310381854823,-0.7864593577015971,4.343805421853684,0.2463768595041322
+Prune Danish,Royale,Play,35323,0.61,2080448,0.56875,39,58.897828610253946,-0.4942963218147801,4.075804224277712,-0.564314308716977,3.6635616461296463,0.3721
+Putting It Together,Ethel Barrymore,Musical,94783,0.7111764705882354,5371370,0.6258823529411764,101,56.67018347171961,-0.3408346794295146,4.0372482077220715,-0.4685928601427178,4.61512051684126,0.5057719723183393
+Rabbit Hole,Biltmore,Play,58154,0.8969230769230769,3203305,0.63,77,55.083141314440965,-0.1087851765391904,4.008843704086796,-0.4620354595965587,4.343805421853684,0.8044710059171598
+Ragtime '09,Neil Simon,Musical,92587,0.7083333333333333,6030275,0.42416666666666664,65,65.13090390659596,-0.34484048629172964,4.17639915096033,-0.857628819225569,4.174387269895637,0.501736111111111
+Ring Of Fire,Ethel Barrymore,Musical,50623,0.505,2775120,0.3,57,54.81935088793632,-0.6831968497067772,4.004043250015342,-1.2039728043259361,4.04305126783455,0.255025
+Ring Round The Moon,Belasco,Play,47453,0.48307692307692307,1282880,0.3,66,27.034750173856235,-0.7275793769814295,3.29712308195,-1.2039728043259361,4.189654742026425,0.23336331360946744
+Riverdance,Gershwin,Musical,890766,0.7506410256410256,45553810,0.6035897435897436,605,51.14004126785261,-0.2868277366458654,3.934567776821116,-0.5048605442975157,6.405228458030842,0.5634619493754109
+Rocky,Winter Garden,Musical,235400,0.7488888888888888,19222100,0.5640740740740741,180,81.65717926932881,-0.2891646524120038,4.402529742915803,-0.5725696990972586,5.19295685089021,0.5608345679012344
+"Say Goodnight, Gracie",Helen Hayes,Play,131349,0.566530612244898,5874615,0.4055102040816327,364,44.72523582212274,-0.5682241624720228,3.8005379020946384,-0.902609241546901,5.8971538676367405,0.32095693461057895
+School For Scandal,Lyceum,Play,1120,0.15,27661,0.12,1,24.697321428571428,-1.8971199848858813,3.2066947935660437,-2.120263536200091,0,0.0225
+Seminar,Golden,Play,132687,0.7664285714285713,9819692,0.5260714285714285,191,74.00643619947697,-0.2660137729726516,4.304152065090613,-0.6423182797006651,5.25227342804663,0.5874127551020407
+Sexaholix '01,Royale,Play,109522,0.855,5337342,0.7944444444444444,67,48.73305819835284,-0.15665381004537685,3.8863576129069974,-0.23011222063030315,4.204692619390966,0.7310249999999999
+Shatner'S World: We Just Live In It,Music Box,Special,13721,0.7233333333333333,914006,0.41666666666666663,17,66.61365789665476,-0.3238851211157416,4.198909630044987,-0.8754687373539001,2.833213344056216,0.5232111111111111
+Sight Unseen,Biltmore,Play,50622,0.8533333333333333,2724614,0.6433333333333333,70,53.82272529730157,-0.15860503017663866,3.9856957812761493,-0.44109228575131554,4.248495242049359,0.7281777777777777
+Slava'S Snowshow,Helen Hayes,Special,17093,0.698,1435574,0.586,35,83.9860761715322,-0.35953617621976464,4.430651025240917,-0.5344354894051245,3.5553480614894135,0.4872039999999999
+Sondheim On Sondheim,Studio 54,Musical,89781,0.7933333333333333,5352642,0.4653333333333333,76,59.61887258996892,-0.23151180098472637,4.087972178141055,-0.765001284327929,4.330733340286331,0.6293777777777778
+Soul Doctor,Circle In The Square,Musical,51690,0.7546153846153847,1940459,0.2176923076923077,66,37.54031727606887,-0.2815470838842649,3.625415482802692,-1.5246726458063904,4.189654742026425,0.569444378698225
+South Pacific,Vivian Beaumont,Musical,965647,0.8983076923076924,96488869,0.7698461538461538,996,99.92147130369587,-0.1072426276001908,4.604384590525726,-0.2615645842969267,6.903747257584598,0.8069567100591717
+Speed The Plow '08,Ethel Barrymore,Play,114722,0.6642857142857143,8477093,0.5323809523809524,140,73.89247921061349,-0.4090429294560484,4.302611052959472,-0.6303959699964699,4.941642422609304,0.4412755102040816
+Sweeney Todd 05,Eugene O'Neill,Musical,302836,0.7145833333333332,22218240,0.6377083333333333,349,73.36723507112761,-0.33605565673599685,4.295477447282649,-0.4498742579505698,5.855071922202427,0.5106293402777776
+Taboo,Plymouth,Musical,70160,0.5493333333333333,4894998,0.444,100,69.76907069555303,-0.5990498571808297,4.245190798320416,-0.8119307165499123,4.605170185988092,0.3017671111111111
+Taller Than A Dwarf,Longacre,Play,65891,0.6533333333333333,2557061,0.5,56,38.80743955927213,-0.4256678154256838,3.6586119694675836,-0.6931471805599453,4.02535169073515,0.4268444444444444
+The American Plan,Friedman,Play,38583,0.6416666666666667,2001797,0.35833333333333334,70,51.88287587797735,-0.4436863209283621,3.948988791180522,-1.0262916270884836,4.248495242049359,0.4117361111111112
+The Anarchist,Golden,Play,22583,0.706,1651411,0.426,17,73.12628968693265,-0.34814004148889505,4.292187942140873,-0.8533159327127666,2.833213344056216,0.49843599999999993
+The Assembled Parties,Friedman,Play,82288,0.8573684210526317,5402056,0.4636842105263158,119,65.64816255104024,-0.1538875565524866,4.1843096117971825,-0.7685515392183523,4.77912349311153,0.7350806094182827
+The Boys From Syracuse,American Airlines,Musical,68115,0.9176923076923077,3286075,0.5107692307692308,73,48.24304485062027,-0.08589312135171198,3.8762516692209754,-0.6718373939731943,4.290459441148391,0.8421591715976331
+The Constant Wife,American Airlines,Play,63263,0.8538461538461539,3365506,0.7223076923076923,77,53.19864691841993,-0.1580042491432482,3.9740329621598653,-0.3253040642413652,4.343805421853684,0.72905325443787
+The Curious Incident Of The Dog In The Night-Time,Ethel Barrymore,Play,691205,0.8520792079207921,66641346,0.7127722772277229,775,96.413286940922,-0.1600757894308059,4.568644023455999,-0.3385932963600478,6.652863029353347,0.7260389765709244
+The Dinner Party,Music Box,Play,291757,0.7408333333333332,13974313,0.6745833333333333,364,47.89709587087885,-0.29997960026218723,3.869054873578416,-0.39366006265840187,5.8971538676367405,0.5488340277777777
+The Full Monty,Eugene O'Neill,Musical,764040,0.8716831683168317,47862021,0.7504950495049505,770,62.64334458928852,-0.13732926018299854,4.137457444083593,-0.2870222241929335,6.646390514847729,0.7598315459268699
+"The Goat, Or Who Is Sylvia?",Golden,Play,179887,0.6790697674418605,7932478,0.47627906976744183,309,44.09700534224263,-0.38703140641932626,3.786391874075483,-0.7417513155222555,5.733341276897746,0.46113574905354254
+The Heidi Chronicles 2015,Music Box,Play,50970,0.636,3257022,0.365,53,63.9007651559741,-0.4525567156420149,4.157331335583693,-1.0078579253996456,3.970291913552122,0.404496
+The Herbal Bed,Eugene O'Neill,Play,13851,0.35,371767,0.222,13,26.840444733232257,-1.0498221244986778,3.2899098817587618,-1.5050778971098575,2.5649493574615367,0.12249999999999998
+The Pee-Wee Herman Show,Stephen Sondheim,Play,64173,0.758,6296959,0.6409999999999999,62,98.12474093466099,-0.2770718933397654,4.586239535942767,-0.44472582206146716,4.127134385045092,0.574564
+The Performers,Longacre,Play,19860,0.61,737219,0.255,6,37.12079556898288,-0.4942963218147801,3.614177340042395,-1.3664917338237108,1.791759469228055,0.3721
+The Pillowman,Booth,Play,137521,0.84,8946186,0.7769230769230769,185,65.05323550585001,-0.1743533871447778,4.175205942474082,-0.25241393361432296,5.220355825078324,0.7055999999999999
+The Rainmaker,Brooks Atkinson,Play,88453,0.8292857142857143,3321242,0.7714285714285714,82,37.54809899042429,-0.18719053390545848,3.625622750841364,-0.2595111954850847,4.406719247264253,0.6877147959183674
+The Real Thing 2014,American Airlines,Play,75040,0.937857142857143,6214364,0.7264285714285714,76,82.81401918976546,-0.06415764130055371,4.416597360945292,-0.31961511955479005,4.330733340286331,0.8795760204081634
+The Royal Family,Friedman,Play,53252,0.7953846153846154,2627586,0.3992307692307692,77,49.34248478930369,-0.2289294883812537,3.8987854703784324,-0.9182156602837395,4.343805421853684,0.6326366863905325
+The Scottsboro Boys,Lyceum,Musical,52266,0.74,2750411,0.365,49,52.62333065472774,-0.3011050927839216,3.9631595699740436,-1.0078579253996456,3.8918202981106265,0.5476
+The Seagull 08,Walter Kerr,Play,85825,0.8085714285714286,6430741,0.6764285714285714,94,74.92852898339645,-0.21248625684022168,4.316534712305711,-0.3909284224172718,4.543294782270004,0.6537877551020409
+The Shadow Box,Circle In The Square,Play,27956,0.5777777777777778,636598,0.2911111111111111,49,22.7714265274002,-0.5485659517488376,3.1255065275379454,-1.234050259563214,3.8918202981106265,0.3338271604938272
+The Smell Of The Kill,Helen Hayes,Play,17858,0.51125,533380,0.2225,40,29.86784634337552,-0.6708965716251256,3.3967825286368365,-1.502828177375842,3.6888794541139363,0.26137656249999996
+The Testament Of Mary,Walter Kerr,Play,32424,0.8,1279803,0.285,16,39.47085492227979,-0.2231435513142097,3.675562549492873,-1.2552660987134867,2.772588722239781,0.6400000000000001
+The Trip To Bountiful,Stephen Sondheim,Play,158164,0.7089655172413794,13498945,0.5237931034482759,187,85.34777193293037,-0.3439483893995096,4.446734343837379,-0.6466585133787924,5.231108616854587,0.5026321046373365
+The Vertical Hour,Music Box,Play,104375,0.7572222222222222,7308875,0.6311111111111112,117,70.0251497005988,-0.2780985121877234,4.2488544589603645,-0.4602733446031593,4.762173934797756,0.5733854938271605
+The Wedding Singer,Al Hirschfeld,Musical,301613,0.67875,19995744,0.46299999999999997,285,66.29602835421551,-0.3875024077339919,4.194129991237846,-0.7700282248959031,5.652489180268651,0.46070156249999994
+Translations 06,Biltmore,Play,43049,0.858,2141231,0.483,53,49.739389997444775,-0.15315117949417478,3.9067971744770733,-0.7277386253295643,3.970291913552122,0.7361639999999999
+Triumph Of Love,Royale,Musical,80669,0.6733333333333333,3700422,0.494,85,45.87167313342176,-0.3955147772549963,3.8258477834926268,-0.7052197617942145,4.442651256490317,0.45337777777777777
+Uncle Vanya 00,Brooks Atkinson,Play,64242,0.8079999999999999,2366742,0.602,49,36.84103857289624,-0.21319322046104175,3.6066124024364297,-0.507497833673316,3.8918202981106265,0.6528639999999999
+Urinetown,Henry Miller,Musical,524188,0.83736,34815864,0.7298399999999999,965,66.41865895442093,-0.1775011934355087,4.195978025356649,-0.31492994694491827,6.872128101338986,0.7011717695999999
+Vanya And Sonia And Masha And Spike,Golden,Play,138147,0.8787999999999999,13130430,0.7,189,95.04679797606897,-0.129197938471682,4.554369380582342,-0.35667494393873245,5.241747015059643,0.7722894399999999
+Violet,American Airlines,Musical,94762,0.8355,6616618,0.4415,128,69.82353686076698,-0.17972493094668862,4.245971157236714,-0.8175772589381224,4.852030263919617,0.69806025
+War Horse,Vivian Beaumont,Play,726281,0.9053684210526316,74975253,0.7681052631578947,718,103.23174225953866,-0.09941332303715265,4.63697638578871,-0.2638284938230121,6.576469569048224,0.8196919778393352
+Well,Longacre,Play,27536,0.33399999999999996,1162288,0.22699999999999998,52,42.20976176641488,-1.0966142860054366,3.7426515157703037,-1.4828052615007346,3.9512437185814275,0.11155599999999997
+Wonderland,Marquis,Musical,84646,0.835,4438971,0.4,33,52.441592042152024,-0.18032355413128162,3.959700017743437,-0.916290731874155,3.4965075614664802,0.697225
