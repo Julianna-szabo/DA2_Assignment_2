@@ -7,41 +7,133 @@ output: html_document
 
 # Ln transformation
 
-## Level - level regression
+## Occupancy percentage 
+
+### Level - level regression
 ```{r, echo=FALSE}
 df %>% 
   ggplot(aes(x = capacity_filled, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Occupancy percentage",y = "Revenue per attendant")
+  labs(x = "Occupancy percentage",y = "Revenue per attendant") +
+  theme_bw()
 ```
 
-## Log - level regression
+### Log - level regression
 ```{r, echo=FALSE}
 df %>% 
   ggplot(aes(x = ln_capacity_filled, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Occupancy percentage)",y = "Revenue per attendant")
+  labs(x = "ln (Occupancy percentage)",y = "Revenue per attendant") +
+  theme_bw()
 ```
 
-## Level - log regression
+### Level - log regression
 ```{r, echo=FALSE}
 df %>% 
   ggplot(aes(x = capacity_filled, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
+  labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
 
-## Log - log regression
+### Log - log regression
 ```{r, echo=FALSE}
 df %>% 
   ggplot(aes(x = ln_capacity_filled, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Occupancy percentage)",y = "ln (Revenue per attendant)")
+  labs(x = "ln (Occupancy percentage)",y = "ln (Revenue per attendant)") +
+  theme_bw()
 ```
+
+## Percentage of potential profit 
+
+### Level - level regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = percentage_of_poss_profit, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Percentage of potential profit",y = "Revenue per attendant") +
+  theme_bw()
+```
+
+### Log - level regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = ln_percentage_of_poss_profit, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Percentage of potential profit)",y = "Revenue per attendant") +
+  theme_bw()
+```
+
+### Level - log regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = percentage_of_poss_profit, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Percentage of potential profit",y = "ln (Revenue per attendant)") +
+  theme_bw()
+```
+
+### Log - log regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = ln_percentage_of_poss_profit, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Percentage of potential profit)",y = "ln (Revenue per attendant)") +
+  theme_bw()
+```
+
+## Number of performances 
+
+### Level - level regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = num_of_performances, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Number of performances",y = "Revenue per attendant") +
+  theme_bw()
+```
+
+### Log - level regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = ln_num_of_performances, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Number of performances)",y = "Revenue per attendant") +
+  theme_bw()
+```
+
+### Level - log regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = num_of_performances, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Number of performances",y = "ln (Revenue per attendant)") +
+  theme_bw()
+```
+
+### Log - log regression
+```{r, echo=FALSE}
+df %>% 
+  ggplot(aes(x = ln_num_of_performances, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Number of performances)",y = "ln (Revenue per attendant)") +
+  theme_bw()
+```
+
+
 
 
 

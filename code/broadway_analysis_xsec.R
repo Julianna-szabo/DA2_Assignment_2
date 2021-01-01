@@ -63,10 +63,11 @@ x1_summary <- df %>%
 
 df %>%
   ggplot(aes(x = capacity_filled)) +
-  geom_histogram(bins= 20)+
-  labs(x = "Occupancy percentage", y = "Count")
+  geom_histogram(bins= 20, col= "white")+
+  labs(x = "Occupancy percentage", y = "Count") +
+  theme_bw()
 
-## Percentage of possible proft
+## Percentage of possible profit
 
 x2_summary <- df %>% 
   summarise(
@@ -79,8 +80,9 @@ x2_summary <- df %>%
 
 df %>%
   ggplot(aes(x = percentage_of_poss_profit)) +
-  geom_histogram(bins= 20)+
-  labs(x = "Percentage of pottention profit", y = "Count")
+  geom_histogram(bins= 20, col="white")+
+  labs(x = "Percentage of pottention profit", y = "Count") +
+  theme_bw()
 
 ## Number of performances
 
@@ -96,9 +98,16 @@ x3_summary <- df %>%
 df %>%
   ggplot(aes(x = num_of_performances)) +
   geom_histogram(bins= 20)+
-  labs(x = "Number of performances", y = "Count")
+  labs(x = "Number of performances", y = "Count") +
+  theme_bw()
 
-# Looks like there are some outliers that are errors, since it cannot be more than 1
+
+## Show type
+
+df %>%
+  ggplot(aes(x = show_type)) +
+  geom_histogram(stat = "count")+
+  labs(x = "Show type", y = "Count")
 
 # Distribution of y
 y_summary <- df %>% 
@@ -126,10 +135,14 @@ summary_table
 
 # First I will add variables with the ln transformation
 df <- df %>% mutate( ln_capacity_filled = log( capacity_filled ),
-                     ln_revenue_per_att= log( revenue_per_att) )
+                     ln_revenue_per_att= log( revenue_per_att),
+                     ln_percentage_of_poss_profit = log( percentage_of_poss_profit),
+                     ln_num_of_performances = log(num_of_performances))
 
 
-# Different types of models
+# Different types of models - 
+
+# Occupancy percentage 
 
 # 1, Level - level regression
 
@@ -165,6 +178,75 @@ df %>%
 
 
 # Level- log makes the most sense
+
+# Percentage of potential profit
+
+# 1, Level - level regression
+
+df %>% 
+  ggplot(aes(x = percentage_of_poss_profit, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Percentage of potential profit",y = "Revenue per attendant")
+
+# 2, Log - level regression
+
+df %>% 
+  ggplot(aes(x = ln_percentage_of_poss_profit, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Percentage of potential profit)",y = "Revenue per attendant")
+
+# 3, Level - log regression
+
+df %>% 
+  ggplot(aes(x = percentage_of_poss_profit, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Percentage of potential profit",y = "ln (Revenue per attendant)")
+
+# 4, Log - log regression
+
+df %>% 
+  ggplot(aes(x = ln_percentage_of_poss_profit, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Percentage of potential profit)",y = "ln (Revenue per attendant)")
+
+# Number of performances
+
+# 1, Level - level regression
+
+df %>% 
+  ggplot(aes(x = num_of_performances, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Number of performances",y = "Revenue per attendant")
+
+# 2, Log - level regression
+
+df %>% 
+  ggplot(aes(x = ln_num_of_performances, y = revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Number of performances)",y = "Revenue per attendant")
+
+# 3, Level - log regression
+
+df %>% 
+  ggplot(aes(x = num_of_performances, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "Number of performances",y = "ln (Revenue per attendant)")
+
+# 4, Log - log regression
+
+df %>% 
+  ggplot(aes(x = ln_num_of_performances, y = ln_revenue_per_att)) +
+  geom_point() +
+  geom_smooth(method="loess")+
+  labs(x = "ln (Number of performances)",y = "ln (Revenue per attendant)")
+
 
 
 
@@ -261,11 +343,13 @@ reg7
 reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + num_of_performances, data = df,  se_type = "HC2" )
 reg8
 
+reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + num_of_performances + as.factor(show_type), data = df,  se_type = "HC2" )
+reg9
 
 # Export again and compare
 
 data_out <- "/Users/Terez/OneDrive - Central European University/Data_Analysis_02/DA2_Assignment_2/out/"
-htmlreg( list(reg1 , reg2 , reg3 , reg4 , reg5 , reg6, reg7, reg8),
+htmlreg( list(reg1 , reg2 , reg3 , reg4 , reg5 , reg6, reg7, reg8, reg9),
          type = 'html',
          custom.model.names = c("Occupancy percentage - linear","Occupancy percentage - quadratic",
                                 "Occupancy percentage - PLS",
@@ -273,7 +357,8 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 , reg5 , reg6, reg7, reg8),
                                 "Occupancy percentage- weighted (number of per) linear",
                                 "Occupancy percentage + Profit - linear",
                                 "Occupancy percentage + number of per - linear",
-                                "Occupancy percentage + profit + number of per - linear"),
+                                "Occupancy percentage + profit + number of per - linear",
+                                "Occupancy percentage + profit + number of per + show type - linera"),
          caption = "Modelling Revenue per attendant on Occupancy percentage for different shows",
          file = paste0( data_out ,'model_comparison.html'), include.ci = FALSE)
 
