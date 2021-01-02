@@ -272,10 +272,12 @@ high_corr <- mutate( high_corr , corr_val = cT[ id_cr ] )
 high_corr
 
 
-# Create the train and test data ------------------------------------------
+# Import the train and test data ------------------------------------------
 
-train <- df[sample(nrow(df), 640), ]
-test <- df[ !(df$show_name %in% train$show_name), ]
+train_url <- "https://raw.githubusercontent.com/Julianna-szabo/DA2_Assignment_2/main/data/clean/broadway_train.csv"
+train <- read.csv(train_url)
+test_url <- "https://raw.githubusercontent.com/Julianna-szabo/DA2_Assignment_2/main/data/clean/broadway_test.csv"
+test <- read.csv(test_url)
 
 
 # Regression Models -------------------------------------------------------
@@ -366,16 +368,16 @@ train <- train %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
 test <- test %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
 
 # More regressions
-reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = test,  se_type = "HC2" )
+reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = train,  se_type = "HC2" )
 summary( reg6 ) 
 
-reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + as.factor(num_of_performances_d), data = test,  se_type = "HC2" )
+reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
 summary( reg7) 
 
-reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d), data = test,  se_type = "HC2" )
+reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
 summary( reg8 ) 
 
-reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = test,  se_type = "HC2" )
+reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = train,  se_type = "HC2" )
 summary( reg9 )
 
 # Export again and compare
@@ -394,7 +396,19 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 , reg5 , reg6, reg7, reg8, reg9),
          caption = "Modelling Revenue per attendant on Occupancy percentage for different shows",
          file = paste0( data_out ,'model_comparison.html'), include.ci = FALSE)
 
-# Looks like including as x revenue percentage is a tiny bit better
+
+## Rerun model on test data set
+reg_test <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = test,  se_type = "HC2" )
+summary( reg_test , digit = 2)
+
+## Compare the two
+
+data_out <- "/Users/Terez/OneDrive - Central European University/Data_Analysis_02/DA2_Assignment_2/out/"
+htmlreg( list(reg9, reg_test),
+         type = 'html',
+         custom.model.names = c("Train model", "Test model"),
+         caption = "Modelling Revenue per attendant for different shows",
+         file = paste0( data_out ,'model_comparison_train_test.html'), include.ci = FALSE)
 
 # Testing hypothesis ------------------------------------------------------
 
