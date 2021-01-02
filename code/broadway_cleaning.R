@@ -6,7 +6,7 @@
 #                           #
 #     Julianna Szabo        #
 #                           #
-#       Cleaning            #
+#       Cleaning  2         #
 #                           #
 #############################
 
@@ -33,12 +33,32 @@ col_names <- c("date", "date_day", "date_month", "date_year", "show_name", "show
 colnames(df) <- col_names
 rm(col_names)
 
-# Looks like most things are okay. I need to make the data column a date and percentage a percentage
+# Looks like most things are okay. I need to make it into cross sectional data, so we need to do some agregation.
+# Also the date columns can be dropped since they become irrelevant.
 
-# Change into date
-# I tried using the conversion but it didn't work. Therefore I used the other columns to combine the date.
+df$date <- NULL
+df$date_day <- NULL
+df$date_month <- NULL
+df$date_year <- NULL
+df$show_theater <- NULL
 
-df$date <- make_date(year=df$date_year,month=df$date_month,day=df$date_day)
+# Now to the aggregation
+
+df_2 <- df %>% 
+  group_by(show_name) %>% 
+  summarise(
+    "show_type" = show_type,
+    "num_of_attendance" = sum(num_of_attendance),
+    "capacity_filled" = mean(capacity_filled),
+    "revenue" = sum(revenue),
+    "percentage_of_poss_profit" =mean(percentage_of_poss_profit),
+    "num_of_performances" = sum(num_of_performances)
+  )
+
+df<- distinct(df_2)
+
+rm(df_2)
+
 
 # Let us convert the percentage columns into percentages
 
@@ -54,29 +74,22 @@ for (i in 1:length(df$percentage_of_poss_profit)) {
 }
 
 # Let's check for missing values
+# I using percentage_of_profit to filter since it is the only one that will have missing values
 
-View( df %>% filter( !complete.cases(df) ) )
+View( df %>% filter( !complete.cases(percentage_of_poss_profit) ) )
 
-# It looks like the only column with missing values is the Percentage of Profit.
-# I will keep these for now to not disrupt my time series.
+# There are about 30 with missing values. I will remove these.
 
-# Let's check what the density of the data per year is
+df <- df %>% filter( complete.cases(percentage_of_poss_profit) ) 
 
-df %>% 
-  group_by(date_year) %>% 
-  summarise(
-    n = n()
-  )
+# For percentages I will eliminate any values I may have about 1
+# since that would be impossible
 
-# Looks like I only have I value for 1990 so I will drop that one
-
-df <- df[-1, ]
-
-# I see that for the other years before 2000 I don't have tons of observations but it will be enough for analysis.
-# If it causes issues I will drop them later.
+df <- df %>% filter(capacity_filled <= 1)
+df <- df %>% filter(percentage_of_poss_profit <= 1)
 
 # Now the data is clean so we can save it
 
 # Save clean data
 my_path <- "/Users/Terez/OneDrive - Central European University/Data_Analysis_02/DA2_Assignment_2/data/"
-write_csv( df , paste0(my_path,'clean/broadway_clean.csv'))
+write_csv( df , paste0(my_path,'clean/broadway_clean_xsec.csv'))
