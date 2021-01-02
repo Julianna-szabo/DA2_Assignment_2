@@ -29,7 +29,7 @@ glimpse(df)
 df <- df[, c(2, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)]
 
 # First let's rename the columns
-col_names <- c("date", "date_day", "date_month", "date_year", "show_name", "show_theater", "show_type", "num_of_attendance", "capacity_filled", "revenue", "percentage_of_poss_profit", "num_of_performances")
+col_names <- c("date", "date_day", "date_month", "date_year", "show_name", "show_theater", "show_type", "num_of_attendance", "occupancy_percentage", "revenue", "percentage_of_poss_revenue", "num_of_performances")
 colnames(df) <- col_names
 rm(col_names)
 
@@ -49,9 +49,9 @@ df_2 <- df %>%
   summarise(
     "show_type" = show_type,
     "num_of_attendance" = sum(num_of_attendance),
-    "capacity_filled" = mean(capacity_filled),
+    "occupancy_percentage" = mean(occupancy_percentage),
     "revenue" = sum(revenue),
-    "percentage_of_poss_profit" =mean(percentage_of_poss_profit),
+    "percentage_of_poss_revenue" =mean(percentage_of_poss_revenue),
     "num_of_performances" = sum(num_of_performances)
   )
 
@@ -62,31 +62,31 @@ rm(df_2)
 
 # Let us convert the percentage columns into percentages
 
-df <- df %>%  mutate( capacity_filled = capacity_filled/100,
-                      percentage_of_poss_profit = percentage_of_poss_profit/100)
+df <- df %>%  mutate( occupancy_percentage = occupancy_percentage/100,
+                      percentage_of_poss_revenue = percentage_of_poss_revenue/100)
 
 # In Percentage of Profit 0 means Null so we need to make this transformation
 
-for (i in 1:length(df$percentage_of_poss_profit)) {
-  if (df$percentage_of_poss_profit[i] == 0) {
-    df$percentage_of_poss_profit[i] <- NA
+for (i in 1:length(df$percentage_of_poss_revenue)) {
+  if (df$percentage_of_poss_revenue[i] == 0) {
+    df$percentage_of_poss_revenue[i] <- NA
   }
 }
 
 # Let's check for missing values
 # I using percentage_of_profit to filter since it is the only one that will have missing values
 
-View( df %>% filter( !complete.cases(percentage_of_poss_profit) ) )
+View( df %>% filter( !complete.cases(percentage_of_poss_revenue) ) )
 
 # There are about 30 with missing values. I will remove these.
 
-df <- df %>% filter( complete.cases(percentage_of_poss_profit) ) 
+df <- df %>% filter( complete.cases(percentage_of_poss_revenue) ) 
 
 # For percentages I will eliminate any values I may have about 1
 # since that would be impossible
 
-df <- df %>% filter(capacity_filled <= 1)
-df <- df %>% filter(percentage_of_poss_profit <= 1)
+df <- df %>% filter(occupancy_percentage <= 1)
+df <- df %>% filter(percentage_of_poss_revenue <= 1)
 
 # Now the data is clean so we can save it
 
