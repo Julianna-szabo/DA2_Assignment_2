@@ -38,8 +38,11 @@ library(knitr)
 library(pander)
 #install.packages(tibble)
 library(tibble)
-#install.packages(stargazes)
-library(stargazer)
+#install.packages(huxtable)
+library(huxtable)
+#install.packages(jtools)
+library(jtools)
+
 ```
 
 # Executive summary
@@ -75,13 +78,13 @@ df$revenue_per_att <- df$revenue/df$num_of_attendance
 df %>%
   ggplot(aes(x = occupancy_percentage)) +
   geom_histogram(bins= 20, col="white")+
-  labs(x = "Occupancy percentage", y = "Count") +
+  labs(x = "Occupancy percentage", y = "Count", title = "Distribution of occupancy percentage") +
   theme_bw()
 
 df %>%
   ggplot(aes(x = percentage_of_poss_revenue)) +
   geom_histogram(bins= 20, col="white")+
-  labs(x = "Percentage of pottention revenue", y = "Count") +
+  labs(x = "Percentage of pottention revenue", y = "Count", title = "Distribution of % of potential revenue") +
   theme_bw()
 ```
 ```{r, echo = FALSE, warning = FALSE, out.width="50%", figures-side2, fig.show="hold"}
@@ -89,13 +92,13 @@ df %>%
   filter(num_of_performances <= 2000) %>% 
   ggplot(aes(x = num_of_performances)) +
   geom_histogram(bins= 20, col= "white")+
-  labs(x = "Number of performances", y = "Count") +
+  labs(x = "Number of performances", y = "Count", title = "Distribution of Number of performances") +
   theme_bw()
 
 df %>%
   ggplot(aes(x = show_type)) +
   geom_histogram(stat = "count")+
-  labs(x = "Show type", y = "Count") +
+  labs(x = "Show type", y = "Count", title = "Distribution of Show types") +
   theme_bw()
 ```
 
@@ -103,9 +106,11 @@ df %>%
 df %>%
   ggplot(aes(x = revenue_per_att)) +
   geom_histogram(bins= 20, col = "white")+
-  labs(x = "Revenue per attendant", y = "Count") +
+  labs(x = "Revenue per attendant", y = "Count", title = "Distribution of Revenue per attendant") +
   theme_bw()
 ```
+
+( The decision was made to crop the Distribution for Number of performances to 2000 max to show a clearer distribution of the values between 0 and 1000. This distribution would not be very visible if some of the extreme values would have also been shown. These values will be kept in the distribution for analysis)
 
 ```{r, echo = FALSE}
 x1_summary <- df %>% 
@@ -175,7 +180,7 @@ test_url <- "https://raw.githubusercontent.com/Julianna-szabo/DA2_Assignment_2/m
 test <- read.csv(test_url)
 ```
 ```{r, echo=FALSE}
-df <- df %>% mutate( occupancy_percentage_sq = occupancy_percentage^2)
+train <- train %>% mutate( occupancy_percentage_sq = occupancy_percentage^2)
 test <- test %>% mutate( occupancy_percentage_sq = occupancy_percentage^2)
 ```
 ```{r, echo=FALSE}
@@ -220,7 +225,7 @@ reg_test_summary <- summary( reg_test , digit = 2)
 train_summary <- data.frame( reg_summary[["coefficients"]][1:6])
 test_summary <- data.frame( reg_test_summary[["coefficients"]][1:6])
 t_and_t_compare <- cbind(train_summary, test_summary)
-row.names(t_and_t_compare) <- c("Intercept", "Occupancy Percentage", "Percentage of pott. profit", 
+row.names(t_and_t_compare) <- c("Intercept", "Occupancy Percentage", "Percentage of pott. revenue", 
                                "More than one year of performances", "Show type is Play", "Show type is Special")
 colnames(t_and_t_compare) <- c("Train - Estimates", "Test - Estimates")
 kable(t_and_t_compare, digits = 2)
@@ -232,13 +237,15 @@ The model shown is very robust based on the train and test robustness check run.
 
 This project has used data from Broadway in New York City to analyse the different variables affecting the Revenue per attendant in theatre. From the findings, generalisations can be made for overall theatre industry, especially in cities like London or Hamburg which have a similarly large theatre fascination within the city. It can be said with confidence that overall Musicals have a higher Revenue per attendant than Plays, and potentially Specials. Further, larger occupancy and larger percentage of potential profit reached, generally lead to higher Revenue per attendant. However, since the model only covers approximately 40% of the observations, this is not conclusive, since there are many observations that cannot be explained by this model. However, the f statistic shows that the model does fit the data better than one with on independent variables, which gives the model some credibility especially for generalization.
 
+# Summary
 
+Overall, this project demonstrates that all four exploratory variables (Occupancy percentage of the theatre, Percentage of potential profit, the total Number of performances, and the Show type) have some impact on Revenue per attendant. The change in Percentage of potential profit has the largest and the Number of shows the smallest effect. While the model only explains 40% of the observations, it shows the general tendencies of revenue per attendant for each variable, however, it also demonstrates that this does not have to be the case.
 
 \newpage
 
 # Appendix
 
-# Correlation
+# Appendix 1 - Correlation
 
 
 ```{r, echo=FALSE}
@@ -257,12 +264,12 @@ pander(high_corr, digits = 2)
 ```
 
 
-# Ln transformation
+# Appendix 2 - Ln transformation
 
 ## Occupancy percentage 
 
 ### Level - level regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = occupancy_percentage, y = revenue_per_att)) +
   geom_point() +
@@ -272,9 +279,9 @@ df %>%
 ```
 
 ### Log - level regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
-  ggplot(aes(x = ln_occupancy_percentage y = revenue_per_att)) +
+  ggplot(aes(x = ln_occupancy_percentage, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
   labs(x = "ln (Occupancy percentage)",y = "Revenue per attendant") +
@@ -282,7 +289,7 @@ df %>%
 ```
 
 ### Level - log regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
   geom_point() +
@@ -292,7 +299,7 @@ df %>%
 ```
 
 ### Log - log regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = ln_occupancy_percentage, y = ln_revenue_per_att)) +
   geom_point() +
@@ -304,7 +311,7 @@ df %>%
 ## Percentage of potential profit 
 
 ### Level - level regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = percentage_of_poss_revenue, y = revenue_per_att)) +
   geom_point() +
@@ -314,7 +321,7 @@ df %>%
 ```
 
 ### Log - level regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = ln_percentage_of_poss_revenue, y = revenue_per_att)) +
   geom_point() +
@@ -324,7 +331,7 @@ df %>%
 ```
 
 ### Level - log regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = percentage_of_poss_revenue, y = ln_revenue_per_att)) +
   geom_point() +
@@ -334,7 +341,7 @@ df %>%
 ```
 
 ### Log - log regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = ln_percentage_of_poss_revenue, y = ln_revenue_per_att)) +
   geom_point() +
@@ -346,7 +353,7 @@ df %>%
 ## Number of performances 
 
 ### Level - level regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = num_of_performances, y = revenue_per_att)) +
   geom_point() +
@@ -356,7 +363,7 @@ df %>%
 ```
 
 ### Log - level regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = ln_num_of_performances, y = revenue_per_att)) +
   geom_point() +
@@ -366,7 +373,7 @@ df %>%
 ```
 
 ### Level - log regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = num_of_performances, y = ln_revenue_per_att)) +
   geom_point() +
@@ -376,7 +383,7 @@ df %>%
 ```
 
 ### Log - log regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 df %>% 
   ggplot(aes(x = ln_num_of_performances, y = ln_revenue_per_att)) +
   geom_point() +
@@ -386,14 +393,13 @@ df %>%
 ```
 
 
-# Regression modes
+# Appendix 3 - Regression modes
 
 To make my regression model more robust, I created a train and test data set
 
 ## Regression 1 - Simple linear regression
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE, results='asis'}
 reg1 <- lm_robust( ln_revenue_per_att ~ occupancy_percentage , data = train,  se_type = "HC2" )
-summary( reg1 , digits = 2) 
 
 ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
@@ -404,9 +410,8 @@ ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) 
 ```
 
 ## Regression 2 - Quadratic (linear) regression
-```{r, echo=FALSE}
-reg2 <- lm_robust( ln_revenue_per_att ~ occupancy_percentage + occupancy_percentage_sq , data = train )
-summary( reg2 , digits = 2) 
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
+reg2 <- lm_robust( ln_revenue_per_att ~ occupancy_percentage + occupancy_percentage_sq , data = train,  se_type = "HC2"  )
 
 ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
@@ -418,10 +423,9 @@ ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) 
 ## Regressipn 3 - Piecewise linear spline regression
 
 Using 0.5 as a cutof point
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 # Use simple regression with the lspline function
-reg3 <- lm_robust(ln_revenue_per_att ~ lspline( occupancy_percentage , 0.5 ), data = train )
-summary( reg3 , digits = 2) 
+reg3 <- lm_robust(ln_revenue_per_att ~ lspline( occupancy_percentage , 0.5 ), data = train,  se_type = "HC2"  )
 
 ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
@@ -432,9 +436,8 @@ ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) 
 
 
 ## Regression 4 - Weighted linear regression, where  weights = percentage of total revenue
-```{r, echo=FALSE}
-reg4 <- lm_robust(ln_revenue_per_att ~ occupancy_percentage, data = train , weights = percentage_of_poss_revenue)
-summary( reg4 , digits = 2) 
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
+reg4 <- lm_robust(ln_revenue_per_att ~ occupancy_percentage, data = train , weights = percentage_of_poss_revenue,  se_type = "HC2" )
 
 ggplot(data = train, aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=percentage_of_poss_revenue),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
@@ -444,9 +447,8 @@ ggplot(data = train, aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
 ```
 
 ## Regression 5 - Weighted linear regression, where weights = number of performances
-```{r, echo=FALSE}
-reg5 <- lm_robust(ln_revenue_per_att ~ occupancy_percentage, data = train , weights = num_of_performances)
-summary( reg5 , digits = 2) 
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
+reg5 <- lm_robust(ln_revenue_per_att ~ occupancy_percentage, data = train , weights = num_of_performances,  se_type = "HC2" )
 
 ggplot(data = train, aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=num_of_performances),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
@@ -455,8 +457,8 @@ ggplot(data = train, aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
   theme_bw()
 ```
 
-# Model Comparison
-```{r, echo=FALSE}
+## Model Comparison
+```{r, echo=FALSE, message=FALSE}
 data_out <- "/Users/Terez/OneDrive - Central European University/Data_Analysis_02/DA2_Assignment_2/out/"
 htmlreg( list(reg1 , reg2 , reg3 , reg4 ,reg5 ),
          type = 'html',
@@ -466,30 +468,31 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 ,reg5 ),
                                 "Occupancy percentage- weighted (number of per) linear"),
          caption = "Modelling Revenue per attendant on Occupancy percentage for different shows",
          file = paste0( data_out ,'model_comparison.html'), include.ci = FALSE)
+
+as_hux(export_summs(reg1, reg2, reg3, reg4, reg5))
 ```
 
 Looks like these models with mainly one variable are not a great fit for the data. Therefore, I will include additional variables to try and get a better fit. Further, it looks like the original use of "Number of Performances" has no impact so I will try and create a dummy variable and use that instead. I will use 0 for any show that had less than one year of performances so less than 8*52 (416) and one for those that have had more.
 
+\newpage
+
 ## Additional models
 
-Check if it becomes better if one of the weights are included as variables
+Check if it becomes better if one of the weights are included as variables.
+I will also be testing model number 9 (which is the best fit) against the test data set
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width='70%', message=FALSE, warning=FALSE}
 reg6 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue, data = train,  se_type = "HC2" )
-summary( reg6 , digit = 2) 
 
 reg7 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
-summary( reg7, digit = 2) 
 
 reg8 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
-summary( reg8 , digit = 2) 
 
 reg9 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue + as.factor(num_of_performances_d) + as.factor(show_type), data = train,  se_type = "HC2" )
-summary( reg9 , digit = 2)
 ```
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, }
 data_out <- "/Users/Terez/OneDrive - Central European University/Data_Analysis_02/DA2_Assignment_2/out/"
 htmlreg( list(reg1 , reg2 , reg3 , reg4 , reg5 , reg6, reg7, reg8, reg9),
          type = 'html',
@@ -503,21 +506,22 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 , reg5 , reg6, reg7, reg8, reg9),
                                 "Occupancy percentage + profit + number of per + show type - linera"),
          caption = "Modelling Revenue per attendant on Occupancy percentage for different shows",
          file = paste0( data_out ,'model_comparison.html'), include.ci = FALSE)
+
+
 ```
 
-## Check model on test data
-
-```{r}
+```{r, echo = FALSE}
 reg_test <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue + as.factor(num_of_performances_d) + as.factor(show_type), data = test,  se_type = "HC2" )
-summary( reg_test , digit = 2)
 ```
 
-```{r}
+```{r, echo=FALSE, message=FALSE}
 data_out <- "/Users/Terez/OneDrive - Central European University/Data_Analysis_02/DA2_Assignment_2/out/"
 htmlreg( list(reg9, reg_test),
          type = 'html',
          custom.model.names = c("Train model", "Test model"),
          caption = "Modelling Revenue per attendant for different shows",
          file = paste0( data_out ,'model_comparison_train_test.html'), include.ci = FALSE)
+
+as_hux(export_summs(reg6, reg7, reg8, reg9, reg_test))
 ```
 

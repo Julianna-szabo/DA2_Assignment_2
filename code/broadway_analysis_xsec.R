@@ -34,6 +34,11 @@ library(ggthemes)
 library(ggplot2)
 library(flextable)
 library(magrittr)
+library(jtools)
+install.packages(sjPlot)
+library(sjPlot)
+library(sjmisc)
+library(sjlabelled)
 
 # Load the data -----------------------------------------------------------
 
@@ -48,21 +53,22 @@ df <- data.frame(df)
 
 df$revenue_per_att <- df$revenue/df$num_of_attendance
 
+
 # Data description --------------------------------------------------------
 
 # Distribution of x
 ## Occupancy percentage
 x1_summary <- df %>% 
   summarise(
-    n = length(capacity_filled),
-    mean = mean(capacity_filled),
-    median = median(capacity_filled),
-    min = min(capacity_filled),
-    max = max(capacity_filled),
-    sd = sd(capacity_filled))
+    n = length(occupancy_percentage),
+    mean = mean(occupancy_percentage),
+    median = median(occupancy_percentage),
+    min = min(occupancy_percentage),
+    max = max(occupancy_percentage),
+    sd = sd(occupancy_percentage))
 
 df %>%
-  ggplot(aes(x = capacity_filled)) +
+  ggplot(aes(x = occupancy_percentage)) +
   geom_histogram(bins= 20, col= "white")+
   labs(x = "Occupancy percentage", y = "Count") +
   theme_bw()
@@ -71,15 +77,15 @@ df %>%
 
 x2_summary <- df %>% 
   summarise(
-    n = length(percentage_of_poss_profit),
-    mean = mean(percentage_of_poss_profit),
-    median = median(percentage_of_poss_profit),
-    min = min(percentage_of_poss_profit),
-    max = max(percentage_of_poss_profit),
-    sd = sd(percentage_of_poss_profit))
+    n = length(percentage_of_poss_revenue),
+    mean = mean(percentage_of_poss_revenue),
+    median = median(percentage_of_poss_revenue),
+    min = min(percentage_of_poss_revenue),
+    max = max(percentage_of_poss_revenue),
+    sd = sd(percentage_of_poss_revenue))
 
 df %>%
-  ggplot(aes(x = percentage_of_poss_profit)) +
+  ggplot(aes(x = percentage_of_poss_revenue)) +
   geom_histogram(bins= 20, col="white")+
   labs(x = "Percentage of pottention profit", y = "Count") +
   theme_bw()
@@ -134,9 +140,9 @@ summary_table
 # Checking different transformations using scatter plots
 
 # First I will add variables with the ln transformation
-df <- df %>% mutate( ln_capacity_filled = log( capacity_filled ),
+df <- df %>% mutate( ln_occupancy_percentage = log( occupancy_percentage ),
                      ln_revenue_per_att= log( revenue_per_att),
-                     ln_percentage_of_poss_profit = log( percentage_of_poss_profit),
+                     ln_percentage_of_poss_revenue = log( percentage_of_poss_revenue),
                      ln_num_of_performances = log(num_of_performances))
 
 
@@ -147,7 +153,7 @@ df <- df %>% mutate( ln_capacity_filled = log( capacity_filled ),
 # 1, Level - level regression
 
 df %>% 
-  ggplot(aes(x = capacity_filled, y = revenue_per_att)) +
+  ggplot(aes(x = occupancy_percentage, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
   labs(x = "Occupancy percentage",y = "Revenue per attendant")
@@ -155,7 +161,7 @@ df %>%
 # 2, Log - level regression
 
 df %>% 
-  ggplot(aes(x = ln_capacity_filled, y = revenue_per_att)) +
+  ggplot(aes(x = ln_occupancy_percentage, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
   labs(x = "ln (Occupancy percentage)",y = "Revenue per attendant")
@@ -163,7 +169,7 @@ df %>%
 # 3, Level - log regression
 
 df %>% 
-  ggplot(aes(x = capacity_filled, y = ln_revenue_per_att)) +
+  ggplot(aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
@@ -171,7 +177,7 @@ df %>%
 # 4, Log - log regression
 
 df %>% 
-  ggplot(aes(x = ln_capacity_filled, y = ln_revenue_per_att)) +
+  ggplot(aes(x = ln_occupancy_percentage, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
   labs(x = "ln (Occupancy percentage)",y = "ln (Revenue per attendant)")
@@ -184,37 +190,37 @@ df %>%
 # 1, Level - level regression
 
 df %>% 
-  ggplot(aes(x = percentage_of_poss_profit, y = revenue_per_att)) +
+  ggplot(aes(x = percentage_of_poss_revenue, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Percentage of potential profit",y = "Revenue per attendant") +
+  labs(x = "Percentage of potential revenue",y = "Revenue per attendant") +
   theme_bw()
 
 # 2, Log - level regression
 
 df %>% 
-  ggplot(aes(x = ln_percentage_of_poss_profit, y = revenue_per_att)) +
+  ggplot(aes(x = ln_percentage_of_poss_revenue, y = revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Percentage of potential profit)",y = "Revenue per attendant") +
+  labs(x = "ln (Percentage of potential revenue)",y = "Revenue per attendant") +
   theme_bw()
 
 # 3, Level - log regression
 
 df %>% 
-  ggplot(aes(x = percentage_of_poss_profit, y = ln_revenue_per_att)) +
+  ggplot(aes(x = percentage_of_poss_revenue, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "Percentage of potential profit",y = "ln (Revenue per attendant)") +
+  labs(x = "Percentage of potential revenue",y = "ln (Revenue per attendant)") +
   theme_bw()
 
 # 4, Log - log regression
 
 df %>% 
-  ggplot(aes(x = ln_percentage_of_poss_profit, y = ln_revenue_per_att)) +
+  ggplot(aes(x = ln_percentage_of_poss_revenue, y = ln_revenue_per_att)) +
   geom_point() +
   geom_smooth(method="loess")+
-  labs(x = "ln (Percentage of potential profit)",y = "ln (Revenue per attendant)") +
+  labs(x = "ln (Percentage of potential revenue)",y = "ln (Revenue per attendant)") +
   theme_bw()
 
 # Number of performances
@@ -289,59 +295,59 @@ test <- read.csv(test_url)
 
 # First I will add the square and cube of the x variable to df
 
-train <- train %>% mutate( capacity_filled_sq = capacity_filled^2)
-test <- test %>% mutate( capacity_filled_sq = capacity_filled^2)
+train <- train %>% mutate( occupancy_percentage_sq = occupancy_percentage^2)
+test <- test %>% mutate( occupancy_percentage_sq = occupancy_percentage^2)
 
 # Regression 1 - Simple linear regression
 
-reg1 <- lm_robust( ln_revenue_per_att ~ capacity_filled , data = train,  se_type = "HC2" )
+reg1 <- lm_robust( ln_revenue_per_att ~ occupancy_percentage , data = train,  se_type = "HC2" )
 reg1
+
+
 
 # Summary statistics
 summary( reg1 )
 # Visual inspection:
-ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
 
 # Regression 2 - Quadratic (linear) regression
 
-reg2 <- lm_robust( ln_revenue_per_att ~ capacity_filled + capacity_filled_sq , data = train )
+reg2 <- lm_robust( ln_revenue_per_att ~ occupancy_percentage + occupancy_percentage_sq , data = train )
 summary( reg2 )
-ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
   geom_smooth( formula = y ~ poly(x,2) , method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
 
 # Regressipn 3 - Piecewise linear spline regression
 
-# Define the cutoff for occupancy
-cutoff <- 0.5
 # Use simple regression with the lspline function
-reg3 <- lm_robust(ln_revenue_per_att ~ lspline( capacity_filled , cutoff ), data = train )
+reg3 <- lm_robust(ln_revenue_per_att ~ lspline( occupancy_percentage , 0.5 ), data = train )
 summary( reg3 )
-ggplot( data = train, aes( x = capacity_filled, y = ln_revenue_per_att ) ) + 
+ggplot( data = train, aes( x = occupancy_percentage, y = ln_revenue_per_att ) ) + 
   geom_point( color='blue') +
-  geom_smooth( formula = y ~ lspline(x,cutoff) , method = lm , color = 'red' ) +
+  geom_smooth( formula = y ~ lspline(x,0.5) , method = lm , color = 'red' ) +
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
 
 # Regression 4 - Weighted linear regression, where  weights = percentage of total revenue
 
-reg4 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = train , weights = percentage_of_poss_profit)
+reg4 <- lm_robust(ln_revenue_per_att ~ occupancy_percentage, data = train , weights = percentage_of_poss_revenue)
 summary( reg4 )
 
-ggplot(data = train, aes(x = capacity_filled, y = ln_revenue_per_att)) +
-  geom_point(data = df, aes(size=percentage_of_poss_profit),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
-  geom_smooth(aes(weight = percentage_of_poss_profit), method = "lm", color='red')+
+ggplot(data = train, aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
+  geom_point(data = df, aes(size=percentage_of_poss_revenue),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
+  geom_smooth(aes(weight = percentage_of_poss_revenue), method = "lm", color='red')+
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
 
 # Regression 5 - Weighted linear regression, where weights = number of performances
 
-reg5 <- lm_robust(ln_revenue_per_att ~ capacity_filled, data = train , weights = num_of_performances)
+reg5 <- lm_robust(ln_revenue_per_att ~ occupancy_percentage, data = train , weights = num_of_performances)
 summary( reg4 )
 
-ggplot(data = train, aes(x = capacity_filled, y = ln_revenue_per_att)) +
+ggplot(data = train, aes(x = occupancy_percentage, y = ln_revenue_per_att)) +
   geom_point(data = df, aes(size=num_of_performances),  color = 'blue', shape = 16, alpha = 0.6,  show.legend=F) +
   geom_smooth(aes(weight = num_of_performances), method = "lm", color='red')+
   labs(x = "Occupancy percentage",y = "ln (Revenue per attendant)")
@@ -350,6 +356,8 @@ ggplot(data = train, aes(x = capacity_filled, y = ln_revenue_per_att)) +
 # Comparing models --------------------------------------------------------
 
 # Creating model summary with texreg
+expo
+
 data_out <- "/Users/Terez/OneDrive - Central European University/Data_Analysis_02/DA2_Assignment_2/out/"
 htmlreg( list(reg1 , reg2 , reg3 , reg4 ,reg5 ),
          type = 'html',
@@ -368,17 +376,21 @@ train <- train %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
 test <- test %>% mutate( num_of_performances_d = 1*(num_of_performances>416))
 
 # More regressions
-reg6 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit, data = train,  se_type = "HC2" )
+reg6 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue, data = train,  se_type = "HC2" )
 summary( reg6 ) 
 
-reg7 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
+reg7 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
 summary( reg7) 
 
-reg8 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
+reg8 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue + as.factor(num_of_performances_d), data = train,  se_type = "HC2" )
 summary( reg8 ) 
 
-reg9 <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = train,  se_type = "HC2" )
-summary( reg9 )
+reg9 <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue + as.factor(num_of_performances_d) + as.factor(show_type), data = train,  se_type = "HC2" )
+reg_summary <- summary( reg9 )
+
+kable(reg_summary[["coefficients"]][1:6], digits = 2 )
+
+train_summary <-data.frame( reg_summary[["coefficients"]][1:6])
 
 # Export again and compare
 
@@ -398,8 +410,14 @@ htmlreg( list(reg1 , reg2 , reg3 , reg4 , reg5 , reg6, reg7, reg8, reg9),
 
 
 ## Rerun model on test data set
-reg_test <-  lm_robust( ln_revenue_per_att ~ capacity_filled + percentage_of_poss_profit + as.factor(num_of_performances_d) + as.factor(show_type), data = test,  se_type = "HC2" )
-summary( reg_test , digit = 2)
+reg_test <-  lm_robust( ln_revenue_per_att ~ occupancy_percentage + percentage_of_poss_revenue + as.factor(num_of_performances_d) + as.factor(show_type), data = test,  se_type = "HC2" )
+reg_test_summary <- summary( reg_test , digit = 2)
+test_summary <-data.frame( reg_test_summary[["coefficients"]][1:6])
+
+t_and_t_compare <- cbind(train_summary, test_summary)
+row.names(t_and_t_compare) <- c("Intercept", "Occupancy Percentage", "Percentage of pott. profit", 
+                               "More than one year of performances", "Show type is Play", "Show type is Special")
+colnames(t_and_t_compare) <- c("Train - Estimates", "Test- Estimates")
 
 ## Compare the two
 
@@ -410,15 +428,5 @@ htmlreg( list(reg9, reg_test),
          caption = "Modelling Revenue per attendant for different shows",
          file = paste0( data_out ,'model_comparison_train_test.html'), include.ci = FALSE)
 
-# Testing hypothesis ------------------------------------------------------
-
-# 1) Coefficient is equal to 0:
-# Implemented by default...
-summary( reg6 )
-
-# 2) Checking it using the unique formula
-library(car)
-# Let test: H0: ln_cases_ppc = 0, HA: ln_cases_ppc neq 0
-linearHypothesis( reg6 , "capacity_filled = 0")
 
 
