@@ -11,12 +11,12 @@
 <th style="padding-left: 5px;padding-right: 5px;">Occupancy percentage + Profit - linear</th>
 <th style="padding-left: 5px;padding-right: 5px;">Occupancy percentage + number of per - linear</th>
 <th style="padding-left: 5px;padding-right: 5px;">Occupancy percentage + profit + number of per - linear</th>
-<th style="padding-left: 5px;padding-right: 5px;">Occupancy percentage + profit + number of per + show type - linera</th>
+<th style="padding-left: 5px;padding-right: 5px;">Occupancy percentage + profit + number of per + show type - linear</th>
 </tr>
 </thead>
 <tbody>
 <tr style="border-top: 1px solid #000000;">
-<td style="padding-left: 5px;padding-right: 5px;">(Intercept)</td>
+<td style="padding-left: 5px;padding-right: 5px;">Intercept</td>
 <td style="padding-left: 5px;padding-right: 5px;">3.15<sup>***</sup></td>
 <td style="padding-left: 5px;padding-right: 5px;">3.30<sup>***</sup></td>
 <td style="padding-left: 5px;padding-right: 5px;">3.25<sup>***</sup></td>
@@ -40,7 +40,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">(0.06)</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">occupancy_percentage</td>
+<td style="padding-left: 5px;padding-right: 5px;">Occupancy Percentage</td>
 <td style="padding-left: 5px;padding-right: 5px;">1.23<sup>***</sup></td>
 <td style="padding-left: 5px;padding-right: 5px;">0.76</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
@@ -64,7 +64,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">(0.12)</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">occupancy_percentage_sq</td>
+<td style="padding-left: 5px;padding-right: 5px;">Occupancy Percentage Squared</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">0.35</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
@@ -88,7 +88,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">lspline(occupancy_percentage, 0.5)1</td>
+<td style="padding-left: 5px;padding-right: 5px;">PLS (0.5, first part)</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">1.03<sup>**</sup></td>
@@ -112,7 +112,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">lspline(occupancy_percentage, 0.5)2</td>
+<td style="padding-left: 5px;padding-right: 5px;">PLS (0.5, second part)</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">1.27<sup>***</sup></td>
@@ -136,7 +136,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">percentage_of_poss_revenue</td>
+<td style="padding-left: 5px;padding-right: 5px;">Percentage of potential revenue</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
@@ -160,7 +160,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">(0.10)</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">as.factor(num_of_performances_d)1</td>
+<td style="padding-left: 5px;padding-right: 5px;">More than one year of performances</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
@@ -184,7 +184,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">(0.03)</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">as.factor(show_type)Play</td>
+<td style="padding-left: 5px;padding-right: 5px;">Show type is Play</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
@@ -208,7 +208,7 @@
 <td style="padding-left: 5px;padding-right: 5px;">(0.02)</td>
 </tr>
 <tr>
-<td style="padding-left: 5px;padding-right: 5px;">as.factor(show_type)Special</td>
+<td style="padding-left: 5px;padding-right: 5px;">Show type is Special</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
 <td style="padding-left: 5px;padding-right: 5px;">&nbsp;</td>
