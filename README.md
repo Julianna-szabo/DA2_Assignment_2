@@ -1,5 +1,6 @@
 # DA2 Assigment 2
 This repository contains my work for the second assignment for the ECBS5142 - Data Analysis 2 course at CEU.
+You can find all the data and code on this github repository: https://github.com/Julianna-szabo/DA2_Assignment_2
 
 # Goal
 My goal was to understand how different variables affected the Revenue per attendant of shows on Braodway in New York City.
