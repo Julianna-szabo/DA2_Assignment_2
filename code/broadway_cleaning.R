@@ -19,8 +19,8 @@ library(scales)
 
 # Download the broadway data set
 broadway_url <- "https://raw.githubusercontent.com/Julianna-szabo/DA2_Assignment_2/main/data/raw/broadway.csv"
-df <- read.csv(broadway_url)
-df <- data.frame(df)
+df_2 <- read.csv(broadway_url)
+df_2 <- data.frame(df_2)
 
 # Let us take a quick look at the data
 glimpse(df)
@@ -87,6 +87,11 @@ df <- df %>% filter( complete.cases(percentage_of_poss_revenue) )
 
 df <- df %>% filter(occupancy_percentage <= 1)
 df <- df %>% filter(percentage_of_poss_revenue <= 1)
+
+# Seems like there are some shows that have zero performances
+
+View( df_2 %>% filter(show_name == c("Bobbi Boland", "Chronicle Of A Death Foretold", 
+                                     "Company 95", "Hello, Dolly!", "Holiday", "Patti Lupone On Broadway")))
 
 # Now the data is clean so we can save it
 

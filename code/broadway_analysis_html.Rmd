@@ -3,7 +3,9 @@ title: "Analysing the Revenue per attendant of shows on Broadway"
 author: "Julianna Szabo"
 date: "03/01/2021"
 output:
-  pdf_document:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
     latex_engine: xelatex
 ---
 
@@ -68,6 +70,7 @@ df <- data.frame(df)
 The data comes from the CORGIS Dataset Project and was originally published by the Broadway League. You can find a link to the original file in my GitHub folder. The data is a cross sectional time series covering all the shows that have been on Broadway from 1990 to 2016. For this project, the cross sectional aspect is the more important, and therefore, the data was aggregated based on show name. The time series aspect has been discarded but there have been a few adjustments made to control the effects it has on the data.  
 One of the main ones is using Revenue per attendant as the dependent variable. Since there are shows that ran for over 25 years and some for less than a year it would be unfair to compare the total revenue per show during its runtime. However, since the data includes the total revenue and the total number of attendants over the whole runtime of the show, using the ratio of these two variable gives an easy comparable relevant variable.  
 Overall the quality of the data is good. It included over 3000 observations originally after the aggregation to cross sectional data, which, after cleaning, resulted in 758 complete observations. This shows a very representative sample, that has the potential of generalisation to other cities such as London with a similar theatre scene. There have been a few discrepancies in the data especially with the variables representing percentages. For both Occupancy percentage and Percentage of potential revenue, there were observations with values over 100%, which have been dropped.  
+Measurement errors are another thing to consider. Classic error measurement is possible in the dependent variable mainly because of counting the number of attendants. This number does not come from a computer system, but is the actual number of people entering the theater, which could be miscounted by the doorman.If this was the case, the slope would still be similar to what is given. Number of shows are least likely to have error, since this is standard weekly, which was then agregated in the cleaning process. The other explanatory variables that are quantitative could include measurement errors since they depend on numbers that are entered by people. If this is the case, the slope would change with values that do not have error.
 Looking at the data more in detail, one can see that there are four explanatory variables to consider for one dependent variable.  
 
 
@@ -163,7 +166,7 @@ summary_table <- rbind(x1_summary, x2_summary, x3_summary ,y_summary)
 kable(summary_table, align = "r", digits = 2)
 ```
 
-As shown in the graphs above, there are four quantitative ordered variables (including the dependent variable) and one qualitative nominal variable. All quantitative variables, with the exception of the Number of shows, are distributed somewhat normally with a left or right tail. The summary table of the variables also show the distribution of the values, where the only one that stand out is that there is a show with 0 performances. This is an error, but will be resolved due to some transformations later on. Further, none of the variables are highly correlated (see Appendix 1), so the analysis can be conducted without eliminating any variable.  
+As shown in the graphs above, there are four quantitative ordered variables (including the dependent variable) and one qualitative nominal variable. All quantitative variables, with the exception of the Number of shows, are distributed somewhat normally with a left or right tail. The summary table of the variables also show the distribution of the values, where the only one that stand out is that there is a show with 0 performances. This is an error, which is surprising for this variable. However, after checking the source data, it looks like there was only one week of performances, so it will be resolved due to some transformations later on. Further, none of the variables are highly correlated (see Appendix 1), so the analysis can be conducted without eliminating any variable.  
 After seeing the distribution of the variables, the decision was made to do transformations on some of the quantitative variables. After examining grams with possible log transformations (see Appendix 2), log transformations were applied to the Number of performances and Revenue per attendant. This was decided based on the distribution of the observations, but also due to the interpretation being more cohesive across variables. One additional transformation that was later added was to instead of a log transformation of Number of performances a dummy variable was created where 0 denotes the shows with less than one year (416) of performances while 1 denotes the ones with more than that.  
 
 ```{r, echo=FALSE}
